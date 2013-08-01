@@ -8,3 +8,7 @@
 *.snm
 *.toc
 *.vrb
+*.hi
+*.o
+shake
+.shake.database
