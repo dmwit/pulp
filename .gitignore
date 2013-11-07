@@ -1,8 +1,6 @@
 *.aux
 *.log
 *.pdf
-!*/images/*.pdf
-!*/pdf/*.pdf
 *.bbl
 *.blg
 *.nav
