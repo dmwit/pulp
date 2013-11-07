@@ -1,0 +1,103 @@
+/usr/share/texmf
+^Chapter
+^<use [^.]*.pdf>
+^This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6)
+^ %&-line parsing enabled.
+^entering extended mode
+^(\./[a-z_]*\.\(tex\|aux\)
+^LaTeX2e <2005/12/01>
+^Babel <v3\.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
+^yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
+^erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
+^ french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
+^us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
+^tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
+^turkish, ukenglish, ukrainian, loaded.
+^Document Class:
+^For additional information on amsmath
+^\[[0-9]*[] ]
+Output written on
+Transcript written on
+^This is BibTeX, Version 0\.99c (Web2C 7\.5\.6)
+^The top-level auxiliary file: 
+^A level-1 auxiliary file: 
+^The style file: 
+^Database file #
+<\./\(images\|pdf\)/[^>]*\.pdf>
+> <\./[^.]*.pdf
+^<\(images\|pdf\)/[^.]*\.pdf
+^$
+^pdfTeX warning: pdflatex (file .*): PDF inclusion: Page Group
+which pdfTeX can't handle. Ignoring it.
+/usr/share/texlive
+^This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian)
+^ restricted \\write18 enabled.
+^LaTeX2e <2011/06/27>
+^Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+/var/lib/texmf
+texmf-dist/fonts
+^\[Loading MPS to PDF converter (version 2006\.09\.02)\.\]
+ABD: EveryShipout initializing macros
+^pdfTeX warning: pdflatex (file .*): PDF inclusion: multiple pdf
+^s with page group included in a single page
+^\([(<]*[a-z._/][>) ]*\)*$
+^This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+^This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013)
+^Babel <3.9f> and hyphenation patterns for 2 languages loaded.
+^cs-revision e81e0c94bcc6)
+^\*geometry\* driver: auto-detecting
+^\*geometry\* detected driver: pdftex
+/translator-[a-z]*-dictionary-English.dict
+^Package hyperref Message: Stopped early.
+^Package hyperref Message: Driver (autodetected): hpdftex.
+^LaTeX Font Warning: Font shape `[a-zA-Z1-9/]*' in size <[1-9.]*> not available
+^(Font)              size <[1-9.]*> substituted on input line
+^LaTeX Font Warning: Size substitutions with differences
+^(Font)              up to 1\.0pt have occurred.
+^\\OT1/cmr/m/n/10\.95 As with sym-met-ric lenses, we will build our edit lens be-t
+^ween \\$(\OML/cmm/m/it/10.95 X \OMS/cmsy/m/n/10.95 \^\^B \OML/cmm/m/it/10\.95 Y\\OT1/
+^cmr/m/n/10\.95 )\[\]\$ and \$(\\OML/cmm/m/it/10.95 X \\OMS/cmsy/m/n/10.95 \^\^B \\OML/cmm
+^/m/it/10\.95 Z\\OT1/cmr/m/n/10.95 )\[\]\$ compositionally---
+fonts/type1/public/amsfonts/symbols/[a-z0-9]*.pfb>
+^This is BibTeX, Version 0\.99d (TeX Live 2013)
+^Underfull \\hbox (badness 10000) has occurred while \\output is active
+^pe1/public/amsfonts/cm/cmss8.pfb>$
+^\([][ ()]\|[[:digit:]]\)*$
+<\(use \)\?cats/[a-z]*_full.jpg
+^Overfull 
+^Underfull 
+^Semantic Package v2\.0(epsilon) \[2003/10/28\]$
+^CVSId: \$Id: semantic\.dtx,v 1\.11 2003/10/28 13:45:57 turtle Exp \$$
+^Loading features: $
+^ math mode ligatures,$
+^ inference rules,$
+^)  short hands,$
+^) (\./presentation\.aux)$
+^ (\./presentation.toc)$
+^<timeline\.pdf
+<[.a-z/_]*.\(jpg\|png\|pdf\)
+^er_full.jpg>
+^(\./presentation.vrb) \[[0-9]*\] (\./presentation.vrb)
+(rcs-revision 24853e6b98cf)
+^Here is how much of TeX's memory you used:
+^ [[:digit:]]* strings out of
+^ [[:digit:]]* string characters out of
+^ [[:digit:]]* words of memory out of
+^ [[:digit:]]* multiletter control sequences out of
+^ [[:digit:]]* words of font info for [[:digit:]]* fonts, out of
+^ [[:digit:]]* hyphenation exceptions out of
+^ [^ ]* stack positions out of
+^PDF statistics:
+^ [[:digit:]]* PDF objects out of [[:digit:]]* (max. [[:digit:]]*)
+^ [[:digit:]]* compressed objects within [[:digit:]]* object streams
+^ [[:digit:]]* named destinations out of [[:digit:]]* (max. [[:digit:]]*)
+^ [[:digit:]]* words of extra memory for PDF output out of [[:digit:]]* (max. [[:digit:]]*)
+type1/public/amsfonts
+^\*\*paper$
+^\\[^ =]*=\\\(count\|dimen\|toks\|mathgroup\|skip\|box\|muskip\|write\|read\)[[:digit:]]*$
+^) (./paper.sty
+^\(Package\|File\): [^ ]* [[:digit:]]\{4\}/[[:digit:]]\{2\}/[[:digit:]]\{2\}
+^LaTeX Font Info:
+^LaTeX Info:
+^) (./bcprules.sty$
+^Package [^ ]* Info:
