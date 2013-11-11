@@ -127,5 +127,9 @@
 \~^Forcing optional page break$~d
 \~^File: [^ ]* Graphic file (type pdf)$~d
 \~^(pdftex.def)             Requested size: [[:digit:]]\+.[[:digit:]]\+pt x [[:digit:]]\+.[[:digit:]]\+pt.$~d
-\~^ <[^,]*\.pdf, id=[[:digit:]]*, [[:digit:]]\+.[[:digit:]]\+pt x [[:digit:]]\+.[[:digit:]]\+pt>$~d
+\~\.pdf, id=[[:digit:]]*, [[:digit:]]*\.[[:digit:]]*pt x [[:digit:]]*\.[[:digit:]]*pt~d
 \~^ <use images/.*.pdf>$~d
+\~^>]\( \[[[:digit:]]*]\)*$~d
+\~^(\./paper.bbl \[[[:digit:]]*$~d
+\~^) \[[[:digit:]]*] (\./paper.aux)[ )]*$~d
+\~symbols/msbm10.pfb>~d
