@@ -132,4 +132,7 @@
 \~^>]\( \[[[:digit:]]*]\)*$~d
 \~^(\./paper.bbl \[[[:digit:]]*$~d
 \~^) \[[[:digit:]]*] (\./paper.aux)[ )]*$~d
-\~symbols/msbm10.pfb>~d
+\~msbm10.pfb>~d
+# a funny heuristic: if we've got something like "[28] [29] [31] [42]", the
+# whole line is probably useless
+\~\(\[[[:digit:]]\+] \)\{4,\}~d
