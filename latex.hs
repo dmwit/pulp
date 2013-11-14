@@ -238,13 +238,20 @@ annotate = concatMap retag . liftA3 zip3 (scanl (flip combine) Nothing) (scanr c
 interesting = concatMap locallyInteresting
 locallyInteresting (_, Boring s) = []
 locallyInteresting (_, Message Info _ _) = []
-locallyInteresting (_, HBox {}) = []
+locallyInteresting (_, HBox s _) | "Underfull \\hbox" `isPrefixOf` s = []
 locallyInteresting (l, File f ls) = case interesting ls of
 	[] -> []
 	ls -> [(l, File f ls)]
 locallyInteresting other = [other]
 
 prettyPrint = show . interesting . annotate
+
+used :: File Markers -> [String]
+used = concatMap go where
+	go (File f ls) = f : used ls
+	go _ = []
+
+prettyPrintUsedFiles = unlines . nub . filter ("." `isPrefixOf`) . used
 
 main = do
 	s <- readFile "dissertation/paper.log"
