@@ -10,6 +10,13 @@ import Text.Regex.Posix
 -- for auto-generated code
 import GHC.Show
 
+-- TODO: import the real Void when Hackage isn't down
+data Void
+deriving instance Eq  Void
+deriving instance Ord  Void
+deriving instance Show Void
+--deriving instance Read Void -- throws an exception during compilation with 7.4.2
+
 groupUntil = groupWhen . (not .)
 groupWhen p xs = case span p xs of
 	(b, m:e) -> (b ++ [m]) : groupWhen p e
@@ -22,13 +29,14 @@ coalesce = map concat
 
 data MessageLevel = Info | Warning | Error
 	deriving (Eq, Ord, Show, Read, Enum, Bounded)
-data LineIndicators = Markers | Annotations
+data LineIndicators = Markers | Annotations | Flat
 	deriving (Eq, Ord, Show, Read, Enum, Bounded)
 
 type Annotation = (Maybe Integer, Maybe Integer)
 type family   File (a :: LineIndicators)
 type instance File Markers     = [Line Markers]
 type instance File Annotations = [(Annotation, Line Annotations)]
+type instance File Flat        = Void
 
 data Line a where
 	Boring         :: String -> Line a
@@ -87,6 +95,15 @@ instance Show (Line Annotations) where
            (showString "Unknown ") (showsPrec 11 b1_a150))
   showList = showList__ (showsPrec 0)
 -- }}}
+
+retag :: Line a -> [Line b]
+retag (Boring s) = [Boring s]
+retag (HBox s e) = [HBox s e]
+retag (File s f) = []
+retag (Message l s ss) = [Message l s ss]
+retag (LineMarker n)   = []
+retag (ExtraCloseFile) = [ExtraCloseFile]
+retag (Unknown s)      = [Unknown s]
 
 compile :: String -> Regex
 compile = makeRegex
@@ -222,26 +239,24 @@ treeTake n = fst . treeTake' n where
 	treeTake' n (other:rest) = first (other:) (treeTake' (n-1) rest)
 
 annotate :: File Markers -> File Annotations
-annotate = concatMap retag . liftA3 zip3 (scanl (flip combine) Nothing) (scanr combine Nothing) id where
+annotate = concatMap retagAnnot . liftA3 zip3 (scanl (flip combine) Nothing) (scanr combine Nothing) id where
 	combine (LineMarker n) l = Just n
 	combine _ l = l
 
-	retag (b, e, l) = (,) (b, e) <$> case l of
-		Boring s       -> [Boring s]
-		HBox s e       -> [HBox s e]
+	retagAnnot (b, e, l) = (,) (b, e) <$> case l of
 		File s f       -> [File s (annotate f)]
-		Message l s ss -> [Message l s ss]
-		LineMarker n   -> []
-		ExtraCloseFile -> [ExtraCloseFile]
-		Unknown s      -> [Unknown s]
+		_              -> retag l
 
-interesting = concatMap locallyInteresting
-locallyInteresting (_, Boring s) = []
-locallyInteresting (_, Message Info _ _) = []
-locallyInteresting (_, HBox s _) | "Underfull \\hbox" `isPrefixOf` s = []
-locallyInteresting (l, File f ls) = case interesting ls of
-	[] -> []
-	ls -> [(l, File f ls)]
+interesting :: File Annotations -> File Annotations
+interesting = concatMap go where
+	go (l, File f ls) = case interesting ls of
+		[] -> []
+		ls -> [(l, File f ls)]
+	go (l, m) = (,) l <$> (retag >=> locallyInteresting >=> retag) m
+
+locallyInteresting (Boring s) = []
+locallyInteresting (Message Info _ _) = []
+locallyInteresting (HBox s _) | "Underfull \\hbox (badness " `isPrefixOf` s = []
 locallyInteresting other = [other]
 
 prettyPrint = show . interesting . annotate
