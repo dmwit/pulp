@@ -42,7 +42,7 @@ data Line a where
 	Boring         :: String -> Line a
 	HBox           :: String -> String -> Line a
 	File           :: String -> File a -> Line a
-	Message        :: MessageLevel -> String -> [String] -> Line a
+	Message        :: String -> MessageLevel -> [String] -> Line a
 	LineMarker     :: Integer -> Line Markers
 	ExtraCloseFile :: Line a
 	Unknown        :: String -> Line a
@@ -73,7 +73,7 @@ instance Show (Line Annotations) where
            ((.)
               (showsPrec 11 b1_a14R)
               ((.) showSpace (showsPrec 11 b2_a14S))))
-  showsPrec a_a14T (Main.Message b1_a14U b2_a14V b3_a14W)
+  showsPrec a_a14T (Main.Message b2_a14V b1_a14U b3_a14W)
     = showParen
         ((a_a14T >= 11))
         ((.)
@@ -100,7 +100,7 @@ retag :: Line a -> [Line b]
 retag (Boring s) = [Boring s]
 retag (HBox s e) = [HBox s e]
 retag (File s f) = []
-retag (Message l s ss) = [Message l s ss]
+retag (Message p l ss) = [Message p l ss]
 retag (LineMarker n)   = []
 retag (ExtraCloseFile) = [ExtraCloseFile]
 retag (Unknown s)      = [Unknown s]
@@ -183,7 +183,7 @@ parseMessage l b e ss = first (thisM:) (categorize' Nothing ss') where
 		[_, level] -> ("LaTeX", level)
 	(es, ss') = span (("(" ++ package ++ ")") `isPrefixOf`) ss
 	ms        = map (dropWhile isSpace) (e:map (drop (length package + 2)) es)
-	thisM     = Message (read (init level)) package ms
+	thisM     = Message package (read (init level)) ms
 
 -- TODO: I'm sure " []" isn't the only thing that can follow an
 -- overfull/underfull hbox message; but what else can?
@@ -255,11 +255,24 @@ interesting = concatMap go where
 	go (l, m) = (,) l <$> (retag >=> locallyInteresting >=> retag) m
 
 locallyInteresting (Boring s) = []
-locallyInteresting (Message Info _ _) = []
+locallyInteresting (Message _ Info _) = []
 locallyInteresting (HBox s _) | "Underfull \\hbox (badness " `isPrefixOf` s = []
 locallyInteresting other = [other]
 
-prettyPrint = show . interesting . annotate
+prettyPrint = concatMap (go []) . interesting . annotate where
+	go fs         (l, File f ls) = concatMap (go ((l, f):fs)) ls
+	go ((_, f):_) (l, m)         = f ++ ":" ++ pprintLoc l ++ pprintMess m ++ "\n"
+	go []         (l, m)         = pprintLoc l ++ pprintMess m ++ "\n"
+
+	pprintLoc (l1, l2)  = pprintLine l1 ++ "-" ++ pprintLine l2 ++ ": "
+	pprintLine Nothing  = "?"
+	pprintLine (Just l) = show l
+
+	pprintMess (Boring s) = s
+	pprintMess (HBox s e) = s
+	pprintMess (Message p l ss) = "Package " ++ p ++ " " ++ show l ++ ":\n\t" ++ intercalate "\n\t" ss
+	pprintMess (ExtraCloseFile) = "For some reason, the log-file parser noticed an extra 'close file' marker here.\nIt's possible that the filenames and line numbers reported near this are wrong.\nThis is likely a bug -- you should report it and include your log file!"
+	pprintMess (Unknown s) = s
 
 used :: File Markers -> [String]
 used = concatMap go where
@@ -270,4 +283,4 @@ prettyPrintUsedFiles = unlines . nub . filter ("." `isPrefixOf`) . used
 
 main = do
 	s <- readFile "dissertation/paper.log"
-	putStrLn . prettyPrint . parse $ s
+	putStr . prettyPrint . parse $ s
