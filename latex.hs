@@ -135,7 +135,7 @@ regexen = map compile $
 	,"^Chapter [[:digit:]]+\\.$"
 	,"^[[:space:]]*<" ++ filenameRegex ++ ", id=[[:digit:]]+, " ++ ptRegex ++ " x " ++ ptRegex ++ ">$"
 	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
-	,"^<use " ++ filenameRegex ++ ">$"
+	,"^[[:space:]]*<use " ++ filenameRegex ++ ">$"
 	,"^ [[:digit:]]+ (" ++ intercalate "|" statistics ++ ") out of "
 	,"^ [^ ]* stack positions out of"
 	,"^ [[:digit:]]+ compressed objects within [[:digit:]]+ object streams$"
