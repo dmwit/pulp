@@ -10,6 +10,8 @@ import Text.Regex.Posix
 -- for auto-generated code
 import GHC.Show
 
+-- TODO: lol, we don't even parse TeX's actual errors
+
 -- TODO: import the real Void when Hackage isn't down
 data Void
 deriving instance Eq  Void
@@ -108,6 +110,7 @@ retag (Unknown s)      = [Unknown s]
 compile :: String -> Regex
 compile = makeRegex
 
+trim = dropWhile isSpace
 prefixes =
 	["This is pdfTeX, Version 3."
 	,"Style option: `fancyvrb' v"
@@ -115,8 +118,8 @@ prefixes =
 	]
 equalities =
 	["entering extended mode"
-	," restricted \\write18 enabled."
-	," %&-line parsing enabled."
+	,"restricted \\write18 enabled."
+	,"%&-line parsing enabled."
 	,"**paper"
 	,"For additional information on amsmath, use the `?' option."
 	,"ABD: EveryShipout initializing macros"
@@ -167,6 +170,7 @@ openFile  = matchBeginning ("[[:space:]]*\\(" ++ filenameRegex)
 closeFile = matchBeginning "[[:space:]]*\\)"
 beginMessage = matchBeginning "(LaTeX|Package) ([^ ]* )?(Info|Warning|Error): "
 beginHBox = matchBeginning ("(Over|Under)full \\\\hbox \\(((badness [[:digit:]]+)|(" ++ ptRegex ++ " too wide))\\) ")
+-- TODO: add the pattern "^l\.[[:digit:]]+ " for TeX's errors
 lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s ->
 	case match pat s of
 		MR { mrSubList = [b, _, ""] } -> range b b
@@ -210,7 +214,7 @@ putLineHere l ss = first (maybeCons l) (categorize' Nothing ss)
 categorize' l [] = (maybeCons l [], [])
 categorize' l (s:ss)
 	| any (`isPrefixOf` s) prefixes         = label Boring
-	| any (s==)            equalities       = label Boring
+	| any (trim s==)       equalities       = label Boring
 	| any (`match` s)      regexen          = label Boring
 	| Just (f, s' ) <- openFile s           = let (b, e) = categorize' Nothing (s':ss)
 	                                          in first (file f b:) (putLineHere l e)
@@ -271,7 +275,7 @@ prettyPrint = concatMap (go []) . interesting . annotate where
 	pprintMess (Boring s) = s
 	pprintMess (HBox s e) = s
 	pprintMess (Message p l ss) = "Package " ++ p ++ " " ++ show l ++ ":\n\t" ++ intercalate "\n\t" ss
-	pprintMess (ExtraCloseFile) = "For some reason, the log-file parser noticed an extra 'close file' marker here.\nIt's possible that the filenames and line numbers reported near this are wrong.\nThis is likely a bug -- you should report it and include your log file!"
+	pprintMess (ExtraCloseFile) = "For some reason, the log-file parser noticed an extra 'close file' marker here.\n\tIt's possible that the filenames and line numbers reported near this are wrong.\n\tThis is likely a bug -- you should report it and include your log file!"
 	pprintMess (Unknown s) = s
 
 used :: File Markers -> [String]
