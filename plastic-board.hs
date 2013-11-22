@@ -6,6 +6,7 @@ import Control.Monad
 import Data.Char
 import Data.List
 import Data.Void
+import System.Environment
 import Text.Regex.Posix
 
 -- for auto-generated code
@@ -280,5 +281,9 @@ used = concatMap go where
 prettyPrintUsedFiles = unlines . nub . filter ("." `isPrefixOf`) . used
 
 main = do
-	s <- readFile "dissertation/paper.log"
+	args <- getArgs
+	s <- case args of
+		[]     -> getContents
+		[file] -> readFile file
+		_ -> error "I haven't made a proper command-line parser yet, so this is what\nyou get instead. I hope you know what went wrong now. Idiot."
 	putStr . prettyPrint . parse $ s
