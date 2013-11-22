@@ -1,0 +1,1561 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.10.11)  22 NOV 2013 10:56
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**paper
+(./paper.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 2 languages loaded.
+(./paper.cond) (./skeleton_dissertation.tex
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./paper.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen103
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amscd.sty
+Package: amscd 1999/11/29 v2.0
+\athelp@=\toks20
+\minaw@=\dimen112
+\bigaw@=\dimen113
+\minCDarrowwidth=\dimen114
+) (./bcprules.sty
+\afterruleskip=\skip46
+\labelminsep=\skip47
+\labelcolwidth=\dimen115
+\@labelbox=\box28
+\rulebox=\box29
+\ruledim=\dimen116
+\labeldim=\dimen117
+)
+(./bcptheorem.sty
+\c@numtextctr=\count100
+\c@casecounter=\count101
+) (/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz) (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+\FV@CodeLineNo=\count102
+\FV@InFile=\read1
+\FV@TabBox=\box30
+\c@FancyVerbLine=\count103
+\FV@StepNumber=\count104
+\FV@OutFile=\write3
+) (/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip48
+\fb@frw=\dimen118
+\fb@frh=\dimen119
+\FrameRule=\dimen120
+\FrameSep=\dimen121
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen122
+)
+(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks22
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box31
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count105
+))
+\Gin@req@height=\dimen123
+\Gin@req@width=\dimen124
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen125
+\pgf@y=\dimen126
+\pgf@xa=\dimen127
+\pgf@ya=\dimen128
+\pgf@xb=\dimen129
+\pgf@yb=\dimen130
+\pgf@xc=\dimen131
+\pgf@yc=\dimen132
+\w@pgf@writea=\write4
+\r@pgf@reada=\read2
+\c@pgf@counta=\count106
+\c@pgf@countb=\count107
+\c@pgf@countc=\count108
+\c@pgf@countd=\count109
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count110
+\pgfsyssoftpath@bigbuffer@items=\count111
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen133
+\pgfmath@count=\count112
+\pgfmath@box=\box32
+\pgfmath@toks=\toks26
+\pgfmath@stack@operand=\toks27
+\pgfmath@stack@operation=\toks28
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count113
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen134
+\pgf@picmaxx=\dimen135
+\pgf@picminy=\dimen136
+\pgf@picmaxy=\dimen137
+\pgf@pathminx=\dimen138
+\pgf@pathmaxx=\dimen139
+\pgf@pathminy=\dimen140
+\pgf@pathmaxy=\dimen141
+\pgf@xx=\dimen142
+\pgf@xy=\dimen143
+\pgf@yx=\dimen144
+\pgf@yy=\dimen145
+\pgf@zx=\dimen146
+\pgf@zy=\dimen147
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen148
+\pgf@path@lasty=\dimen149
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen150
+\pgf@shorten@start@additional=\dimen151
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box33
+\pgf@hbox=\box34
+\pgf@layerbox@main=\box35
+\pgf@picture@serial@count=\count114
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen152
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen153
+\pgf@pt@y=\dimen154
+\pgf@pt@temp=\dimen155
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen156
+\pgf@sys@shading@range@num=\count115
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box36
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box37
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen157
+\pgf@nodesepend=\dimen158
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen159
+\pgffor@skip=\dimen160
+\pgffor@stack=\toks29
+\pgffor@toks=\toks30
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count116
+\pgfplotmarksize=\dimen161
+)
+\tikz@lastx=\dimen162
+\tikz@lasty=\dimen163
+\tikz@lastxsaved=\dimen164
+\tikz@lastysaved=\dimen165
+\tikzleveldistance=\dimen166
+\tikzsiblingdistance=\dimen167
+\tikz@figbox=\box38
+\tikz@tempbox=\box39
+\tikztreelevel=\count117
+\tikznumberofchildren=\count118
+\tikznumberofcurrentchild=\count119
+\tikz@fig@count=\count120
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count121
+\pgfmatrixcurrentcolumn=\count122
+\pgf@matrix@numberofcolumns=\count123
+)
+\tikz@expandcount=\count124
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks31
+\verbatim@line=\toks32
+\verbatim@in@stream=\read3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2008/06/21 v2.10 (rcs-revision 1.3)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2008/01/13 v2.10 (rcs-revision 1.3)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2009/11/15 v2.10 (rcs-revision 1.2)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code
+.tex
+File: pgflibraryfadings.code.tex 2008/02/07 v2.10 (rcs-revision 1.3)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
+)
+\pgf@layerbox@background=\box40
+\pgf@layerboxsaved@background=\box41
+)
+No file paper.aux.
+\openout1 = `paper.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+ABD: EveryShipout initializing macros
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count125
+\scratchdimen=\dimen168
+\scratchbox=\box42
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen169
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks34
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\oldparskip=\skip49
+
+[1
+
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+[3]
+No file paper.toc.
+\tf@toc=\write5
+\openout5 = `paper.toc'.
+
+[4
+
+]
+Chapter 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 123.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 123.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 123.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+stmry on input line 123.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd) [1
+
+] [2] [3]
+Chapter 2.
+[4
+
+]
+Chapter 3.
+[5
+
+]
+Chapter 4.
+(./complement.tex [6
+
+]
+
+LaTeX Warning: Citation `FosterThesis' on page 7 undefined on input line 22.
+
+
+LaTeX Warning: Citation `DBLP:conf/icmt/CzarneckiFHLST09' on page 7 undefined o
+n input line 22.
+
+
+LaTeX Warning: Citation `augeas' on page 7 undefined on input line 25.
+
+
+LaTeX Warning: Citation `Focal2005-shortcite' on page 7 undefined on input line
+ 29.
+
+
+LaTeX Warning: Citation `Boomerang07' on page 7 undefined on input line 35.
+
+
+LaTeX Warning: Citation `QuotientLenses08' on page 7 undefined on input line 35
+.
+
+
+LaTeX Warning: Citation `updatable-security-views' on page 7 undefined on input
+ line 35.
+
+
+LaTeX Warning: Citation `Matching10' on page 7 undefined on input line 35.
+
+
+LaTeX Warning: Citation `Focal2005-shortcite' on page 7 undefined on input line
+ 39.
+
+
+LaTeX Warning: Citation `Hu04' on page 7 undefined on input line 39.
+
+
+LaTeX Warning: Citation `MuAlgebraic2004' on page 7 undefined on input line 39.
+
+
+
+LaTeX Warning: Citation `HuXQuery08' on page 7 undefined on input line 39.
+
+
+LaTeX Warning: Citation `BohannonPierceVaughan' on page 7 undefined on input li
+ne 40.
+
+
+LaTeX Warning: Citation `Hidaka10' on page 7 undefined on input line 40.
+
+
+LaTeX Warning: Citation `Stevens07' on page 7 undefined on input line 45.
+
+
+LaTeX Warning: Citation `HuModels07' on page 7 undefined on input line 45.
+
+
+LaTeX Warning: Citation `stevens2008lbm' on page 7 undefined on input line 45.
+
+
+LaTeX Warning: Citation `DBLP:conf/models/Diskin08' on page 7 undefined on inpu
+t line 45.
+
+
+LaTeX Warning: Citation `diskin2008algebraic' on page 7 undefined on input line
+ 45.
+
+
+LaTeX Warning: Citation `diskin2009model' on page 7 undefined on input line 45.
+
+
+
+LaTeX Warning: Citation `hidaka2009compositional' on page 7 undefined on input 
+line 45.
+
+
+LaTeX Warning: Citation `hidaka2009towards' on page 7 undefined on input line 4
+5.
+
+
+LaTeX Warning: Reference `symm' on page 7 undefined on input line 62.
+
+
+LaTeX Warning: Citation `Meertens98' on page 7 undefined on input line 65.
+
+
+LaTeX Warning: Citation `stevens2008tat' on page 7 undefined on input line 65.
+
+
+LaTeX Warning: Citation `DBLP:conf/models/Diskin08' on page 7 undefined on inpu
+t line 65.
+
+
+LaTeX Warning: Reference `sec:relwork' on page 7 undefined on input line 67.
+
+
+LaTeX Warning: Reference `equiv' on page 7 undefined on input line 72.
+
+[7]
+
+LaTeX Warning: Reference `basic' on page 8 undefined on input line 86.
+
+
+LaTeX Warning: Reference `prod' on page 8 undefined on input line 87.
+
+
+LaTeX Warning: Reference `sumlist' on page 8 undefined on input line 87.
+
+
+LaTeX Warning: Citation `Boomerang07' on page 8 undefined on input line 90.
+
+
+LaTeX Warning: Citation `Focal2005-shortcite' on page 8 undefined on input line
+ 91.
+
+
+LaTeX Warning: Reference `iter' on page 8 undefined on input line 101.
+
+[8]
+
+LaTeX Warning: Reference `contain' on page 9 undefined on input line 125.
+
+
+LaTeX Warning: Citation `1195941' on page 9 undefined on input line 128.
+
+
+LaTeX Warning: Reference `asymm' on page 9 undefined on input line 151.
+
+[9]
+
+LaTeX Warning: Reference `sec:relwork' on page 10 undefined on input line 159.
+
+
+LaTeX Warning: Reference `future' on page 10 undefined on input line 159.
+
+
+LaTeX Warning: Reference `sec:relwork' on page 10 undefined on input line 171.
+
+[10]
+
+LaTeX Warning: Citation `DBLP:journals/tods/BancilhonS81' on page 11 undefined 
+on input line 210.
+
+
+LaTeX Warning: Citation `Matching10' on page 11 undefined on input line 211.
+
+
+LaTeX Warning: Citation `matsuda2007btb' on page 11 undefined on input line 212
+.
+
+[11] [12]
+
+Package pgf Warning: File "pdf/symmetric-minus" not found when defining image "
+pgflastimage".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 323.
+
+
+Package pgf Warning: Missing width for image "pgflastimage" ("pdf/symmetric-min
+us") in draft mode.
+(pgf)                Using 1cm instead on input line 323.
+
+
+Package pgf Warning: Missing height for image "pgflastimage" ("pdf/symmetric-mi
+nus") in draft mode.
+(pgf)                Using 1cm instead on input line 323.
+
+
+Package pgf Warning: File "pdf/symmetric" not found when defining image "pgflas
+timage".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 327.
+
+
+Package pgf Warning: Missing width for image "pgflastimage" ("pdf/symmetric") i
+n draft mode.
+(pgf)                Using 1cm instead on input line 327.
+
+
+Package pgf Warning: Missing height for image "pgflastimage" ("pdf/symmetric") 
+in draft mode.
+(pgf)                Using 1cm instead on input line 327.
+
+
+Package pgf Warning: File "pdf/symmetric-edit" not found when defining image "p
+gflastimage".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 332.
+
+
+Package pgf Warning: Missing width for image "pgflastimage" ("pdf/symmetric-edi
+t") in draft mode.
+(pgf)                Using 1cm instead on input line 332.
+
+
+Package pgf Warning: Missing height for image "pgflastimage" ("pdf/symmetric-ed
+it") in draft mode.
+(pgf)                Using 1cm instead on input line 332.
+
+
+Package pgf Warning: File "pdf/symmetric-propagatex" not found when defining im
+age "pgflastimage".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 336.
+
+
+Package pgf Warning: Missing width for image "pgflastimage" ("pdf/symmetric-pro
+pagatex") in draft mode.
+(pgf)                Using 1cm instead on input line 336.
+
+
+Package pgf Warning: Missing height for image "pgflastimage" ("pdf/symmetric-pr
+opagatex") in draft mode.
+(pgf)                Using 1cm instead on input line 336.
+
+
+Package pgf Warning: File "pdf/symmetric-edit2" not found when defining image "
+pgflastimage".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 341.
+
+
+Package pgf Warning: Missing width for image "pgflastimage" ("pdf/symmetric-edi
+t2") in draft mode.
+(pgf)                Using 1cm instead on input line 341.
+
+
+Package pgf Warning: Missing height for image "pgflastimage" ("pdf/symmetric-ed
+it2") in draft mode.
+(pgf)                Using 1cm instead on input line 341.
+
+
+Package pgf Warning: File "pdf/symmetric-propagate2" not found when defining im
+age "pgflastimage".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 345.
+
+
+Package pgf Warning: Missing width for image "pgflastimage" ("pdf/symmetric-pro
+pagate2") in draft mode.
+(pgf)                Using 1cm instead on input line 345.
+
+
+Package pgf Warning: Missing height for image "pgflastimage" ("pdf/symmetric-pr
+opagate2") in draft mode.
+(pgf)                Using 1cm instead on input line 345.
+
+[13]
+
+LaTeX Warning: Reference `fig:symm' on page 14 undefined on input line 469.
+
+[14]
+
+LaTeX Warning: Reference `fig:symm' on page 15 undefined on input line 501.
+
+[15] [16]
+
+Package pgf Warning: File "pdf/sums1" not found when defining image "pgflastima
+ge".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 581.
+
+
+Package pgf Warning: Missing width for image "pgflastimage" ("pdf/sums1") in dr
+aft mode.
+(pgf)                Using 1cm instead on input line 581.
+
+
+Package pgf Warning: Missing height for image "pgflastimage" ("pdf/sums1") in d
+raft mode.
+(pgf)                Using 1cm instead on input line 581.
+
+
+Package pgf Warning: File "pdf/sums2" not found when defining image "pgflastima
+ge".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 583.
+
+
+Package pgf Warning: Missing width for image "pgflastimage" ("pdf/sums2") in dr
+aft mode.
+(pgf)                Using 1cm instead on input line 583.
+
+
+Package pgf Warning: Missing height for image "pgflastimage" ("pdf/sums2") in d
+raft mode.
+(pgf)                Using 1cm instead on input line 583.
+
+
+Package pgf Warning: File "pdf/sums3" not found when defining image "pgflastima
+ge".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 588.
+
+
+Package pgf Warning: Missing width for image "pgflastimage" ("pdf/sums3") in dr
+aft mode.
+(pgf)                Using 1cm instead on input line 588.
+
+
+Package pgf Warning: Missing height for image "pgflastimage" ("pdf/sums3") in d
+raft mode.
+(pgf)                Using 1cm instead on input line 588.
+
+
+Package pgf Warning: File "pdf/sums4" not found when defining image "pgflastima
+ge".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 590.
+
+
+Package pgf Warning: Missing width for image "pgflastimage" ("pdf/sums4") in dr
+aft mode.
+(pgf)                Using 1cm instead on input line 590.
+
+
+Package pgf Warning: Missing height for image "pgflastimage" ("pdf/sums4") in d
+raft mode.
+(pgf)                Using 1cm instead on input line 590.
+
+
+LaTeX Warning: Reference `fig:sums' on page 17 undefined on input line 598.
+
+[17] [18] [19]
+
+LaTeX Warning: Reference `lists' on page 20 undefined on input line 682.
+
+[20]
+
+LaTeX Warning: Citation `Boomerang07' on page 21 undefined on input line 735.
+
+
+LaTeX Warning: Citation `Matching10' on page 21 undefined on input line 735.
+
+
+LaTeX Warning: Citation `Matching10' on page 21 undefined on input line 747.
+
+
+LaTeX Warning: Reference `future' on page 21 undefined on input line 749.
+
+[21] [22] [23] [24]
+Overfull \hbox (76.33383pt too wide) in paragraph at lines 914--918
+\OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 c; d\OT1/cmr/m/n/12 ) \OMS/
+cmsy/m/n/12 j []\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k; c; P\OT1/cmr/m/n/12 ) = []
+(\OML/cmm/m/it/12 `; d; P\OT1/cmr/m/n/12 )[]\OMS/cmsy/m/n/12 g$\OT1/cmr/m/n/12 
+. By as-sump-tion, we have $(\OML/cmm/m/it/12 k:[]; `:[]\OT1/cmr/m/n/12 ) \OMS/
+cmsy/m/n/12 2
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 947--947
+ [][][][] 
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 974--974
+ [][][][] 
+ []
+
+[26] [27]
+
+LaTeX Warning: Reference `cg:def' on page 28 undefined on input line 1003.
+
+
+LaTeX Warning: Reference `cg:putrll' on page 28 undefined on input line 1004.
+
+
+LaTeX Warning: Reference `cg:computel' on page 28 undefined on input line 1005.
+
+
+
+LaTeX Warning: Reference `cg:putrlk' on page 28 undefined on input line 1006.
+
+
+LaTeX Warning: Reference `cg:computek' on page 28 undefined on input line 1007.
+
+
+[28]
+
+LaTeX Warning: Reference `CPE' on page 29 undefined on input line 1030.
+
+[29] [30]
+Underfull \hbox (badness 3826) in paragraph at lines 1186--1186
+ [][][][] 
+ []
+
+[31]
+Overfull \hbox (33.7889pt too wide) in paragraph at lines 1224--1230
+[]\OT1/cmr/m/n/12 To show the lat-ter, we ar-gue that $\OML/cmm/m/it/12 h$ \OT1
+/cmr/m/n/12 wit-nesses the equiv-a-lence. Clearly $\OML/cmm/m/it/12 h\OT1/cmr/m
+/n/12 ([] []\OML/cmm/m/it/12 :[]\OT1/cmr/m/n/12 ) =
+ []
+
+
+Overfull \hbox (1.41116pt too wide) in paragraph at lines 1224--1230
+\OML/cmm/m/it/12 `:[]$ \OT1/cmr/m/n/12 be-cause all el-e-ments of $\OML/cmm/m/i
+t/12 `:C$ \OT1/cmr/m/n/12 are equal (and hence $([] []\OML/cmm/m/it/12 :[]; `:[
+]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2
+ []
+
+[32]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1249
+.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1249.
+
+ [33]
+
+LaTeX Warning: Reference `singleton_id' on page 34 undefined on input line 1273
+.
+
+
+LaTeX Warning: Reference `trivial_complement_bijection' on page 34 undefined on
+ input line 1274.
+
+[34]
+Underfull \hbox (badness 4595) in paragraph at lines 1319--1319
+ [][][][] 
+ []
+
+[35] [36] [37]
+Underfull \hbox (badness 2393) in paragraph at lines 1402--1402
+ [][][][] 
+ []
+
+[38] [39]
+Underfull \hbox (badness 1466) in paragraph at lines 1501--1501
+ [][][][] 
+ []
+
+[40]
+
+LaTeX Warning: Reference `conuni' on page 41 undefined on input line 1526.
+
+
+Overfull \hbox (71.38261pt too wide) in paragraph at lines 1537--1540
+\OT1/cmr/m/n/12 It's clear that $\OML/cmm/m/it/12 k:[] [] x$\OT1/cmr/m/n/12 , s
+ince we have cho-sen $\OML/cmm/m/it/12 x$ \OT1/cmr/m/n/12 specif-i-cally so tha
+t $[](\OML/cmm/m/it/12 k:[]\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; k:[]\OT1/cmr/m
+/n/12 )) =
+ []
+
+
+Overfull \hbox (38.63185pt too wide) in paragraph at lines 1541--1544
+[]\OT1/cmr/m/n/12 Let us show next that $\OML/cmm/m/it/12 k:[] \OMS/cmsy/m/n/12
+ ^^X[] [][]\OML/cmm/m/it/12 :[]$\OT1/cmr/m/n/12 . Choose $\OML/cmm/m/it/12 c$ \
+OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 y$ \OT1/cmr/m/n/12 such that $[](\OML/cmm/
+m/it/12 k:[]\OT1/cmr/m/n/12 ([]\OML/cmm/m/it/12 ; c\OT1/cmr/m/n/12 )) =
+ []
+
+[41] [42]
+Underfull \hbox (badness 4242) in paragraph at lines 1567--1567
+ [][][][] 
+ []
+
+[43
+
+]
+
+LaTeX Warning: Reference `conuni' on page 44 undefined on input line 1632.
+
+
+LaTeX Warning: Reference `conuni' on page 44 undefined on input line 1633.
+
+[44]
+
+LaTeX Warning: Reference `conuni' on page 45 undefined on input line 1642.
+
+
+Overfull \hbox (6.27432pt too wide) in paragraph at lines 1674--1677
+[]\OT1/cmr/m/n/12 A cat-e-gor-i-cal prod-uct is al-ways a ten-sor prod-uct (by 
+defin-ing $\OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 
+ \OML/cmm/m/it/12 g \OT1/cmr/m/n/12 = []$),
+ []
+
+[45]
+
+LaTeX Warning: Citation `AbrTze09' on page 46 undefined on input line 1743.
+
+[46]
+
+LaTeX Warning: Reference `beta_1' on page 47 undefined on input line 1755.
+
+
+LaTeX Warning: Reference `beta_2' on page 47 undefined on input line 1755.
+
+
+LaTeX Warning: Reference `beta_3' on page 47 undefined on input line 1759.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1783--1783
+ [][][][] 
+ []
+
+[47]
+Overfull \hbox (86.3408pt too wide) in paragraph at lines 1809--1812
+[]\OT1/cmr/m/n/12 Since $\OML/cmm/m/it/12 k:[] [] k[]:[]$ \OT1/cmr/m/n/12 and $
+\OML/cmm/m/it/12 `:[] [] `[]:[]$\OT1/cmr/m/n/12 , we know that $(\OML/cmm/m/it/
+12 k:[]; `:[]\OT1/cmr/m/n/12 ) []
+ []
+
+[48]
+
+LaTeX Warning: Reference `singleton_id' on page 49 undefined on input line 1848
+.
+
+[49] [50]
+
+LaTeX Warning: Reference `future' on page 51 undefined on input line 1933.
+
+[51]
+
+LaTeX Warning: Reference `lemma:bij_product' on page 52 undefined on input line
+ 1954.
+
+
+Underfull \hbox (badness 2556) in paragraph at lines 1965--1965
+ [][][][] 
+ []
+
+[52] [53]
+
+LaTeX Warning: Citation `Focal2005-shortcite' on page 54 undefined on input lin
+e 2028.
+
+
+Underfull \hbox (badness 6380) in paragraph at lines 2038--2038
+ [][][][] 
+ []
+
+[54] [55] [56]
+
+LaTeX Warning: Reference `self_duality' on page 57 undefined on input line 2101
+.
+
+
+LaTeX Warning: Reference `noprod' on page 57 undefined on input line 2102.
+
+[57]
+
+LaTeX Warning: Reference `symm' on page 58 undefined on input line 2169.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2210--2210
+ [][][][] 
+ []
+
+[58] [59] [60]
+
+LaTeX Warning: Reference `singleton_id' on page 61 undefined on input line 2277
+.
+
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 2351--2351
+ [][][][] 
+ []
+
+[62] [63] [64] [65] [66] [67] [68]
+Overfull \hbox (5.7396pt too wide) in paragraph at lines 2545--2559
+[]\OT1/cmr/m/n/12 In \OT1/cmr/m/sc/12 set\OT1/cmr/m/n/12 ,
+ []
+
+[69]
+
+LaTeX Warning: Reference `lemma:bij_sum' on page 70 undefined on input line 258
+5.
+
+[70]
+Underfull \hbox (badness 10000) in paragraph at lines 2606--2606
+ [][][][] 
+ []
+
+[71] [72]
+Underfull \hbox (badness 10000) in paragraph at lines 2684--2684
+ [][][][] 
+ []
+
+[73] [74] [75]
+Underfull \hbox (badness 10000) in paragraph at lines 2855--2855
+ [][][][] 
+ []
+
+[76] [77]
+Underfull \hbox (badness 10000) in paragraph at lines 2919--2919
+ [][][][] 
+ []
+
+[78]
+Underfull \hbox (badness 2042) in paragraph at lines 2968--2968
+ [][][][] 
+ []
+
+[79]
+Underfull \hbox (badness 3954) in paragraph at lines 2994--2994
+ [][][][] 
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 3005--3005
+ [][][][] 
+ []
+
+[80]
+Underfull \hbox (badness 10000) in paragraph at lines 3048--3048
+ [][][][] 
+ []
+
+
+LaTeX Warning: Reference `symm' on page 81 undefined on input line 3051.
+
+
+LaTeX Warning: Citation `Focal2005-shortcite' on page 81 undefined on input lin
+e 3054.
+
+
+LaTeX Warning: Citation `Boomerang07' on page 81 undefined on input line 3054.
+
+[81]
+Forcing optional page break
+
+Underfull \hbox (badness 10000) in paragraph at lines 3073--3073
+ [][][][] 
+ []
+
+[82]
+
+LaTeX Warning: Citation `meijer1991functional' on page 83 undefined on input li
+ne 3132.
+
+[83]
+
+LaTeX Warning: Citation `vene2000categorical' on page 84 undefined on input lin
+e 3220.
+
+
+LaTeX Warning: Reference `listiter' on page 84 undefined on input line 3222.
+
+[84] [85] [86]
+Underfull \hbox (badness 10000) in paragraph at lines 3302--3302
+ [][][][] 
+ []
+
+
+LaTeX Warning: Reference `listiter' on page 87 undefined on input line 3334.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3354--3354
+ [][][][] 
+ []
+
+[87] [88] [89] [90]
+Overfull \hbox (22.88582pt too wide) in paragraph at lines 3452--3455
+$[]$\OT1/cmr/m/n/12 : This time, the def-i-ni-tion gives us $[](\OML/cmm/m/it/1
+2 `\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]xs
+; c[]cs\OT1/cmr/m/n/12 ) =
+ []
+
+[91]
+Overfull \hbox (7.19154pt too wide) in paragraph at lines 3474--3485
+$[]$\OT1/cmr/m/n/12 : Sup-pose we have $[](\OML/cmm/m/it/12 `\OT1/cmr/m/n/12 )\
+OML/cmm/m/it/12 :[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z; c[][]cs\OT1/cmr/m/n/12 
+) =
+ []
+
+
+Overfull \hbox (19.5942pt too wide) in paragraph at lines 3486--3501
+$[]$\OT1/cmr/m/n/12 : Sup-pose we have $[](\OML/cmm/m/it/12 `\OT1/cmr/m/n/12 )\
+OML/cmm/m/it/12 :[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z; c[][]cs\OT1/cmr/m/n/12 
+) =
+ []
+
+
+LaTeX Warning: Citation `meijer1991functional' on page 92 undefined on input li
+ne 3535.
+
+[92]
+
+LaTeX Warning: Reference `listiter' on page 93 undefined on input line 3549.
+
+
+LaTeX Warning: Reference `hylo' on page 93 undefined on input line 3550.
+
+
+LaTeX Warning: Reference `contain' on page 93 undefined on input line 3553.
+
+[93]
+
+LaTeX Warning: Reference `listiter' on page 94 undefined on input line 3564.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3589--3589
+ [][][][] 
+ []
+
+[94]
+
+LaTeX Warning: Reference `hylo' on page 95 undefined on input line 3600.
+
+[95] [96]
+
+LaTeX Warning: Citation `abbott2003categories' on page 97 undefined on input li
+ne 3912.
+
+
+LaTeX Warning: Citation `hasegawa2002two' on page 97 undefined on input line 39
+13.
+
+
+LaTeX Warning: Citation `joyal1986foncteurs' on page 97 undefined on input line
+ 3915.
+
+
+LaTeX Warning: Citation `DBLP:conf/esop/JayC94' on page 97 undefined on input l
+ine 3916.
+
+[97] [98]
+Underfull \hbox (badness 10000) in paragraph at lines 4019--4019
+ [][][][] 
+ []
+
+[99] [100]
+Overfull \hbox (64.61662pt too wide) in paragraph at lines 4069--4075
+[]\OT1/cmr/m/n/12 Let us check that $\OML/cmm/m/it/12 f[] \OT1/cmr/m/n/12 = \OM
+L/cmm/m/it/12 f$\OT1/cmr/m/n/12 . Choose ar-bi-trary $\OML/cmm/m/it/12 b \OMS/c
+msy/m/n/12 2 \OML/cmm/m/it/12 B\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 i\OT1/cmr/m/n/
+12 )$. Then $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b\OT1/cmr/m/
+n/12 ) = [](\OML/cmm/m/it/12 `:[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f[]\OT1/cmr/
+m/n/12 (\OML/cmm/m/it/12 b\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; t[]\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 i\OT1/cmr/m/n/12 )(\OML/cmm/m/it/12 b\OT1/cmr/m/n/12 )))$.
+ []
+
+[101] [102]
+
+LaTeX Warning: Reference `iter' on page 103 undefined on input line 4132.
+
+[103]
+
+LaTeX Warning: Reference `symm' on page 104 undefined on input line 4162.
+
+[104]
+Underfull \hbox (badness 10000) in paragraph at lines 4179--4179
+ [][][][] 
+ []
+
+[105]
+
+LaTeX Warning: Citation `Boomerang07' on page 106 undefined on input line 4218.
+
+
+
+Overfull \hbox (4.31357pt too wide) in paragraph at lines 4217--4219
+[]\OT1/cmr/m/n/12 Here are sev-eral use-ful asym-met-ric lenses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4236--4236
+ [][][][] 
+ []
+
+[106]
+Underfull \hbox (badness 1533) in paragraph at lines 4244--4244
+ [][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4254--4254
+ [][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4276--4276
+ [][][][] 
+ []
+
+[107]
+Underfull \hbox (badness 10000) in paragraph at lines 4291--4291
+ [][][][] 
+ []
+
+[108] [109] [110] [111]
+Overfull \hbox (15.32616pt too wide) in paragraph at lines 4404--4408
+\OT1/cmr/m/n/12 Observing that $\OML/cmm/m/it/12 k:[]\OT1/cmr/m/n/12 (\OML/cmm/
+m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/
+12 z\OT1/cmr/m/n/12 ))) = \OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ z\OT1/cmr/m/n/12 )$ be-cause $\OML/cmm/m/it/12 f[] \OMS/cmsy/m/n/12 2 \OML/cmm
+/m/it/12 k[]:C$ \OT1/cmr/m/n/12 and that $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (
+\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 z\OT1/cmr/m/n/12 )) =
+ []
+
+[112] [113] [114] [115] [116] [117]
+Underfull \hbox (badness 10000) in paragraph at lines 4603--4603
+ [][][][] 
+ []
+
+[118]
+Underfull \hbox (badness 10000) in paragraph at lines 4618--4618
+ [][][][] 
+ []
+
+[119]
+
+LaTeX Warning: Reference `asymmetrization_of_lenses' on page 120 undefined on i
+nput line 4670.
+
+[120]
+Overfull \hbox (16.0034pt too wide) in paragraph at lines 4687--4691
+\OT1/cmr/m/n/12 to $\OML/cmm/m/it/12 R$\OT1/cmr/m/n/12 . Sup-pose $\OML/cmm/m/i
+t/12 `:[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x; c\OT1/cmr/m/n/12 ) = (\OML/cmm/m/
+it/12 y; c[]\OT1/cmr/m/n/12 )$; then we need to show that $(\OML/cmm/m/it/12 `[
+]\OT1/cmr/m/n/12 ; \OML/cmm/m/it/12 `[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :[]\OT
+1/cmr/m/n/12 (\OML/cmm/m/it/12 x; \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f[]; g[]\OT
+1/cmr/m/n/12 )) =
+ []
+
+[121]
+
+LaTeX Warning: Citation `FosterThesis' on page 122 undefined on input line 5120
+.
+
+
+LaTeX Warning: Citation `DBLP:conf/icmt/CzarneckiFHLST09' on page 122 undefined
+ on input line 5120.
+
+
+LaTeX Warning: Citation `Focal2005-shortcite' on page 122 undefined on input li
+ne 5122.
+
+
+LaTeX Warning: Citation `HofmannPierceWagner10' on page 122 undefined on input 
+line 5123.
+
+
+LaTeX Warning: Citation `Meertens98' on page 122 undefined on input line 5126.
+
+
+LaTeX Warning: Citation `Stevens07' on page 122 undefined on input line 5127.
+
+
+LaTeX Warning: Citation `DBLP:conf/models/Diskin08' on page 122 undefined on in
+put line 5128.
+
+
+LaTeX Warning: Citation `xiong2009supporting' on page 122 undefined on input li
+ne 5129.
+
+
+Overfull \hbox (6.77383pt too wide) in paragraph at lines 5125--5138
+[]\OT1/cmr/m/n/12 The first sym-met-ric ap-proach to up-date prop-a-ga-tion was
+ pro-posed by Meertens [[]]
+ []
+
+[122] [123]
+
+LaTeX Warning: Citation `matsuda2007btb' on page 124 undefined on input line 51
+96.
+
+
+LaTeX Warning: Citation `Focal2005-shortcite' on page 124 undefined on input li
+ne 5199.
+
+
+LaTeX Warning: Citation `updatable-security-views' on page 124 undefined on inp
+ut line 5200.
+
+
+LaTeX Warning: Citation `Focal2005-shortcite' on page 124 undefined on input li
+ne 5204.
+
+[124]
+
+LaTeX Warning: Reference `basic' on page 125 undefined on input line 5252.
+
+
+LaTeX Warning: Reference `sumlist' on page 125 undefined on input line 5252.
+
+
+LaTeX Warning: Citation `Boomerang07' on page 125 undefined on input line 5254.
+
+
+[125]
+
+LaTeX Warning: Reference `concatprime' on page 126 undefined on input line 5285
+.
+
+[126] [127]
+
+LaTeX Warning: Reference `firstalign' on page 128 undefined on input line 5336.
+
+
+
+LaTeX Warning: Citation `Boomerang07' on page 128 undefined on input line 5340.
+
+
+
+LaTeX Warning: Citation `Matching10' on page 128 undefined on input line 5340.
+
+[128]) [129]
+Chapter 5.
+[130
+
+]
+Chapter 6.
+[131
+
+]
+Chapter 7.
+[132
+
+]
+Chapter 8.
+[133
+
+] (./paper.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) )
+(\end occurred when \iftrue on line 2 was incomplete) 
+Here is how much of TeX's memory you used:
+ 12404 strings out of 495035
+ 222656 string characters out of 6181701
+ 275458 words of memory out of 5000000
+ 15292 multiletter control sequences out of 15000+600000
+ 18342 words of font info for 73 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 66i,21n,72p,434b,824s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on paper.pdf (137 pages, 519818 bytes).
+PDF statistics:
+ 565 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+
