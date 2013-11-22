@@ -260,7 +260,7 @@ interesting = concatMap go where
 
 locallyInteresting (Boring s) = []
 locallyInteresting (Message _ Info _) = []
-locallyInteresting (HBox s _) | "Underfull \\hbox (badness " `isPrefixOf` s = []
+locallyInteresting (HBox s _) = []
 locallyInteresting other = [other]
 
 prettyPrint = concatMap (go []) . interesting . annotate where
