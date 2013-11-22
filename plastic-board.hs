@@ -5,19 +5,13 @@ import Control.Arrow
 import Control.Monad
 import Data.Char
 import Data.List
+import Data.Void
 import Text.Regex.Posix
 
 -- for auto-generated code
 import GHC.Show
 
 -- TODO: lol, we don't even parse TeX's actual errors
-
--- TODO: import the real Void when Hackage isn't down
-data Void
-deriving instance Eq  Void
-deriving instance Ord  Void
-deriving instance Show Void
---deriving instance Read Void -- throws an exception during compilation with 7.4.2
 
 groupUntil = groupWhen . (not .)
 groupWhen p xs = case span p xs of
