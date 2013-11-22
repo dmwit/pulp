@@ -243,8 +243,8 @@ annotate = concatMap retagAnnot . liftA3 zip3 (scanl (flip combine) Nothing) (sc
 	combine _ l = l
 
 	retagAnnot (b, e, l) = (,) (b, e) <$> case l of
-		File s f       -> [File s (annotate f)]
-		_              -> retag l
+		File s f -> [File s (annotate f)]
+		_        -> retag l
 
 interesting :: File Annotations -> File Annotations
 interesting = concatMap go where
