@@ -121,6 +121,7 @@ equalities =
 	,"ABD: EveryShipout initializing macros"
 	,"Here is how much of TeX's memory you used:"
 	,"PDF statistics:"
+	,"Forcing optional page break"
 	]
 regexen = map compile $
 	["^[[:space:]]*$"
