@@ -6,6 +6,7 @@ import Control.Monad
 import Data.Char
 import Data.List
 import Data.Void
+import GHC.IO.Encoding
 import System.Environment
 import Text.Regex.Posix
 
@@ -282,6 +283,7 @@ prettyPrintUsedFiles = unlines . nub . filter ("." `isPrefixOf`) . used
 
 main = do
 	args <- getArgs
+	setLocaleEncoding latin1
 	s <- case args of
 		[]     -> getContents
 		[file] -> readFile file
