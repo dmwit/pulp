@@ -143,7 +143,7 @@ regexen = map compile $
 	,"^ [^ ]* stack positions out of"
 	,"^ [[:digit:]]+ compressed objects within [[:digit:]]+ object streams$"
 	,"^([<>]|" ++ filenameRegex ++ ")+$"
-	,"^Output written on " ++ filenameRegex ++ " \\([[:digit:]]+ pages, [[:digit:]]+ bytes\\)\\.$"
+	,"^Output written on " ++ filenameRegex ++ " \\([[:digit:]]+ pages?, [[:digit:]]+ bytes?\\)\\.$"
 	,"^\\*\\*[-_.a-zA-Z0-9]*$"
 	,"^Dictionary: [-a-z]*, Language: [[:alpha:]]* $"
 	] where
