@@ -182,6 +182,11 @@ lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s 
 	convert = LineMarker . read
 	range s1 s2 = Just (convert s1, convert s2)
 
+-- TODO: May have to parse LaTeX warnings(/errors/infos/messages?) separately,
+-- since they don't put "(LaTeX)" at the beginning of each continuation line.
+-- (Maybe they terminate with a blank line.) See e.g.
+-- tests/multiline-latex-warning.log.
+
 -- TODO: don't silently drop l on the ground, and look for line markers within es
 parseMessage l b e ss = first (thisM:) (categorize' Nothing ss') where
 	(package, level) = case words b of
