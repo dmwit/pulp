@@ -17,3 +17,4 @@ executable pulp
   build-depends:       base >=4 && <5,
                        void >=0 && <1,
                        regex-posix >= 0.95 && <0.96
+  ghc-options:         -O2
