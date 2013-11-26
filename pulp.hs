@@ -26,7 +26,7 @@ coalesce = map concat
          . groupWhen (\l -> length l == 79 && not (".tex" `isSuffixOf` l))
          . lines
 
-data MessageLevel = Info | Warning | Error
+data MessageLevel = Info | Message | Warning | Error
 	deriving (Eq, Ord, Show, Read, Enum, Bounded)
 data LineIndicators = Markers | Annotations | Flat
 	deriving (Eq, Ord, Show, Read, Enum, Bounded)
@@ -41,7 +41,7 @@ data Line a where
 	Boring         :: String -> Line a
 	HBox           :: String -> String -> Line a
 	File           :: String -> File a -> Line a
-	Message        :: String -> MessageLevel -> [String] -> Line a
+	LaTeXMessage   :: String -> MessageLevel -> [String] -> Line a
 	LineMarker     :: Integer -> Line Markers
 	ExtraCloseFile :: Line a
 	Unknown        :: String -> Line a
@@ -72,11 +72,11 @@ instance Show (Line Annotations) where
            ((.)
               (showsPrec 11 b1_a14R)
               ((.) showSpace (showsPrec 11 b2_a14S))))
-  showsPrec a_a14T (Main.Message b2_a14V b1_a14U b3_a14W)
+  showsPrec a_a14T (Main.LaTeXMessage b2_a14V b1_a14U b3_a14W)
     = showParen
         ((a_a14T >= 11))
         ((.)
-           (showString "Message ")
+           (showString "LaTeXMessage ")
            ((.)
               (showsPrec 11 b1_a14U)
               ((.)
@@ -99,7 +99,7 @@ retag :: Line a -> [Line b]
 retag (Boring s) = [Boring s]
 retag (HBox s e) = [HBox s e]
 retag (File s f) = []
-retag (Message p l ss) = [Message p l ss]
+retag (LaTeXMessage p l ss) = [LaTeXMessage p l ss]
 retag (LineMarker n)   = []
 retag (ExtraCloseFile) = [ExtraCloseFile]
 retag (Unknown s)      = [Unknown s]
@@ -112,12 +112,13 @@ prefixes =
 	["This is pdfTeX, Version 3."
 	,"Style option: `fancyvrb' v"
 	,"[Loading MPS to PDF converter (version "
+	,"*geometry* driver: "
+	,"*geometry* detected driver: "
 	]
 equalities =
 	["entering extended mode"
 	,"restricted \\write18 enabled."
 	,"%&-line parsing enabled."
-	,"**paper"
 	,"For additional information on amsmath, use the `?' option."
 	,"ABD: EveryShipout initializing macros"
 	,"Here is how much of TeX's memory you used:"
@@ -128,7 +129,7 @@ regexen = map compile $
 	["^[[:space:]]*$"
 	,"^LaTeX2e <[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}>$"
 	,"^Babel <.*> and hyphenation patterns for [[:digit:]]* languages loaded\\.$"
-	,"^Document Class: .* Standard LaTeX document class$"
+	,"^Document Class: (beamer|report)"
 	,"^File: " ++ filenameRegex ++ " [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}"
 	,"^Package: " ++ "[^ ]*"    ++ " [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}"
 	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read)[[:digit:]]+$"
@@ -138,10 +139,13 @@ regexen = map compile $
 	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
 	,"^[[:space:]]*<use " ++ filenameRegex ++ ">$"
 	,"^ [[:digit:]]+ (" ++ intercalate "|" statistics ++ ") out of "
+	,"^ [[:digit:]]+ compressed objects within [[:digit:]]+ object stream$"
 	,"^ [^ ]* stack positions out of"
 	,"^ [[:digit:]]+ compressed objects within [[:digit:]]+ object streams$"
 	,"^([<>]|" ++ filenameRegex ++ ")+$"
 	,"^Output written on " ++ filenameRegex ++ " \\([[:digit:]]+ pages, [[:digit:]]+ bytes\\)\\.$"
+	,"^\\*\\*[-_.a-zA-Z0-9]*$"
+	,"^Dictionary: [-a-z]*, Language: [[:alpha:]]* $"
 	] where
 	statistics =
 		["strings"
@@ -166,7 +170,7 @@ bracketNumber ss = (lines <$>) <$> bracketNumber' (unlines ss)
 bracketNumber' = matchBeginning ("[[:space:]]*\\[[[:digit:]]+([[:space:]]|[<>{}]|" ++ filenameRegex ++ ")*\\]")
 openFile  = matchBeginning ("[[:space:]]*\\(" ++ filenameRegex)
 closeFile = matchBeginning "[[:space:]]*\\)"
-beginMessage = matchBeginning "(LaTeX|Package) ([^ ]* )?(Info|Warning|Error): "
+beginMessage = matchBeginning "(LaTeX|Package) ([^ ]* )?(Info|Message|Warning|Error): "
 beginHBox = matchBeginning ("(Over|Under)full \\\\hbox \\(((badness [[:digit:]]+)|(" ++ ptRegex ++ " too wide))\\) ")
 -- TODO: add the pattern "^l\.[[:digit:]]+ " for TeX's errors
 lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s ->
@@ -185,7 +189,7 @@ parseMessage l b e ss = first (thisM:) (categorize' Nothing ss') where
 		[_, level] -> ("LaTeX", level)
 	(es, ss') = span (("(" ++ package ++ ")") `isPrefixOf`) ss
 	ms        = map (dropWhile isSpace) (e:map (drop (length package + 2)) es)
-	thisM     = Message package (read (init level)) ms
+	thisM     = LaTeXMessage package (read (init level)) ms
 
 -- TODO: I'm sure " []" isn't the only thing that can follow an
 -- overfull/underfull hbox message; but what else can?
@@ -206,6 +210,10 @@ parseHBox l s ss = first (HBox s e:) (putLineHere l ss') where
 	hboxErrorTooShort = "Huh. I was expecting another line to happen after this hbox error, but none did! Maybe there's a bug in the parser."
 	hboxErrorTooLong  = "Huh. I was expecting this hbox error to end with a blank line pretty quickly, but it took a long time! Maybe there's a bug in the parser."
 
+geometryVerboseMode = "*geometry* verbose mode - [ preamble ] result:"
+parseGeometryVerboseMode l ss = first (map Boring results ++) (putLineHere l rest) where
+	(results, rest) = span ("* " `isPrefixOf`) ss
+
 maybeCons = maybe id (:)
 putLineHere l ss = first (maybeCons l) (categorize' Nothing ss)
 
@@ -214,6 +222,7 @@ categorize' l (s:ss)
 	| any (`isPrefixOf` s) prefixes         = label Boring
 	| any (trim s==)       equalities       = label Boring
 	| any (`match` s)      regexen          = label Boring
+	| s == geometryVerboseMode              = first (Boring s:) (parseGeometryVerboseMode l ss)
 	| Just (f, s' ) <- openFile s           = let (b, e) = categorize' Nothing (s':ss)
 	                                          in first (file f b:) (putLineHere l e)
 	| Just (_, s' ) <- closeFile s          = (maybeCons l [], s':ss)
@@ -256,9 +265,10 @@ interesting = concatMap go where
 		ls -> [(l, File f ls)]
 	go (l, m) = (,) l <$> (retag >=> locallyInteresting >=> retag) m
 
-locallyInteresting (Boring s) = []
-locallyInteresting (Message _ Info _) = []
-locallyInteresting (HBox s _) = []
+locallyInteresting (Boring _) = []
+locallyInteresting (LaTeXMessage _ Info    _) = []
+locallyInteresting (LaTeXMessage _ Message _) = []
+locallyInteresting (HBox _ _) = []
 locallyInteresting other = [other]
 
 prettyPrint = concatMap (go []) . interesting . annotate where
@@ -272,7 +282,7 @@ prettyPrint = concatMap (go []) . interesting . annotate where
 
 	pprintMess (Boring s) = s
 	pprintMess (HBox s e) = s
-	pprintMess (Message p l ss) = p ++ " " ++ show l ++ ":\n\t" ++ intercalate "\n\t" ss
+	pprintMess (LaTeXMessage p l ss) = p ++ " " ++ map toLower (show l) ++ ":\n\t" ++ intercalate "\n\t" ss
 	pprintMess (ExtraCloseFile) = "For some reason, the log-file parser noticed an extra 'close file' marker here.\n\tIt's possible that the filenames and line numbers reported near this are wrong.\n\tThis is likely a bug -- you should report it and include your log file!"
 	pprintMess (Unknown s) = s
 
