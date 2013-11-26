@@ -14,6 +14,7 @@ import Text.Regex.Posix
 import GHC.Show
 
 -- TODO: lol, we don't even parse TeX's actual errors
+-- TODO: why is parsing slow.log SO slow (like, 30-45s slow)?
 
 groupUntil = groupWhen . (not .)
 groupWhen p xs = case span p xs of
