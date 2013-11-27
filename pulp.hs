@@ -171,7 +171,7 @@ bracketNumber' = matchBeginning ("[[:space:]]*\\[[[:digit:]]+([[:space:]]|[<>{}]
 openFile  = matchBeginning ("[[:space:]]*\\(" ++ filenameRegex)
 closeFile = matchBeginning "[[:space:]]*\\)"
 beginMessage = matchBeginning "(LaTeX|Package) ([^ ]* )?(Info|Message|Warning|Error): "
-beginHBox = matchBeginning ("(Over|Under)full \\\\hbox \\(((badness [[:digit:]]+)|(" ++ ptRegex ++ " too wide))\\) ")
+beginHBox = matchBeginning ("(Over|Under)full \\\\[hv]box \\(((badness [[:digit:]]+)|(" ++ ptRegex ++ " too (wide|high)))\\) ")
 -- TODO: add the pattern "^l\.[[:digit:]]+ " for TeX's errors
 lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s ->
 	case match pat s of
