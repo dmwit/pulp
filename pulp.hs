@@ -131,7 +131,7 @@ regexen = map compile $
 	,"^Babel <.*> and hyphenation patterns for [[:digit:]]* languages loaded\\.$"
 	,"^Document Class: (beamer|report)"
 	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
-	,"^Package: " ++ "[^ ]*"    ++ " " ++ dateRegex
+	,"^Package: [^ ]* " ++ dateRegex
 	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read)[[:digit:]]+$"
 	,"^\\\\openout[[:digit:]]+ = [^']*'\\.$"
 	,"^Chapter [[:digit:]]+\\.$"
