@@ -127,11 +127,11 @@ equalities =
 	]
 regexen = map compile $
 	["^[[:space:]]*$"
-	,"^LaTeX2e <[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}>$"
+	,"^LaTeX2e <" ++ dateRegex ++ ">$"
 	,"^Babel <.*> and hyphenation patterns for [[:digit:]]* languages loaded\\.$"
 	,"^Document Class: (beamer|report)"
-	,"^File: " ++ filenameRegex ++ " [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}"
-	,"^Package: " ++ "[^ ]*"    ++ " [[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}"
+	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
+	,"^Package: " ++ "[^ ]*"    ++ " " ++ dateRegex
 	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read)[[:digit:]]+$"
 	,"^\\\\openout[[:digit:]]+ = [^']*'\\.$"
 	,"^Chapter [[:digit:]]+\\.$"
@@ -158,6 +158,7 @@ regexen = map compile $
 		,"named destinations"
 		,"words of extra memory for PDF output"
 		]
+dateRegex = "[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}"
 filenameRegex = "[-_./a-zA-Z0-9]*\\.[a-z]{2,}"
 ptRegex = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
 
