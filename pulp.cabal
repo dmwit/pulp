@@ -12,9 +12,28 @@ category:            Development
 build-type:          Simple
 cabal-version:       >=1.8
 
+library
+  exposed-modules:     Text.Pulp
+  build-depends:       base >=4 && <5,
+                       void >=0 && <1,
+                       regex-posix >=0.95 && <0.96
+  hs-source-dirs:      lib
+  ghc-options:         -O2
+
 executable pulp
   main-is:             pulp.hs
   build-depends:       base >=4 && <5,
-                       void >=0 && <1,
-                       regex-posix >= 0.95 && <0.96
+                       pulp ==0.0
+  hs-source-dirs:      bin
   ghc-options:         -O2
+
+test-suite regression
+  type:                detailed-0.9
+  test-module:         Regression
+  build-depends:       base >=4 && <5,
+                       Cabal >=1.18 && <1.19,
+                       directory >=1.2 && <1.3,
+                       filepath >=1.3 && <1.4,
+                       pulp ==0.0,
+                       strict >=0.3 && <0.4
+  hs-source-dirs:      tests
