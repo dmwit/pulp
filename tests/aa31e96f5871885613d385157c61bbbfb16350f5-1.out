@@ -1,0 +1,600 @@
+./skeleton_dissertation.tex:?-36: No file paper.aux.
+./skeleton_dissertation.tex:36-123: No file paper.toc.
+./complement.tex:22-22: LaTeX warning:
+	Citation `FosterThesis' on page 7 undefined on input line 22.
+./complement.tex:22-25: LaTeX warning:
+	Citation `DBLP:conf/icmt/CzarneckiFHLST09' on page 7 undefined on input line 22.
+./complement.tex:25-29: LaTeX warning:
+	Citation `Augeas' on page 7 undefined on input line 25.
+./complement.tex:29-35: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 7 undefined on input line 29.
+./complement.tex:35-35: LaTeX warning:
+	Citation `Boomerang07' on page 7 undefined on input line 35.
+./complement.tex:35-35: LaTeX warning:
+	Citation `QuotientLenses08' on page 7 undefined on input line 35.
+./complement.tex:35-35: LaTeX warning:
+	Citation `updatable-security-views' on page 7 undefined on input line 35.
+./complement.tex:35-39: LaTeX warning:
+	Citation `Matching10' on page 7 undefined on input line 35.
+./complement.tex:39-39: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 7 undefined on input line 39.
+./complement.tex:39-39: LaTeX warning:
+	Citation `Hu04' on page 7 undefined on input line 39.
+./complement.tex:39-39: LaTeX warning:
+	Citation `MuAlgebraic2004' on page 7 undefined on input line 39.
+./complement.tex:39-40: LaTeX warning:
+	Citation `HuXQuery08' on page 7 undefined on input line 39.
+./complement.tex:40-40: LaTeX warning:
+	Citation `BohannonPierceVaughan' on page 7 undefined on input line 40.
+./complement.tex:40-45: LaTeX warning:
+	Citation `Hidaka10' on page 7 undefined on input line 40.
+./complement.tex:45-45: LaTeX warning:
+	Citation `Stevens07' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `HuModels07' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `stevens2008lbm' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `DBLP:conf/models/Diskin08' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `diskin2008algebraic' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `diskin2009model' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `hidaka2009compositional' on page 7 undefined on input line 45.
+./complement.tex:45-62: LaTeX warning:
+	Citation `hidaka2009towards' on page 7 undefined on input line 45.
+./complement.tex:62-65: LaTeX warning:
+	Reference `symm' on page 7 undefined on input line 62.
+./complement.tex:65-65: LaTeX warning:
+	Citation `Meertens98' on page 7 undefined on input line 65.
+./complement.tex:65-65: LaTeX warning:
+	Citation `stevens2008tat' on page 7 undefined on input line 65.
+./complement.tex:65-67: LaTeX warning:
+	Citation `DBLP:conf/models/Diskin08' on page 7 undefined on input line 65.
+./complement.tex:67-72: LaTeX warning:
+	Reference `sec:relwork' on page 7 undefined on input line 67.
+./complement.tex:72-86: LaTeX warning:
+	Reference `equiv' on page 7 undefined on input line 72.
+./complement.tex:86-87: LaTeX warning:
+	Reference `basic' on page 8 undefined on input line 86.
+./complement.tex:87-87: LaTeX warning:
+	Reference `prod' on page 8 undefined on input line 87.
+./complement.tex:87-90: LaTeX warning:
+	Reference `sumlist' on page 8 undefined on input line 87.
+./complement.tex:90-91: LaTeX warning:
+	Citation `Boomerang07' on page 8 undefined on input line 90.
+./complement.tex:91-101: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 8 undefined on input line 91.
+./complement.tex:101-125: LaTeX warning:
+	Reference `iter' on page 8 undefined on input line 101.
+./complement.tex:125-128: LaTeX warning:
+	Reference `contain' on page 9 undefined on input line 125.
+./complement.tex:128-151: LaTeX warning:
+	Citation `1195941' on page 9 undefined on input line 128.
+./complement.tex:151-159: LaTeX warning:
+	Reference `asymm' on page 9 undefined on input line 151.
+./complement.tex:159-159: LaTeX warning:
+	Reference `sec:relwork' on page 10 undefined on input line 159.
+./complement.tex:159-171: LaTeX warning:
+	Reference `future' on page 10 undefined on input line 159.
+./complement.tex:171-210: LaTeX warning:
+	Reference `sec:relwork' on page 10 undefined on input line 171.
+./complement.tex:210-211: LaTeX warning:
+	Citation `DBLP:journals/tods/BancilhonS81' on page 11 undefined on input line 210.
+./complement.tex:211-212: LaTeX warning:
+	Citation `Matching10' on page 11 undefined on input line 211.
+./complement.tex:212-469: LaTeX warning:
+	Citation `matsuda2007btb' on page 11 undefined on input line 212.
+./complement.tex:469-501: LaTeX warning:
+	Reference `fig:symm' on page 15 undefined on input line 469.
+./complement.tex:501-598: LaTeX warning:
+	Reference `fig:symm' on page 15 undefined on input line 501.
+./complement.tex:598-682: LaTeX warning:
+	Reference `fig:sums' on page 18 undefined on input line 598.
+./complement.tex:682-735: LaTeX warning:
+	Reference `lists' on page 21 undefined on input line 682.
+./complement.tex:735-735: LaTeX warning:
+	Citation `Boomerang07' on page 22 undefined on input line 735.
+./complement.tex:735-747: LaTeX warning:
+	Citation `Matching10' on page 22 undefined on input line 735.
+./complement.tex:747-749: LaTeX warning:
+	Citation `Matching10' on page 22 undefined on input line 747.
+./complement.tex:749-914: LaTeX warning:
+	Reference `future' on page 22 undefined on input line 749.
+./complement.tex:1003-1004: LaTeX warning:
+	Reference `cg:def' on page 29 undefined on input line 1003.
+./complement.tex:1004-1005: LaTeX warning:
+	Reference `cg:putrll' on page 29 undefined on input line 1004.
+./complement.tex:1005-1006: LaTeX warning:
+	Reference `cg:computel' on page 29 undefined on input line 1005.
+./complement.tex:1006-1007: LaTeX warning:
+	Reference `cg:putrlk' on page 29 undefined on input line 1006.
+./complement.tex:1007-1030: LaTeX warning:
+	Reference `cg:computek' on page 29 undefined on input line 1007.
+./complement.tex:1030-1186: LaTeX warning:
+	Reference `CPE' on page 30 undefined on input line 1030.
+./complement.tex:1273-1274: LaTeX warning:
+	Reference `singleton_id' on page 35 undefined on input line 1273.
+./complement.tex:1274-1319: LaTeX warning:
+	Reference `trivial_complement_bijection' on page 35 undefined on input line 1274.
+./complement.tex:1526-1537: LaTeX warning:
+	Reference `conuni' on page 42 undefined on input line 1526.
+./complement.tex:1632-1633: LaTeX warning:
+	Reference `conuni' on page 45 undefined on input line 1632.
+./complement.tex:1633-1642: LaTeX warning:
+	Reference `conuni' on page 45 undefined on input line 1633.
+./complement.tex:1642-1674: LaTeX warning:
+	Reference `conuni' on page 46 undefined on input line 1642.
+./complement.tex:1743-1755: LaTeX warning:
+	Citation `AbrTze09' on page 47 undefined on input line 1743.
+./complement.tex:1755-1755: LaTeX warning:
+	Reference `beta_1' on page 48 undefined on input line 1755.
+./complement.tex:1755-1759: LaTeX warning:
+	Reference `beta_2' on page 48 undefined on input line 1755.
+./complement.tex:1759-1783: LaTeX warning:
+	Reference `beta_3' on page 48 undefined on input line 1759.
+./complement.tex:1848-1933: LaTeX warning:
+	Reference `singleton_id' on page 50 undefined on input line 1848.
+./complement.tex:1933-1954: LaTeX warning:
+	Reference `future' on page 52 undefined on input line 1933.
+./complement.tex:1954-1965: LaTeX warning:
+	Reference `lemma:bij_product' on page 53 undefined on input line 1954.
+./complement.tex:2028-2038: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 55 undefined on input line 2028.
+./complement.tex:2101-2102: LaTeX warning:
+	Reference `self_duality' on page 58 undefined on input line 2101.
+./complement.tex:2102-2169: LaTeX warning:
+	Reference `noprod' on page 58 undefined on input line 2102.
+./complement.tex:2169-2210: LaTeX warning:
+	Reference `symm' on page 59 undefined on input line 2169.
+./complement.tex:2277-2351: LaTeX warning:
+	Reference `singleton_id' on page 62 undefined on input line 2277.
+./complement.tex:2585-2606: LaTeX warning:
+	Reference `lemma:bij_sum' on page 71 undefined on input line 2585.
+./complement.tex:3051-3054: LaTeX warning:
+	Reference `symm' on page 82 undefined on input line 3051.
+./complement.tex:3054-3054: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 82 undefined on input line 3054.
+./complement.tex:3054-3073: LaTeX warning:
+	Citation `Boomerang07' on page 82 undefined on input line 3054.
+./complement.tex:3132-3220: LaTeX warning:
+	Citation `meijer1991functional' on page 84 undefined on input line 3132.
+./complement.tex:3220-3222: LaTeX warning:
+	Citation `vene2000categorical' on page 85 undefined on input line 3220.
+./complement.tex:3222-3302: LaTeX warning:
+	Reference `listiter' on page 85 undefined on input line 3222.
+./complement.tex:3334-3354: LaTeX warning:
+	Reference `listiter' on page 88 undefined on input line 3334.
+./complement.tex:3535-3549: LaTeX warning:
+	Citation `meijer1991functional' on page 93 undefined on input line 3535.
+./complement.tex:3549-3550: LaTeX warning:
+	Reference `listiter' on page 94 undefined on input line 3549.
+./complement.tex:3550-3553: LaTeX warning:
+	Reference `hylo' on page 94 undefined on input line 3550.
+./complement.tex:3553-3564: LaTeX warning:
+	Reference `contain' on page 94 undefined on input line 3553.
+./complement.tex:3564-3589: LaTeX warning:
+	Reference `listiter' on page 95 undefined on input line 3564.
+./complement.tex:3600-3912: LaTeX warning:
+	Reference `hylo' on page 96 undefined on input line 3600.
+./complement.tex:3912-3913: LaTeX warning:
+	Citation `abbott2003categories' on page 98 undefined on input line 3912.
+./complement.tex:3913-3915: LaTeX warning:
+	Citation `hasegawa2002two' on page 98 undefined on input line 3913.
+./complement.tex:3915-3916: LaTeX warning:
+	Citation `joyal1986foncteurs' on page 98 undefined on input line 3915.
+./complement.tex:3916-4019: LaTeX warning:
+	Citation `DBLP:conf/esop/JayC94' on page 98 undefined on input line 3916.
+./complement.tex:4132-4162: LaTeX warning:
+	Reference `iter' on page 104 undefined on input line 4132.
+./complement.tex:4162-4179: LaTeX warning:
+	Reference `symm' on page 105 undefined on input line 4162.
+./complement.tex:4218-4217: LaTeX warning:
+	Citation `Boomerang07' on page 107 undefined on input line 4218.
+./complement.tex:4670-4687: LaTeX warning:
+	Reference `asymmetrization_of_lenses' on page 121 undefined on input line 4670.
+./complement.tex:5120-5120: LaTeX warning:
+	Citation `FosterThesis' on page 123 undefined on input line 5120.
+./complement.tex:5120-5122: LaTeX warning:
+	Citation `DBLP:conf/icmt/CzarneckiFHLST09' on page 123 undefined on input line 5120.
+./complement.tex:5122-5123: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 123 undefined on input line 5122.
+./complement.tex:5123-5126: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 123 undefined on input line 5123.
+./complement.tex:5126-5127: LaTeX warning:
+	Citation `Meertens98' on page 123 undefined on input line 5126.
+./complement.tex:5127-5128: LaTeX warning:
+	Citation `Stevens07' on page 123 undefined on input line 5127.
+./complement.tex:5128-5129: LaTeX warning:
+	Citation `DBLP:conf/models/Diskin08' on page 123 undefined on input line 5128.
+./complement.tex:5129-5125: LaTeX warning:
+	Citation `xiong2009supporting' on page 123 undefined on input line 5129.
+./complement.tex:5196-5199: LaTeX warning:
+	Citation `matsuda2007btb' on page 125 undefined on input line 5196.
+./complement.tex:5199-5200: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 125 undefined on input line 5199.
+./complement.tex:5200-5204: LaTeX warning:
+	Citation `updatable-security-views' on page 125 undefined on input line 5200.
+./complement.tex:5204-5252: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 125 undefined on input line 5204.
+./complement.tex:5252-5252: LaTeX warning:
+	Reference `basic' on page 126 undefined on input line 5252.
+./complement.tex:5252-5254: LaTeX warning:
+	Reference `sumlist' on page 126 undefined on input line 5252.
+./complement.tex:5254-5285: LaTeX warning:
+	Citation `Boomerang07' on page 126 undefined on input line 5254.
+./complement.tex:5285-5336: LaTeX warning:
+	Reference `concatprime' on page 127 undefined on input line 5285.
+./complement.tex:5336-5340: LaTeX warning:
+	Reference `firstalign' on page 129 undefined on input line 5336.
+./complement.tex:5340-5340: LaTeX warning:
+	Citation `Boomerang07' on page 129 undefined on input line 5340.
+./complement.tex:5340-?: LaTeX warning:
+	Citation `Matching10' on page 129 undefined on input line 5340.
+./delta.tex:10-12: LaTeX warning:
+	Citation `Focal2005' on page 131 undefined on input line 10.
+./delta.tex:12-12: LaTeX warning:
+	Citation `Stevens07' on page 131 undefined on input line 12.
+./delta.tex:12-13: LaTeX warning:
+	Citation `Focal2005' on page 131 undefined on input line 12.
+./delta.tex:13-14: LaTeX warning:
+	Citation `Meertens98' on page 131 undefined on input line 13.
+./delta.tex:14-62: LaTeX warning:
+	Citation `Augeas' on page 131 undefined on input line 14.
+./delta.tex:62-68: LaTeX warning:
+	Reference `sec:semantics' on page 133 undefined on input line 62.
+./delta.tex:68-72: LaTeX warning:
+	Reference `sec:combinators' on page 133 undefined on input line 68.
+./delta.tex:72-73: LaTeX warning:
+	Citation `1195941' on page 133 undefined on input line 72.
+./delta.tex:73-75: LaTeX warning:
+	Reference `sec:containers' on page 133 undefined on input line 73.
+./delta.tex:75-79: LaTeX warning:
+	Citation `Matching10' on page 133 undefined on input line 75.
+./delta.tex:79-84: LaTeX warning:
+	Reference `sec:monoid-laws' on page 133 undefined on input line 79.
+./delta.tex:84-85: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 133 undefined on input line 84.
+./delta.tex:85-91: LaTeX warning:
+	Reference `stateb' on page 133 undefined on input line 85.
+./delta.tex:91-92: LaTeX warning:
+	Reference `cats' on page 133 undefined on input line 91.
+./delta.tex:92-93: LaTeX warning:
+	Reference `sec:related' on page 133 undefined on input line 92.
+./delta.tex:93-115: LaTeX warning:
+	Reference `sec:concl' on page 133 undefined on input line 93.
+./delta.tex:133-138: LaTeX warning:
+	Float too large for page by 4.64713pt on input line 133.
+./delta.tex:138-161: LaTeX warning:
+	Reference `fig:example-simple' on page 134 undefined on input line 138.
+./delta.tex:161-182: LaTeX warning:
+	Reference `sec:containers' on page 134 undefined on input line 161.
+./delta.tex:182-196: LaTeX warning:
+	Reference `fig:example-simple' on page 136 undefined on input line 182.
+./delta.tex:196-260: LaTeX warning:
+	Citation `Matching10' on page 137 undefined on input line 196.
+./delta.tex:260-260: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 138 undefined on input line 260.
+./delta.tex:260-260: LaTeX warning:
+	Citation `Focal2005' on page 138 undefined on input line 260.
+./delta.tex:260-309: LaTeX warning:
+	Citation `Boomerang07' on page 138 undefined on input line 260.
+./delta.tex:329-450: LaTeX warning:
+	Reference `fig:example-partition' on page 138 undefined on input line 329.
+./delta.tex:450-452: LaTeX warning:
+	Reference `sec:monoid-laws' on page 141 undefined on input line 450.
+./delta.tex:452-476: LaTeX warning:
+	Reference `sec:delta-examples' on page 141 undefined on input line 452.
+./delta.tex:476-480: LaTeX warning:
+	Citation `stevens2008tat' on page 142 undefined on input line 476.
+./delta.tex:480-546: LaTeX warning:
+	Reference `sec:monoid-laws' on page 142 undefined on input line 480.
+./delta.tex:546-547: LaTeX warning:
+	Citation `Focal2005' on page 143 undefined on input line 546.
+./delta.tex:547-575: LaTeX warning:
+	Reference `nofail' on page 143 undefined on input line 547.
+./delta.tex:575-581: LaTeX warning:
+	Reference `sec:delta-examples' on page 144 undefined on input line 575.
+./delta.tex:581-692: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 144 undefined on input line 581.
+./delta.tex:692-752: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 147 undefined on input line 692.
+./delta.tex:752-914: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 148 undefined on input line 752.
+./delta.tex:1042-1126: LaTeX warning:
+	Reference `eqchar' on page 155 undefined on input line 1042.
+./delta.tex:1257-1298: LaTeX warning:
+	Reference `sec:delta-examples' on page 162 undefined on input line 1257.
+./delta.tex:1341-1358: LaTeX warning:
+	Reference `thm:bisim' on page 164 undefined on input line 1341.
+./delta.tex:1358-1359: LaTeX warning:
+	Reference `sec:containers' on page 165 undefined on input line 1358.
+./delta.tex:1359-1425: LaTeX warning:
+	Reference `sec:monoid-laws' on page 165 undefined on input line 1359.
+./delta.tex:1461-1471: LaTeX warning:
+	Reference `thm:bisim' on page 168 undefined on input line 1461.
+./delta.tex:1488-1529: LaTeX warning:
+	Reference `sec:monoid-laws' on page 168 undefined on input line 1488.
+./delta.tex:1534-1541: LaTeX warning:
+	Reference `fig:definition-sum' on page 169 undefined on input line 1534.
+./delta.tex:1541-1551: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 169 undefined on input line 1541.
+./delta.tex:1551-1583: LaTeX warning:
+	Reference `footnoteseven' on page 169 undefined on input line 1551.
+./delta.tex:1583-1627: LaTeX warning:
+	Reference `sec:monoid-laws' on page 171 undefined on input line 1583.
+./delta.tex:1627-1638: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 172 undefined on input line 1627.
+./delta.tex:1638-2261: LaTeX warning:
+	Reference `fig:definition-sum' on page 172 undefined on input line 1638.
+./delta.tex:2266-2284: LaTeX warning:
+	Reference `fig:definition-map' on page 173 undefined on input line 2266.
+./delta.tex:2284-2285: LaTeX warning:
+	Reference `sec:containers' on page 173 undefined on input line 2284.
+./delta.tex:2285-2325: LaTeX warning:
+	Reference `sec:delta-examples' on page 173 undefined on input line 2285.
+./delta.tex:2325-2401: LaTeX warning:
+	Reference `fig:definition-map' on page 175 undefined on input line 2325.
+./delta.tex:2581-2601: LaTeX warning:
+	Reference `fig:definition-partition' on page 179 undefined on input line 2581.
+./delta.tex:2647-2649: LaTeX warning:
+	Reference `fig:definition-partition-supplementary' on page 179 undefined on input line 2647.
+./delta.tex:2649-2652: LaTeX warning:
+	Float too large for page by 74.48848pt on input line 2649.
+./delta.tex:2652-2653: LaTeX warning:
+	Reference `fig:definition-partition' on page 179 undefined on input line 2652.
+./delta.tex:2653-2655: LaTeX warning:
+	Reference `fig:definition-partition-supplementary' on page 179 undefined on input line 2653.
+./delta.tex:2655-2669: LaTeX warning:
+	Reference `sec:delta-examples' on page 179 undefined on input line 2655.
+./delta.tex:2669-2678: LaTeX warning:
+	Reference `fig:triple-partition' on page 179 undefined on input line 2669.
+./delta.tex:2727-2728: LaTeX warning:
+	Reference `refrmodstay' on page 179 undefined on input line 2727.
+./delta.tex:2728-2738: LaTeX warning:
+	Reference `fig:definition-partition' on page 179 undefined on input line 2728.
+./delta.tex:2738-2753: LaTeX warning:
+	Reference `fig:definition-partition-supplementary' on page 179 undefined on input line 2738.
+./delta.tex:2753-2766: LaTeX warning:
+	Reference `refrmodswitch' on page 180 undefined on input line 2753.
+./delta.tex:2766-2807: LaTeX warning:
+	Reference `fig:definition-partition-supplementary' on page 180 undefined on input line 2766.
+./delta.tex:2807-2852: LaTeX warning:
+	Reference `reflreorder' on page 182 undefined on input line 2807.
+./delta.tex:2852-2917: LaTeX warning:
+	Reference `refrreorder' on page 183 undefined on input line 2852.
+./delta.tex:2917-2985: LaTeX warning:
+	Reference `lemma:high-level-delete' on page 185 undefined on input line 2917.
+./delta.tex:2985-2986: LaTeX warning:
+	Reference `fig:definition-partition' on page 187 undefined on input line 2985.
+./delta.tex:2986-2992: LaTeX warning:
+	Reference `fig:definition-partition-supplementary' on page 187 undefined on input line 2986.
+./delta.tex:2992-3018: LaTeX warning:
+	Reference `defn:lens' on page 187 undefined on input line 2992.
+./delta.tex:3018-3025: LaTeX warning:
+	Reference `refrmodbigp' on page 188 undefined on input line 3018.
+./delta.tex:3025-3039: LaTeX warning:
+	Reference `refrmodempty' on page 188 undefined on input line 3025.
+./delta.tex:3039-3051: LaTeX warning:
+	Reference `refrmodcons' on page 188 undefined on input line 3039.
+./delta.tex:3051-3054: LaTeX warning:
+	Reference `lemma:unfold-mod-once' on page 189 undefined on input line 3051.
+./delta.tex:3054-3050: LaTeX warning:
+	Reference `eq:IH-1' on page 189 undefined on input line 3054.
+./delta.tex:3058-3060: LaTeX warning:
+	Reference `eq:IH-2' on page 189 undefined on input line 3058.
+./delta.tex:3060-3065: LaTeX warning:
+	Reference `lemma:unfold-mod-once' on page 189 undefined on input line 3060.
+./delta.tex:3065-3109: LaTeX warning:
+	Reference `refrmodswitch' on page 189 undefined on input line 3065.
+./delta.tex:3109-3110: LaTeX warning:
+	Reference `lemma:high-level-delete' on page 191 undefined on input line 3109.
+./delta.tex:3110-3119: LaTeX warning:
+	Reference `lemma:high-level-insert' on page 191 undefined on input line 3110.
+./delta.tex:3119-3130: LaTeX warning:
+	Reference `lemma:lefts-rights-homomorphism' on page 192 undefined on input line 3119.
+./delta.tex:3130-3143: LaTeX warning:
+	Reference `lemma:iso-coherent' on page 192 undefined on input line 3130.
+./delta.tex:3143-3152: LaTeX warning:
+	Reference `refrmodstay' on page 193 undefined on input line 3143.
+./delta.tex:3152-3169: LaTeX warning:
+	Reference `lemma:iso-coherent' on page 193 undefined on input line 3152.
+./delta.tex:3169-3174: LaTeX warning:
+	Reference `refrmodfail' on page 193 undefined on input line 3169.
+./delta.tex:3174-3199: LaTeX warning:
+	Reference `refrins' on page 194 undefined on input line 3174.
+./delta.tex:3199-3207: LaTeX warning:
+	Reference `lemma:lefts-rights-homomorphism' on page 194 undefined on input line 3199.
+./delta.tex:3213-3259: LaTeX warning:
+	Reference `refrdel' on page 195 undefined on input line 3213.
+./delta.tex:3259-3263: LaTeX warning:
+	Reference `refrreorder' on page 197 undefined on input line 3259.
+./delta.tex:3263-3291: LaTeX warning:
+	Reference `lemma:iso-coherent' on page 197 undefined on input line 3263.
+./delta.tex:3291-3292: LaTeX warning:
+	Reference `eq:reorder-z' on page 198 undefined on input line 3291.
+./delta.tex:3292-3293: LaTeX warning:
+	Reference `eq:float-index' on page 198 undefined on input line 3292.
+./delta.tex:3293-3294: LaTeX warning:
+	Reference `eq:def-c' on page 198 undefined on input line 3293.
+./delta.tex:3294-3302: LaTeX warning:
+	Reference `eq:def-reorder' on page 198 undefined on input line 3294.
+./delta.tex:3302-3324: LaTeX warning:
+	Reference `lemma:iso-coherent' on page 198 undefined on input line 3302.
+./delta.tex:3324-3325: LaTeX warning:
+	Reference `eq:lefts-lemma' on page 199 undefined on input line 3324.
+./delta.tex:3325-3325: LaTeX warning:
+	Reference `lemma:iso-coherent' on page 199 undefined on input line 3325.
+./delta.tex:3325-3326: LaTeX warning:
+	Reference `eq:def-h'' on page 199 undefined on input line 3325.
+./delta.tex:3326-3327: LaTeX warning:
+	Reference `eq:apply-reordering-to-def-h'' on page 199 undefined on input line 3326.
+./delta.tex:3327-3328: LaTeX warning:
+	Reference `eq:lefts-unlemma' on page 199 undefined on input line 3327.
+./delta.tex:3328-3330: LaTeX warning:
+	Reference `lemma:iso-coherent' on page 199 undefined on input line 3328.
+./delta.tex:3330-3331: LaTeX warning:
+	Reference `eq:def-h' on page 199 undefined on input line 3330.
+./delta.tex:3331-3331: LaTeX warning:
+	Reference `eq:semi-syntax' on page 199 undefined on input line 3331.
+./delta.tex:3331-3331: LaTeX warning:
+	Reference `eq:def-h''' on page 199 undefined on input line 3331.
+./delta.tex:3331-3334: LaTeX warning:
+	Reference `eq:def-fL' on page 199 undefined on input line 3331.
+./delta.tex:3334-3340: LaTeX warning:
+	Reference `eq:uninl' on page 199 undefined on input line 3334.
+./delta.tex:3340-3340: LaTeX warning:
+	Reference `refrfail' on page 199 undefined on input line 3340.
+./delta.tex:3340-3356: LaTeX warning:
+	Reference `refrmodfail' on page 199 undefined on input line 3340.
+./delta.tex:3356-3358: LaTeX warning:
+	Reference `reflmod' on page 200 undefined on input line 3356.
+./delta.tex:3358-3360: LaTeX warning:
+	Reference `reflreorder' on page 200 undefined on input line 3358.
+./delta.tex:3360-3395: LaTeX warning:
+	Reference `reflins' on page 200 undefined on input line 3360.
+./delta.tex:3395-3399: LaTeX warning:
+	Reference `refldel0' on page 201 undefined on input line 3395.
+./delta.tex:3399-3401: LaTeX warning:
+	Reference `refldeli' on page 201 undefined on input line 3399.
+./delta.tex:3401-3404: LaTeX warning:
+	Reference `refldelfail' on page 201 undefined on input line 3401.
+./delta.tex:3404-3426: LaTeX warning:
+	Reference `reflfail' on page 202 undefined on input line 3404.
+./delta.tex:3426-3430: LaTeX warning:
+	Reference `sec:monoid-laws' on page 202 undefined on input line 3426.
+./delta.tex:3430-3448: LaTeX warning:
+	Citation `1195941' on page 202 undefined on input line 3430.
+./delta.tex:3448-3458: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 203 undefined on input line 3448.
+./delta.tex:3458-3458: LaTeX warning:
+	Citation `1195941' on page 203 undefined on input line 3458.
+./delta.tex:3458-3464: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 203 undefined on input line 3458.
+./delta.tex:3464-3466: LaTeX warning:
+	Citation `1195941' on page 203 undefined on input line 3464.
+./delta.tex:3466-3534: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 203 undefined on input line 3466.
+./delta.tex:3534-3601: LaTeX warning:
+	Reference `def:containereditapplication' on page 205 undefined on input line 3534.
+./delta.tex:3601-3655: LaTeX warning:
+	Reference `sec:monoid-laws' on page 207 undefined on input line 3601.
+./delta.tex:3735-3723: LaTeX warning:
+	Reference `thm:bisim' on page 210 undefined on input line 3735.
+./delta.tex:3813-3817: LaTeX warning:
+	Reference `fig:restructuring-definition' on page 211 undefined on input line 3813.
+./delta.tex:3817-3820: LaTeX warning:
+	Float too large for page by 99.13847pt on input line 3817.
+./delta.tex:3820-3894: LaTeX warning:
+	Reference `fig:restructuring-definition' on page 211 undefined on input line 3820.
+./delta.tex:3923-3924: wrapfig warning:
+	Collision between wrapping environments on input line 3923.
+./delta.tex:3925-3951: wrapfig warning:
+	Stationary wrapfigure forced to float on input line 3925.
+./delta.tex:3951-3952: wrapfig warning:
+	Collision between wrapping environments on input line 3951.
+./delta.tex:3954-3989: wrapfig warning:
+	Stationary wrapfigure forced to float on input line 3954.
+./delta.tex:3989-4122: LaTeX warning:
+	Reference `sec:semantics' on page 215 undefined on input line 3989.
+./delta.tex:4122-4123: LaTeX warning:
+	Reference `eq:klens' on page 220 undefined on input line 4122.
+./delta.tex:4123-4124: LaTeX warning:
+	Reference `eq:law' on page 220 undefined on input line 4123.
+./delta.tex:4124-4124: LaTeX warning:
+	Reference `eq:one1' on page 220 undefined on input line 4124.
+./delta.tex:4124-4208: LaTeX warning:
+	Reference `eq:one2' on page 220 undefined on input line 4124.
+./delta.tex:4208-4468: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 222 undefined on input line 4208.
+./delta.tex:4468-4473: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 230 undefined on input line 4468.
+./delta.tex:4473-4552: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 230 undefined on input line 4473.
+./delta.tex:4644-4644: LaTeX warning:
+	Citation `Diskin-Delta11' on page 234 undefined on input line 4644.
+./delta.tex:4644-4842: LaTeX warning:
+	Citation `Johnson11' on page 234 undefined on input line 4644.
+./delta.tex:4842-4843: LaTeX warning:
+	Citation `Diskin-Delta11' on page 235 undefined on input line 4842.
+./delta.tex:4843-4849: LaTeX warning:
+	Citation `Matching10' on page 235 undefined on input line 4843.
+./delta.tex:4849-4860: LaTeX warning:
+	Reference `cats' on page 235 undefined on input line 4849.
+./delta.tex:4860-4861: LaTeX warning:
+	Citation `Stevens07' on page 235 undefined on input line 4860.
+./delta.tex:4861-4902: LaTeX warning:
+	Reference `stateb' on page 235 undefined on input line 4861.
+./delta.tex:4902-4909: LaTeX warning:
+	Citation `Meertens98' on page 236 undefined on input line 4902.
+./delta.tex:4909-4909: LaTeX warning:
+	Citation `Hu04' on page 236 undefined on input line 4909.
+./delta.tex:4909-4909: LaTeX warning:
+	Citation `Mu2004' on page 236 undefined on input line 4909.
+./delta.tex:4909-4909: LaTeX warning:
+	Citation `MuAlgebraic2004' on page 236 undefined on input line 4909.
+./delta.tex:4909-4909: LaTeX warning:
+	Citation `HuModels07' on page 236 undefined on input line 4909.
+./delta.tex:4909-4916: LaTeX warning:
+	Citation `Hidaka10' on page 236 undefined on input line 4909.
+./delta.tex:4916-4963: LaTeX warning:
+	Citation `Matching10' on page 236 undefined on input line 4916.
+./delta.tex:4963-4968: LaTeX warning:
+	Citation `Boomerang07' on page 237 undefined on input line 4963.
+./delta.tex:4968-?: LaTeX warning:
+	Reference `sec:containers' on page 237 undefined on input line 4968.
+./tree.tex:53-54: LaTeX warning:
+	Citation `Boomerang07' on page 244 undefined on input line 53.
+./tree.tex:54-54: LaTeX warning:
+	Citation `Matching10' on page 244 undefined on input line 54.
+./tree.tex:54-55: LaTeX warning:
+	Citation `Diskin-Delta11' on page 244 undefined on input line 54.
+./tree.tex:55-56: LaTeX warning:
+	Citation `diskin2011asymmetric' on page 244 undefined on input line 55.
+./tree.tex:56-58: LaTeX warning:
+	Citation `Stevens07' on page 244 undefined on input line 56.
+./tree.tex:58-58: LaTeX warning:
+	Citation `HuModels07' on page 244 undefined on input line 58.
+./tree.tex:58-69: LaTeX warning:
+	Citation `Hidaka10' on page 244 undefined on input line 58.
+./tree.tex:69-84: LaTeX warning:
+	Citation `HofmannPierceWagner12' on page 244 undefined on input line 69.
+./tree.tex:84-87: LaTeX warning:
+	Citation `DalzilioS:POPL04' on page 245 undefined on input line 84.
+./tree.tex:87-87: LaTeX warning:
+	Citation `UnQL96' on page 245 undefined on input line 87.
+./tree.tex:87-235: LaTeX warning:
+	Citation `Hidaka10' on page 245 undefined on input line 87.
+./tree.tex:235-334: LaTeX warning:
+	Citation `Foster:FTL' on page 250 undefined on input line 235.
+./tree.tex:334-334: LaTeX warning:
+	Citation `Foster:FTL' on page 253 undefined on input line 334.
+./tree.tex:334-524: LaTeX warning:
+	Citation `DalzilioS:POPL04' on page 253 undefined on input line 334.
+./tree.tex:524-543: LaTeX warning:
+	Citation `DalzilioS:POPL04' on page 257 undefined on input line 524.
+./tree.tex:543-668: LaTeX warning:
+	Citation `DalzilioS:POPL04' on page 257 undefined on input line 543.
+./tree.tex:668-808: LaTeX warning:
+	Citation `Foster:FTL' on page 260 undefined on input line 668.
+./tree.tex:808-860: LaTeX warning:
+	Citation `DalzilioS:POPL04' on page 264 undefined on input line 808.
+./tree.tex:860-870: LaTeX warning:
+	Citation `HofmannPierceWagner12' on page 265 undefined on input line 860.
+./tree.tex:870-907: LaTeX warning:
+	Reference `sec:tree-examples' on page 265 undefined on input line 870.
+./tree.tex:907-978: LaTeX warning:
+	Citation `HofmannPierceWagner12' on page 266 undefined on input line 907.
+./tree.tex:978-978: LaTeX warning:
+	Citation `DalzilioS:POPL04' on page 268 undefined on input line 978.
+./tree.tex:978-980: LaTeX warning:
+	Citation `Foster:FTL' on page 268 undefined on input line 978.
+./tree.tex:980-?: LaTeX warning:
+	Citation `Foster:FTL' on page 268 undefined on input line 980.
+./skeleton_dissertation.tex:123-?: No file paper.bbl.
+./skeleton_dissertation.tex:123-?: LaTeX warning:
+	There were undefined references.
+./skeleton_dissertation.tex:123-?: LaTeX warning:
+	Label(s) may have changed. Rerun to get cross-references right.
+2-2: (\end occurred when \iftrue on line 2 was incomplete) 

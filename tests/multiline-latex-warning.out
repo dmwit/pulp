@@ -1,0 +1,12 @@
+./presentation.sty:?-?: Package: presentation 
+../beamer_minimal.sty:?-?: LaTeX warning:
+	You have requested package `../beamer_minimal',
+../beamer_minimal.sty:?-?:                but the package provides `beamer_minimal'.
+../beamer_minimal.sty:?-?: Package: beamer_minimal 
+./cornell20131202.tex:4-9: Font warning:
+	Font shape `OT1/cmss/m/n' in size <4> not available
+	size <5> substituted on input line 8.
+./cornell20131202.tex:9-9: Font warning:
+	Size substitutions with differences
+	up to 1.0pt have occurred.
+?-?: </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us

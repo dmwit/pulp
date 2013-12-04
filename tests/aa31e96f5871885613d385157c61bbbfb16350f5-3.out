@@ -1,0 +1,17 @@
+./delta.tex:133-309: LaTeX warning:
+	Float too large for page by 4.64713pt on input line 133.
+./delta.tex:2649-2678: LaTeX warning:
+	Float too large for page by 74.48848pt on input line 2649.
+./delta.tex:3817-3894: LaTeX warning:
+	Float too large for page by 99.13847pt on input line 3817.
+./delta.tex:3923-3924: wrapfig warning:
+	Collision between wrapping environments on input line 3923.
+./delta.tex:3925-3951: wrapfig warning:
+	Stationary wrapfigure forced to float on input line 3925.
+./delta.tex:3951-3952: wrapfig warning:
+	Collision between wrapping environments on input line 3951.
+./delta.tex:3954-4208: wrapfig warning:
+	Stationary wrapfigure forced to float on input line 3954.
+./skeleton_dissertation.tex:36-?: LaTeX warning:
+	Label(s) may have changed. Rerun to get cross-references right.
+2-2: (\end occurred when \iftrue on line 2 was incomplete) 

@@ -1,0 +1,110 @@
+./paper.sty:?-?: ! LaTeX Error: Command \arrow already defined.
+./paper.sty:?-?:                Or name \end... illegal, see p.192 of the manual.
+./paper.sty:?-?: See the LaTeX manual or LaTeX Companion for explanation.
+./paper.sty:?-?: Type  H <return>  for immediate help.
+./paper.sty:?-?:  ...                                              
+./paper.sty:?-?: l.89 \newcommand{\arrow}{\rightarrow}
+./paper.sty:?-?: Your command was ignored.
+./paper.sty:?-?: Type  I <command> <return>  to replace it with another command,
+./paper.sty:?-?: or  <return>  to continue without it.
+./paper.sty:?-?: ! LaTeX Error: Command \const already defined.
+./paper.sty:?-?:                Or name \end... illegal, see p.192 of the manual.
+./paper.sty:?-?: See the LaTeX manual or LaTeX Companion for explanation.
+./paper.sty:?-?: Type  H <return>  for immediate help.
+./paper.sty:?-?:  ...                                              
+./paper.sty:?-?: l.115 \newcommand{\const}{\mathit{term}}
+./paper.sty:?-?: Your command was ignored.
+./paper.sty:?-?: Type  I <command> <return>  to replace it with another command,
+./paper.sty:?-?: or  <return>  to continue without it.
+./paper.sty:?-?: ! LaTeX Error: Command \discuss already defined.
+./paper.sty:?-?:                Or name \end... illegal, see p.192 of the manual.
+./paper.sty:?-?: See the LaTeX manual or LaTeX Companion for explanation.
+./paper.sty:?-?: Type  H <return>  for immediate help.
+./paper.sty:?-?:  ...                                              
+./paper.sty:?-?: l.133 ...cuss}[1]{\ifdraft{\color{red}{[#1]}} \fi}
+./paper.sty:?-?: Your command was ignored.
+./paper.sty:?-?: Type  I <command> <return>  to replace it with another command,
+./paper.sty:?-?: or  <return>  to continue without it.
+./paper.sty:?-?: ! LaTeX Error: Command \missing already defined.
+./paper.sty:?-?:                Or name \end... illegal, see p.192 of the manual.
+./paper.sty:?-?: See the LaTeX manual or LaTeX Companion for explanation.
+./paper.sty:?-?: Type  H <return>  for immediate help.
+./paper.sty:?-?:  ...                                              
+./paper.sty:?-?: l.201 \newcommand{\missing}{\mathit{missing}}
+./paper.sty:?-?: Your command was ignored.
+./paper.sty:?-?: Type  I <command> <return>  to replace it with another command,
+./paper.sty:?-?: or  <return>  to continue without it.
+./paper.sty:?-?: ! LaTeX Error: Command \mlinl already defined.
+./paper.sty:?-?:                Or name \end... illegal, see p.192 of the manual.
+./paper.sty:?-?: See the LaTeX manual or LaTeX Companion for explanation.
+./paper.sty:?-?: Type  H <return>  for immediate help.
+./paper.sty:?-?:  ...                                              
+./paper.sty:?-?: l.217 \newcommand{\mlinl}{\ml{inl}\ }
+./paper.sty:?-?: Your command was ignored.
+./paper.sty:?-?: Type  I <command> <return>  to replace it with another command,
+./paper.sty:?-?: or  <return>  to continue without it.
+./paper.sty:?-?: ! LaTeX Error: Command \mlinr already defined.
+./paper.sty:?-?:                Or name \end... illegal, see p.192 of the manual.
+./paper.sty:?-?: See the LaTeX manual or LaTeX Companion for explanation.
+./paper.sty:?-?: Type  H <return>  for immediate help.
+./paper.sty:?-?:  ...                                              
+./paper.sty:?-?: l.220 \newcommand{\mlinr}{\ml{inr}\ }
+./paper.sty:?-?: Your command was ignored.
+./paper.sty:?-?: Type  I <command> <return>  to replace it with another command,
+./paper.sty:?-?: or  <return>  to continue without it.
+./paper.sty:?-?: ! LaTeX Error: Command \pdf already defined.
+./paper.sty:?-?:                Or name \end... illegal, see p.192 of the manual.
+./paper.sty:?-?: See the LaTeX manual or LaTeX Companion for explanation.
+./paper.sty:?-?: Type  H <return>  for immediate help.
+./paper.sty:?-?:  ...                                              
+./paper.sty:?-?: l.287 ...}[1]{\node[scale=.27]{\pgfimage{pdf/#1}}}
+./paper.sty:?-?: Your command was ignored.
+./paper.sty:?-?: Type  I <command> <return>  to replace it with another command,
+./paper.sty:?-?: or  <return>  to continue without it.
+./paper.sty:?-?: ! LaTeX Error: Command \PUT already defined.
+./paper.sty:?-?:                Or name \end... illegal, see p.192 of the manual.
+./paper.sty:?-?: See the LaTeX manual or LaTeX Companion for explanation.
+./paper.sty:?-?: Type  H <return>  for immediate help.
+./paper.sty:?-?:  ...                                              
+./paper.sty:?-?: l.292 \newcommand{\PUT}{\ensuremath{\mathit{put}}}
+./paper.sty:?-?: Your command was ignored.
+./paper.sty:?-?: Type  I <command> <return>  to replace it with another command,
+./paper.sty:?-?: or  <return>  to continue without it.
+./paper.sty:?-?: ! LaTeX Error: Command \R already defined.
+./paper.sty:?-?:                Or name \end... illegal, see p.192 of the manual.
+./paper.sty:?-?: See the LaTeX manual or LaTeX Companion for explanation.
+./paper.sty:?-?: Type  H <return>  for immediate help.
+./paper.sty:?-?:  ...                                              
+./paper.sty:?-?: l.305 \newcommand{\R}{\mathbb{R}}
+./paper.sty:?-?: Your command was ignored.
+./paper.sty:?-?: Type  I <command> <return>  to replace it with another command,
+./paper.sty:?-?: or  <return>  to continue without it.
+./paper.aux:?-?: LaTeX warning:
+	Label `fig:example-simple' multiply defined.
+./paper.aux:?-?: LaTeX warning:
+	Label `fig:symm' multiply defined.
+./paper.aux:?-?: LaTeX warning:
+	Label `fig:sums' multiply defined.
+./paper.aux:?-?: LaTeX warning:
+	Label `fig:example-partition' multiply defined.
+./paper.aux:?-?: LaTeX warning:
+	Label `sec:semantics' multiply defined.
+./hyper_finished_work.tex:117-639: LaTeX warning:
+	Float too large for page by 21.18045pt on input line 117.
+./hyper_spreadsheets.tex:192-379: LaTeX warning:
+	Reference `chap:finished_work' on page 240 undefined on input line 192.
+./hyper_spreadsheets.tex:774-?: LaTeX warning:
+	File `timeline.pdf' not found on input line 774.
+./hyper_spreadsheets.tex:774-?: ! Package pdftex.def Error: File `timeline.pdf' not found.
+./hyper_spreadsheets.tex:774-?: See the pdftex.def package documentation for explanation.
+./hyper_spreadsheets.tex:774-?: Type  H <return>  for immediate help.
+./hyper_spreadsheets.tex:774-?:  ...                                              
+./hyper_spreadsheets.tex:774-?: l.774 ...\includegraphics[scale=0.6]{timeline.pdf}
+./hyper_spreadsheets.tex:774-?: Using draft setting for this image.
+./hyper_spreadsheets.tex:774-?: Try typing  <return>  to proceed.
+./hyper_spreadsheets.tex:774-?: If that doesn't work, type  X <return>  to quit.
+./skeleton_dissertation.tex:37-?: LaTeX warning:
+	There were undefined references.
+./skeleton_dissertation.tex:37-?: LaTeX warning:
+	There were multiply-defined labels.
+505-505: (\end occurred when \iftrue on line 505 was incomplete) 

@@ -1,0 +1,255 @@
+./complement.tex:22-22: natbib warning:
+	Citation `FosterThesis' on page 7 undefined on input line 22.
+./complement.tex:22-25: natbib warning:
+	Citation `DBLP:conf/icmt/CzarneckiFHLST09' on page 7 undefined on input line 22.
+./complement.tex:25-29: natbib warning:
+	Citation `Augeas' on page 7 undefined on input line 25.
+./complement.tex:29-35: natbib warning:
+	Citation `Focal2005-shortcite' on page 7 undefined on input line 29.
+./complement.tex:35-35: natbib warning:
+	Citation `Boomerang07' on page 7 undefined on input line 35.
+./complement.tex:35-35: natbib warning:
+	Citation `QuotientLenses08' on page 7 undefined on input line 35.
+./complement.tex:35-35: natbib warning:
+	Citation `updatable-security-views' on page 7 undefined on input line 35.
+./complement.tex:35-39: natbib warning:
+	Citation `Matching10' on page 7 undefined on input line 35.
+./complement.tex:39-39: natbib warning:
+	Citation `Focal2005-shortcite' on page 7 undefined on input line 39.
+./complement.tex:39-39: natbib warning:
+	Citation `Hu04' on page 7 undefined on input line 39.
+./complement.tex:39-39: natbib warning:
+	Citation `MuAlgebraic2004' on page 7 undefined on input line 39.
+./complement.tex:39-40: natbib warning:
+	Citation `HuXQuery08' on page 7 undefined on input line 39.
+./complement.tex:40-40: natbib warning:
+	Citation `BohannonPierceVaughan' on page 7 undefined on input line 40.
+./complement.tex:40-45: natbib warning:
+	Citation `Hidaka10' on page 7 undefined on input line 40.
+./complement.tex:45-45: natbib warning:
+	Citation `Stevens07' on page 7 undefined on input line 45.
+./complement.tex:45-45: natbib warning:
+	Citation `HuModels07' on page 7 undefined on input line 45.
+./complement.tex:45-45: natbib warning:
+	Citation `stevens2008lbm' on page 7 undefined on input line 45.
+./complement.tex:45-45: natbib warning:
+	Citation `DBLP:conf/models/Diskin08' on page 7 undefined on input line 45.
+./complement.tex:45-45: natbib warning:
+	Citation `diskin2008algebraic' on page 7 undefined on input line 45.
+./complement.tex:45-45: natbib warning:
+	Citation `diskin2009model' on page 7 undefined on input line 45.
+./complement.tex:45-45: natbib warning:
+	Citation `hidaka2009compositional' on page 7 undefined on input line 45.
+./complement.tex:45-65: natbib warning:
+	Citation `hidaka2009towards' on page 7 undefined on input line 45.
+./complement.tex:65-65: natbib warning:
+	Citation `Meertens98' on page 7 undefined on input line 65.
+./complement.tex:65-65: natbib warning:
+	Citation `stevens2008tat' on page 7 undefined on input line 65.
+./complement.tex:65-90: natbib warning:
+	Citation `DBLP:conf/models/Diskin08' on page 7 undefined on input line 65.
+./complement.tex:90-91: natbib warning:
+	Citation `Boomerang07' on page 8 undefined on input line 90.
+./complement.tex:91-128: natbib warning:
+	Citation `Focal2005-shortcite' on page 8 undefined on input line 91.
+./complement.tex:128-210: natbib warning:
+	Citation `1195941' on page 9 undefined on input line 128.
+./complement.tex:210-211: natbib warning:
+	Citation `DBLP:journals/tods/BancilhonS81' on page 11 undefined on input line 210.
+./complement.tex:211-212: natbib warning:
+	Citation `Matching10' on page 11 undefined on input line 211.
+./complement.tex:212-735: natbib warning:
+	Citation `matsuda2007btb' on page 11 undefined on input line 212.
+./complement.tex:735-735: natbib warning:
+	Citation `Boomerang07' on page 22 undefined on input line 735.
+./complement.tex:735-747: natbib warning:
+	Citation `Matching10' on page 22 undefined on input line 735.
+./complement.tex:747-914: natbib warning:
+	Citation `Matching10' on page 22 undefined on input line 747.
+./complement.tex:1743-1783: natbib warning:
+	Citation `AbrTze09' on page 47 undefined on input line 1743.
+./complement.tex:2028-2038: natbib warning:
+	Citation `Focal2005-shortcite' on page 55 undefined on input line 2028.
+./complement.tex:3054-3054: natbib warning:
+	Citation `Focal2005-shortcite' on page 82 undefined on input line 3054.
+./complement.tex:3054-3073: natbib warning:
+	Citation `Boomerang07' on page 82 undefined on input line 3054.
+./complement.tex:3132-3220: natbib warning:
+	Citation `meijer1991functional' on page 84 undefined on input line 3132.
+./complement.tex:3220-3302: natbib warning:
+	Citation `vene2000categorical' on page 85 undefined on input line 3220.
+./complement.tex:3535-3589: natbib warning:
+	Citation `meijer1991functional' on page 93 undefined on input line 3535.
+./complement.tex:3912-3913: natbib warning:
+	Citation `abbott2003categories' on page 98 undefined on input line 3912.
+./complement.tex:3913-3915: natbib warning:
+	Citation `hasegawa2002two' on page 98 undefined on input line 3913.
+./complement.tex:3915-3916: natbib warning:
+	Citation `joyal1986foncteurs' on page 98 undefined on input line 3915.
+./complement.tex:3916-4019: natbib warning:
+	Citation `DBLP:conf/esop/JayC94' on page 98 undefined on input line 3916.
+./complement.tex:4218-4217: natbib warning:
+	Citation `Boomerang07' on page 107 undefined on input line 4218.
+./complement.tex:5120-5120: natbib warning:
+	Citation `FosterThesis' on page 123 undefined on input line 5120.
+./complement.tex:5120-5122: natbib warning:
+	Citation `DBLP:conf/icmt/CzarneckiFHLST09' on page 123 undefined on input line 5120.
+./complement.tex:5122-5123: natbib warning:
+	Citation `Focal2005-shortcite' on page 123 undefined on input line 5122.
+./complement.tex:5123-5126: natbib warning:
+	Citation `HofmannPierceWagner10' on page 123 undefined on input line 5123.
+./complement.tex:5126-5127: natbib warning:
+	Citation `Meertens98' on page 123 undefined on input line 5126.
+./complement.tex:5127-5128: natbib warning:
+	Citation `Stevens07' on page 123 undefined on input line 5127.
+./complement.tex:5128-5129: natbib warning:
+	Citation `DBLP:conf/models/Diskin08' on page 123 undefined on input line 5128.
+./complement.tex:5129-5125: natbib warning:
+	Citation `xiong2009supporting' on page 123 undefined on input line 5129.
+./complement.tex:5196-5199: natbib warning:
+	Citation `matsuda2007btb' on page 125 undefined on input line 5196.
+./complement.tex:5199-5200: natbib warning:
+	Citation `Focal2005-shortcite' on page 125 undefined on input line 5199.
+./complement.tex:5200-5204: natbib warning:
+	Citation `updatable-security-views' on page 125 undefined on input line 5200.
+./complement.tex:5204-5254: natbib warning:
+	Citation `Focal2005-shortcite' on page 125 undefined on input line 5204.
+./complement.tex:5254-5340: natbib warning:
+	Citation `Boomerang07' on page 126 undefined on input line 5254.
+./complement.tex:5340-5340: natbib warning:
+	Citation `Boomerang07' on page 129 undefined on input line 5340.
+./complement.tex:5340-?: natbib warning:
+	Citation `Matching10' on page 129 undefined on input line 5340.
+./delta.tex:10-12: natbib warning:
+	Citation `Focal2005' on page 131 undefined on input line 10.
+./delta.tex:12-12: natbib warning:
+	Citation `Stevens07' on page 131 undefined on input line 12.
+./delta.tex:12-13: natbib warning:
+	Citation `Focal2005' on page 131 undefined on input line 12.
+./delta.tex:13-14: natbib warning:
+	Citation `Meertens98' on page 131 undefined on input line 13.
+./delta.tex:14-72: natbib warning:
+	Citation `Augeas' on page 131 undefined on input line 14.
+./delta.tex:72-75: natbib warning:
+	Citation `1195941' on page 133 undefined on input line 72.
+./delta.tex:75-84: natbib warning:
+	Citation `Matching10' on page 133 undefined on input line 75.
+./delta.tex:84-116: natbib warning:
+	Citation `HofmannPierceWagner10' on page 133 undefined on input line 84.
+./delta.tex:198-262: natbib warning:
+	Citation `Matching10' on page 137 undefined on input line 198.
+./delta.tex:262-262: natbib warning:
+	Citation `HofmannPierceWagner10' on page 138 undefined on input line 262.
+./delta.tex:262-262: natbib warning:
+	Citation `Focal2005' on page 138 undefined on input line 262.
+./delta.tex:262-311: natbib warning:
+	Citation `Boomerang07' on page 138 undefined on input line 262.
+./delta.tex:478-548: natbib warning:
+	Citation `stevens2008tat' on page 142 undefined on input line 478.
+./delta.tex:548-583: natbib warning:
+	Citation `Focal2005' on page 143 undefined on input line 548.
+./delta.tex:583-694: natbib warning:
+	Citation `HofmannPierceWagner10' on page 144 undefined on input line 583.
+./delta.tex:694-754: natbib warning:
+	Citation `HofmannPierceWagner10' on page 147 undefined on input line 694.
+./delta.tex:754-916: natbib warning:
+	Citation `HofmannPierceWagner10' on page 148 undefined on input line 754.
+./delta.tex:1543-1629: natbib warning:
+	Citation `HofmannPierceWagner10' on page 169 undefined on input line 1543.
+./delta.tex:1629-2263: natbib warning:
+	Citation `HofmannPierceWagner10' on page 172 undefined on input line 1629.
+./delta.tex:3434-3452: natbib warning:
+	Citation `1195941' on page 202 undefined on input line 3434.
+./delta.tex:3452-3462: natbib warning:
+	Citation `HofmannPierceWagner10' on page 203 undefined on input line 3452.
+./delta.tex:3462-3462: natbib warning:
+	Citation `1195941' on page 203 undefined on input line 3462.
+./delta.tex:3462-3468: natbib warning:
+	Citation `HofmannPierceWagner10' on page 203 undefined on input line 3462.
+./delta.tex:3468-3470: natbib warning:
+	Citation `1195941' on page 203 undefined on input line 3468.
+./delta.tex:3470-3659: natbib warning:
+	Citation `HofmannPierceWagner10' on page 203 undefined on input line 3470.
+./delta.tex:4225-4485: natbib warning:
+	Citation `HofmannPierceWagner10' on page 222 undefined on input line 4225.
+./delta.tex:4485-4490: natbib warning:
+	Citation `HofmannPierceWagner10' on page 230 undefined on input line 4485.
+./delta.tex:4490-4569: natbib warning:
+	Citation `HofmannPierceWagner10' on page 230 undefined on input line 4490.
+./delta.tex:4661-4661: natbib warning:
+	Citation `Diskin-Delta11' on page 234 undefined on input line 4661.
+./delta.tex:4661-4859: natbib warning:
+	Citation `Johnson11' on page 234 undefined on input line 4661.
+./delta.tex:4859-4860: natbib warning:
+	Citation `Diskin-Delta11' on page 235 undefined on input line 4859.
+./delta.tex:4860-4877: natbib warning:
+	Citation `Matching10' on page 235 undefined on input line 4860.
+./delta.tex:4877-4919: natbib warning:
+	Citation `Stevens07' on page 235 undefined on input line 4877.
+./delta.tex:4919-4926: natbib warning:
+	Citation `Meertens98' on page 236 undefined on input line 4919.
+./delta.tex:4926-4926: natbib warning:
+	Citation `Hu04' on page 236 undefined on input line 4926.
+./delta.tex:4926-4926: natbib warning:
+	Citation `Mu2004' on page 236 undefined on input line 4926.
+./delta.tex:4926-4926: natbib warning:
+	Citation `MuAlgebraic2004' on page 236 undefined on input line 4926.
+./delta.tex:4926-4926: natbib warning:
+	Citation `HuModels07' on page 236 undefined on input line 4926.
+./delta.tex:4926-4933: natbib warning:
+	Citation `Hidaka10' on page 236 undefined on input line 4926.
+./delta.tex:4933-4980: natbib warning:
+	Citation `Matching10' on page 236 undefined on input line 4933.
+./delta.tex:4980-?: natbib warning:
+	Citation `Boomerang07' on page 237 undefined on input line 4980.
+./tree.tex:53-54: natbib warning:
+	Citation `Boomerang07' on page 243 undefined on input line 53.
+./tree.tex:54-54: natbib warning:
+	Citation `Matching10' on page 243 undefined on input line 54.
+./tree.tex:54-55: natbib warning:
+	Citation `Diskin-Delta11' on page 243 undefined on input line 54.
+./tree.tex:55-56: natbib warning:
+	Citation `diskin2011asymmetric' on page 243 undefined on input line 55.
+./tree.tex:56-58: natbib warning:
+	Citation `Stevens07' on page 243 undefined on input line 56.
+./tree.tex:58-58: natbib warning:
+	Citation `HuModels07' on page 243 undefined on input line 58.
+./tree.tex:58-69: natbib warning:
+	Citation `Hidaka10' on page 243 undefined on input line 58.
+./tree.tex:69-84: natbib warning:
+	Citation `HofmannPierceWagner12' on page 243 undefined on input line 69.
+./tree.tex:84-87: natbib warning:
+	Citation `DalzilioS:POPL04' on page 244 undefined on input line 84.
+./tree.tex:87-87: natbib warning:
+	Citation `UnQL96' on page 244 undefined on input line 87.
+./tree.tex:87-235: natbib warning:
+	Citation `Hidaka10' on page 244 undefined on input line 87.
+./tree.tex:235-334: natbib warning:
+	Citation `Foster:FTL' on page 249 undefined on input line 235.
+./tree.tex:334-334: natbib warning:
+	Citation `Foster:FTL' on page 252 undefined on input line 334.
+./tree.tex:334-524: natbib warning:
+	Citation `DalzilioS:POPL04' on page 252 undefined on input line 334.
+./tree.tex:524-543: natbib warning:
+	Citation `DalzilioS:POPL04' on page 256 undefined on input line 524.
+./tree.tex:543-668: natbib warning:
+	Citation `DalzilioS:POPL04' on page 256 undefined on input line 543.
+./tree.tex:668-808: natbib warning:
+	Citation `Foster:FTL' on page 259 undefined on input line 668.
+./tree.tex:808-860: natbib warning:
+	Citation `DalzilioS:POPL04' on page 263 undefined on input line 808.
+./tree.tex:860-907: natbib warning:
+	Citation `HofmannPierceWagner12' on page 264 undefined on input line 860.
+./tree.tex:907-978: natbib warning:
+	Citation `HofmannPierceWagner12' on page 265 undefined on input line 907.
+./tree.tex:978-978: natbib warning:
+	Citation `DalzilioS:POPL04' on page 267 undefined on input line 978.
+./tree.tex:978-980: natbib warning:
+	Citation `Foster:FTL' on page 267 undefined on input line 978.
+./tree.tex:980-?: natbib warning:
+	Citation `Foster:FTL' on page 267 undefined on input line 980.
+./skeleton_dissertation.tex:37-?: natbib warning:
+	There were undefined citations.
+./paper.aux:?-?: natbib warning:
+	Citation(s) may have changed.
+	Rerun to get citations correct.

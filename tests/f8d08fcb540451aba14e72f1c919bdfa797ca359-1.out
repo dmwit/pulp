@@ -1,0 +1,333 @@
+./paper.tex:?-36: No file paper.aux.
+./paper.tex:36-123: No file paper.toc.
+./complement.tex:22-22: LaTeX warning:
+	Citation `FosterThesis' on page 7 undefined on input line 22.
+./complement.tex:22-25: LaTeX warning:
+	Citation `DBLP:conf/icmt/CzarneckiFHLST09' on page 7 undefined on input line 22.
+./complement.tex:25-29: LaTeX warning:
+	Citation `augeas' on page 7 undefined on input line 25.
+./complement.tex:29-35: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 7 undefined on input line 29.
+./complement.tex:35-35: LaTeX warning:
+	Citation `Boomerang07' on page 7 undefined on input line 35.
+./complement.tex:35-35: LaTeX warning:
+	Citation `QuotientLenses08' on page 7 undefined on input line 35.
+./complement.tex:35-35: LaTeX warning:
+	Citation `updatable-security-views' on page 7 undefined on input line 35.
+./complement.tex:35-39: LaTeX warning:
+	Citation `Matching10' on page 7 undefined on input line 35.
+./complement.tex:39-39: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 7 undefined on input line 39.
+./complement.tex:39-39: LaTeX warning:
+	Citation `Hu04' on page 7 undefined on input line 39.
+./complement.tex:39-39: LaTeX warning:
+	Citation `MuAlgebraic2004' on page 7 undefined on input line 39.
+./complement.tex:39-40: LaTeX warning:
+	Citation `HuXQuery08' on page 7 undefined on input line 39.
+./complement.tex:40-40: LaTeX warning:
+	Citation `BohannonPierceVaughan' on page 7 undefined on input line 40.
+./complement.tex:40-45: LaTeX warning:
+	Citation `Hidaka10' on page 7 undefined on input line 40.
+./complement.tex:45-45: LaTeX warning:
+	Citation `Stevens07' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `HuModels07' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `stevens2008lbm' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `DBLP:conf/models/Diskin08' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `diskin2008algebraic' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `diskin2009model' on page 7 undefined on input line 45.
+./complement.tex:45-45: LaTeX warning:
+	Citation `hidaka2009compositional' on page 7 undefined on input line 45.
+./complement.tex:45-62: LaTeX warning:
+	Citation `hidaka2009towards' on page 7 undefined on input line 45.
+./complement.tex:62-65: LaTeX warning:
+	Reference `symm' on page 7 undefined on input line 62.
+./complement.tex:65-65: LaTeX warning:
+	Citation `Meertens98' on page 7 undefined on input line 65.
+./complement.tex:65-65: LaTeX warning:
+	Citation `stevens2008tat' on page 7 undefined on input line 65.
+./complement.tex:65-67: LaTeX warning:
+	Citation `DBLP:conf/models/Diskin08' on page 7 undefined on input line 65.
+./complement.tex:67-72: LaTeX warning:
+	Reference `sec:relwork' on page 7 undefined on input line 67.
+./complement.tex:72-86: LaTeX warning:
+	Reference `equiv' on page 7 undefined on input line 72.
+./complement.tex:86-87: LaTeX warning:
+	Reference `basic' on page 8 undefined on input line 86.
+./complement.tex:87-87: LaTeX warning:
+	Reference `prod' on page 8 undefined on input line 87.
+./complement.tex:87-90: LaTeX warning:
+	Reference `sumlist' on page 8 undefined on input line 87.
+./complement.tex:90-91: LaTeX warning:
+	Citation `Boomerang07' on page 8 undefined on input line 90.
+./complement.tex:91-101: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 8 undefined on input line 91.
+./complement.tex:101-125: LaTeX warning:
+	Reference `iter' on page 8 undefined on input line 101.
+./complement.tex:125-128: LaTeX warning:
+	Reference `contain' on page 9 undefined on input line 125.
+./complement.tex:128-151: LaTeX warning:
+	Citation `1195941' on page 9 undefined on input line 128.
+./complement.tex:151-159: LaTeX warning:
+	Reference `asymm' on page 9 undefined on input line 151.
+./complement.tex:159-159: LaTeX warning:
+	Reference `sec:relwork' on page 10 undefined on input line 159.
+./complement.tex:159-171: LaTeX warning:
+	Reference `future' on page 10 undefined on input line 159.
+./complement.tex:171-210: LaTeX warning:
+	Reference `sec:relwork' on page 10 undefined on input line 171.
+./complement.tex:210-211: LaTeX warning:
+	Citation `DBLP:journals/tods/BancilhonS81' on page 11 undefined on input line 210.
+./complement.tex:211-212: LaTeX warning:
+	Citation `Matching10' on page 11 undefined on input line 211.
+./complement.tex:212-469: LaTeX warning:
+	Citation `matsuda2007btb' on page 11 undefined on input line 212.
+./complement.tex:212-469: pgf warning:
+	File "pdf/symmetric-minus" not found when defining image "pgflastimage".
+	Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input line 323.
+./complement.tex:212-469: pgf warning:
+	Missing width for image "pgflastimage" ("pdf/symmetric-minus") in draft mode.
+	Using 1cm instead on input line 323.
+./complement.tex:212-469: pgf warning:
+	Missing height for image "pgflastimage" ("pdf/symmetric-minus") in draft mode.
+	Using 1cm instead on input line 323.
+./complement.tex:212-469: pgf warning:
+	File "pdf/symmetric" not found when defining image "pgflastimage".
+	Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input line 327.
+./complement.tex:212-469: pgf warning:
+	Missing width for image "pgflastimage" ("pdf/symmetric") in draft mode.
+	Using 1cm instead on input line 327.
+./complement.tex:212-469: pgf warning:
+	Missing height for image "pgflastimage" ("pdf/symmetric") in draft mode.
+	Using 1cm instead on input line 327.
+./complement.tex:212-469: pgf warning:
+	File "pdf/symmetric-edit" not found when defining image "pgflastimage".
+	Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input line 332.
+./complement.tex:212-469: pgf warning:
+	Missing width for image "pgflastimage" ("pdf/symmetric-edit") in draft mode.
+	Using 1cm instead on input line 332.
+./complement.tex:212-469: pgf warning:
+	Missing height for image "pgflastimage" ("pdf/symmetric-edit") in draft mode.
+	Using 1cm instead on input line 332.
+./complement.tex:212-469: pgf warning:
+	File "pdf/symmetric-propagatex" not found when defining image "pgflastimage".
+	Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input line 336.
+./complement.tex:212-469: pgf warning:
+	Missing width for image "pgflastimage" ("pdf/symmetric-propagatex") in draft mode.
+	Using 1cm instead on input line 336.
+./complement.tex:212-469: pgf warning:
+	Missing height for image "pgflastimage" ("pdf/symmetric-propagatex") in draft mode.
+	Using 1cm instead on input line 336.
+./complement.tex:212-469: pgf warning:
+	File "pdf/symmetric-edit2" not found when defining image "pgflastimage".
+	Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input line 341.
+./complement.tex:212-469: pgf warning:
+	Missing width for image "pgflastimage" ("pdf/symmetric-edit2") in draft mode.
+	Using 1cm instead on input line 341.
+./complement.tex:212-469: pgf warning:
+	Missing height for image "pgflastimage" ("pdf/symmetric-edit2") in draft mode.
+	Using 1cm instead on input line 341.
+./complement.tex:212-469: pgf warning:
+	File "pdf/symmetric-propagate2" not found when defining image "pgflastimage".
+	Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input line 345.
+./complement.tex:212-469: pgf warning:
+	Missing width for image "pgflastimage" ("pdf/symmetric-propagate2") in draft mode.
+	Using 1cm instead on input line 345.
+./complement.tex:212-469: pgf warning:
+	Missing height for image "pgflastimage" ("pdf/symmetric-propagate2") in draft mode.
+	Using 1cm instead on input line 345.
+./complement.tex:469-501: LaTeX warning:
+	Reference `fig:symm' on page 14 undefined on input line 469.
+./complement.tex:501-598: LaTeX warning:
+	Reference `fig:symm' on page 15 undefined on input line 501.
+./complement.tex:501-598: pgf warning:
+	File "pdf/sums1" not found when defining image "pgflastimage".
+	Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input line 581.
+./complement.tex:501-598: pgf warning:
+	Missing width for image "pgflastimage" ("pdf/sums1") in draft mode.
+	Using 1cm instead on input line 581.
+./complement.tex:501-598: pgf warning:
+	Missing height for image "pgflastimage" ("pdf/sums1") in draft mode.
+	Using 1cm instead on input line 581.
+./complement.tex:501-598: pgf warning:
+	File "pdf/sums2" not found when defining image "pgflastimage".
+	Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input line 583.
+./complement.tex:501-598: pgf warning:
+	Missing width for image "pgflastimage" ("pdf/sums2") in draft mode.
+	Using 1cm instead on input line 583.
+./complement.tex:501-598: pgf warning:
+	Missing height for image "pgflastimage" ("pdf/sums2") in draft mode.
+	Using 1cm instead on input line 583.
+./complement.tex:501-598: pgf warning:
+	File "pdf/sums3" not found when defining image "pgflastimage".
+	Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input line 588.
+./complement.tex:501-598: pgf warning:
+	Missing width for image "pgflastimage" ("pdf/sums3") in draft mode.
+	Using 1cm instead on input line 588.
+./complement.tex:501-598: pgf warning:
+	Missing height for image "pgflastimage" ("pdf/sums3") in draft mode.
+	Using 1cm instead on input line 588.
+./complement.tex:501-598: pgf warning:
+	File "pdf/sums4" not found when defining image "pgflastimage".
+	Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input line 590.
+./complement.tex:501-598: pgf warning:
+	Missing width for image "pgflastimage" ("pdf/sums4") in draft mode.
+	Using 1cm instead on input line 590.
+./complement.tex:501-598: pgf warning:
+	Missing height for image "pgflastimage" ("pdf/sums4") in draft mode.
+	Using 1cm instead on input line 590.
+./complement.tex:598-682: LaTeX warning:
+	Reference `fig:sums' on page 17 undefined on input line 598.
+./complement.tex:682-735: LaTeX warning:
+	Reference `lists' on page 20 undefined on input line 682.
+./complement.tex:735-735: LaTeX warning:
+	Citation `Boomerang07' on page 21 undefined on input line 735.
+./complement.tex:735-747: LaTeX warning:
+	Citation `Matching10' on page 21 undefined on input line 735.
+./complement.tex:747-749: LaTeX warning:
+	Citation `Matching10' on page 21 undefined on input line 747.
+./complement.tex:749-914: LaTeX warning:
+	Reference `future' on page 21 undefined on input line 749.
+./complement.tex:1003-1004: LaTeX warning:
+	Reference `cg:def' on page 28 undefined on input line 1003.
+./complement.tex:1004-1005: LaTeX warning:
+	Reference `cg:putrll' on page 28 undefined on input line 1004.
+./complement.tex:1005-1006: LaTeX warning:
+	Reference `cg:computel' on page 28 undefined on input line 1005.
+./complement.tex:1006-1007: LaTeX warning:
+	Reference `cg:putrlk' on page 28 undefined on input line 1006.
+./complement.tex:1007-1030: LaTeX warning:
+	Reference `cg:computek' on page 28 undefined on input line 1007.
+./complement.tex:1030-1186: LaTeX warning:
+	Reference `CPE' on page 29 undefined on input line 1030.
+./complement.tex:1273-1274: LaTeX warning:
+	Reference `singleton_id' on page 34 undefined on input line 1273.
+./complement.tex:1274-1319: LaTeX warning:
+	Reference `trivial_complement_bijection' on page 34 undefined on input line 1274.
+./complement.tex:1526-1537: LaTeX warning:
+	Reference `conuni' on page 41 undefined on input line 1526.
+./complement.tex:1632-1633: LaTeX warning:
+	Reference `conuni' on page 44 undefined on input line 1632.
+./complement.tex:1633-1642: LaTeX warning:
+	Reference `conuni' on page 44 undefined on input line 1633.
+./complement.tex:1642-1674: LaTeX warning:
+	Reference `conuni' on page 45 undefined on input line 1642.
+./complement.tex:1743-1755: LaTeX warning:
+	Citation `AbrTze09' on page 46 undefined on input line 1743.
+./complement.tex:1755-1755: LaTeX warning:
+	Reference `beta_1' on page 47 undefined on input line 1755.
+./complement.tex:1755-1759: LaTeX warning:
+	Reference `beta_2' on page 47 undefined on input line 1755.
+./complement.tex:1759-1783: LaTeX warning:
+	Reference `beta_3' on page 47 undefined on input line 1759.
+./complement.tex:1848-1933: LaTeX warning:
+	Reference `singleton_id' on page 49 undefined on input line 1848.
+./complement.tex:1933-1954: LaTeX warning:
+	Reference `future' on page 51 undefined on input line 1933.
+./complement.tex:1954-1965: LaTeX warning:
+	Reference `lemma:bij_product' on page 52 undefined on input line 1954.
+./complement.tex:2028-2038: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 54 undefined on input line 2028.
+./complement.tex:2101-2102: LaTeX warning:
+	Reference `self_duality' on page 57 undefined on input line 2101.
+./complement.tex:2102-2169: LaTeX warning:
+	Reference `noprod' on page 57 undefined on input line 2102.
+./complement.tex:2169-2210: LaTeX warning:
+	Reference `symm' on page 58 undefined on input line 2169.
+./complement.tex:2277-2351: LaTeX warning:
+	Reference `singleton_id' on page 61 undefined on input line 2277.
+./complement.tex:2585-2606: LaTeX warning:
+	Reference `lemma:bij_sum' on page 70 undefined on input line 2585.
+./complement.tex:3051-3054: LaTeX warning:
+	Reference `symm' on page 81 undefined on input line 3051.
+./complement.tex:3054-3054: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 81 undefined on input line 3054.
+./complement.tex:3054-3073: LaTeX warning:
+	Citation `Boomerang07' on page 81 undefined on input line 3054.
+./complement.tex:3132-3220: LaTeX warning:
+	Citation `meijer1991functional' on page 83 undefined on input line 3132.
+./complement.tex:3220-3222: LaTeX warning:
+	Citation `vene2000categorical' on page 84 undefined on input line 3220.
+./complement.tex:3222-3302: LaTeX warning:
+	Reference `listiter' on page 84 undefined on input line 3222.
+./complement.tex:3334-3354: LaTeX warning:
+	Reference `listiter' on page 87 undefined on input line 3334.
+./complement.tex:3535-3549: LaTeX warning:
+	Citation `meijer1991functional' on page 92 undefined on input line 3535.
+./complement.tex:3549-3550: LaTeX warning:
+	Reference `listiter' on page 93 undefined on input line 3549.
+./complement.tex:3550-3553: LaTeX warning:
+	Reference `hylo' on page 93 undefined on input line 3550.
+./complement.tex:3553-3564: LaTeX warning:
+	Reference `contain' on page 93 undefined on input line 3553.
+./complement.tex:3564-3589: LaTeX warning:
+	Reference `listiter' on page 94 undefined on input line 3564.
+./complement.tex:3600-3912: LaTeX warning:
+	Reference `hylo' on page 95 undefined on input line 3600.
+./complement.tex:3912-3913: LaTeX warning:
+	Citation `abbott2003categories' on page 97 undefined on input line 3912.
+./complement.tex:3913-3915: LaTeX warning:
+	Citation `hasegawa2002two' on page 97 undefined on input line 3913.
+./complement.tex:3915-3916: LaTeX warning:
+	Citation `joyal1986foncteurs' on page 97 undefined on input line 3915.
+./complement.tex:3916-4019: LaTeX warning:
+	Citation `DBLP:conf/esop/JayC94' on page 97 undefined on input line 3916.
+./complement.tex:4132-4162: LaTeX warning:
+	Reference `iter' on page 103 undefined on input line 4132.
+./complement.tex:4162-4179: LaTeX warning:
+	Reference `symm' on page 104 undefined on input line 4162.
+./complement.tex:4218-4217: LaTeX warning:
+	Citation `Boomerang07' on page 106 undefined on input line 4218.
+./complement.tex:4670-4687: LaTeX warning:
+	Reference `asymmetrization_of_lenses' on page 120 undefined on input line 4670.
+./complement.tex:5120-5120: LaTeX warning:
+	Citation `FosterThesis' on page 122 undefined on input line 5120.
+./complement.tex:5120-5122: LaTeX warning:
+	Citation `DBLP:conf/icmt/CzarneckiFHLST09' on page 122 undefined on input line 5120.
+./complement.tex:5122-5123: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 122 undefined on input line 5122.
+./complement.tex:5123-5126: LaTeX warning:
+	Citation `HofmannPierceWagner10' on page 122 undefined on input line 5123.
+./complement.tex:5126-5127: LaTeX warning:
+	Citation `Meertens98' on page 122 undefined on input line 5126.
+./complement.tex:5127-5128: LaTeX warning:
+	Citation `Stevens07' on page 122 undefined on input line 5127.
+./complement.tex:5128-5129: LaTeX warning:
+	Citation `DBLP:conf/models/Diskin08' on page 122 undefined on input line 5128.
+./complement.tex:5129-5125: LaTeX warning:
+	Citation `xiong2009supporting' on page 122 undefined on input line 5129.
+./complement.tex:5196-5199: LaTeX warning:
+	Citation `matsuda2007btb' on page 124 undefined on input line 5196.
+./complement.tex:5199-5200: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 124 undefined on input line 5199.
+./complement.tex:5200-5204: LaTeX warning:
+	Citation `updatable-security-views' on page 124 undefined on input line 5200.
+./complement.tex:5204-5252: LaTeX warning:
+	Citation `Focal2005-shortcite' on page 124 undefined on input line 5204.
+./complement.tex:5252-5252: LaTeX warning:
+	Reference `basic' on page 125 undefined on input line 5252.
+./complement.tex:5252-5254: LaTeX warning:
+	Reference `sumlist' on page 125 undefined on input line 5252.
+./complement.tex:5254-5285: LaTeX warning:
+	Citation `Boomerang07' on page 125 undefined on input line 5254.
+./complement.tex:5285-5336: LaTeX warning:
+	Reference `concatprime' on page 126 undefined on input line 5285.
+./complement.tex:5336-5340: LaTeX warning:
+	Reference `firstalign' on page 128 undefined on input line 5336.
+./complement.tex:5340-5340: LaTeX warning:
+	Citation `Boomerang07' on page 128 undefined on input line 5340.
+./complement.tex:5340-?: LaTeX warning:
+	Citation `Matching10' on page 128 undefined on input line 5340.
+./paper.tex:123-?: LaTeX warning:
+	There were undefined references.
+./paper.tex:123-?: LaTeX warning:
+	Label(s) may have changed. Rerun to get cross-references right.
+?-2: For some reason, the log-file parser noticed an extra 'close file' marker here.
+	It's possible that the filenames and line numbers reported near this are wrong.
+	This is likely a bug -- you should report it and include your log file!
+2-2: (\end occurred when \iftrue on line 2 was incomplete) 
+2-?: </usr/share/texlive/texmf-

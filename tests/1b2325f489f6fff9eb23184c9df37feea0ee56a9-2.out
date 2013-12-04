@@ -1,0 +1,1091 @@
+./paper.aux:?-?: LaTeX warning:
+	Label `fig:example-simple' multiply defined.
+./paper.aux:?-?: LaTeX warning:
+	Label `fig:symm' multiply defined.
+./paper.aux:?-?: LaTeX warning:
+	Label `fig:sums' multiply defined.
+./paper.aux:?-?: LaTeX warning:
+	Label `fig:example-partition' multiply defined.
+./paper.aux:?-?: LaTeX warning:
+	Label `sec:semantics' multiply defined.
+./complement.tex:51-52: natbib warning:
+	Citation `DBLP:journals/tods/BancilhonS81' on page 6 undefined on input line 51.
+./complement.tex:52-53: natbib warning:
+	Citation `Matching10' on page 6 undefined on input line 52.
+./complement.tex:53-576: natbib warning:
+	Citation `matsuda2007btb' on page 6 undefined on input line 53.
+./complement.tex:576-576: natbib warning:
+	Citation `Boomerang07' on page 17 undefined on input line 576.
+./complement.tex:576-588: natbib warning:
+	Citation `Matching10' on page 17 undefined on input line 576.
+./complement.tex:588-792: natbib warning:
+	Citation `Matching10' on page 17 undefined on input line 588.
+./complement.tex:1592-1632: natbib warning:
+	Citation `AbrTze09' on page 41 undefined on input line 1592.
+./complement.tex:1883-1893: natbib warning:
+	Citation `Focal2005-shortcite' on page 48 undefined on input line 1883.
+./complement.tex:2909-2909: natbib warning:
+	Citation `Focal2005-shortcite' on page 71 undefined on input line 2909.
+./complement.tex:2909-2928: natbib warning:
+	Citation `Boomerang07' on page 71 undefined on input line 2909.
+./complement.tex:2987-3075: natbib warning:
+	Citation `meijer1991functional' on page 73 undefined on input line 2987.
+./complement.tex:3075-3157: natbib warning:
+	Citation `vene2000categorical' on page 74 undefined on input line 3075.
+./complement.tex:3393-3447: natbib warning:
+	Citation `meijer1991functional' on page 82 undefined on input line 3393.
+./complement.tex:3770-3771: natbib warning:
+	Citation `abbott2003categories' on page 85 undefined on input line 3770.
+./complement.tex:3771-3773: natbib warning:
+	Citation `hasegawa2002two' on page 85 undefined on input line 3771.
+./complement.tex:3773-3774: natbib warning:
+	Citation `joyal1986foncteurs' on page 85 undefined on input line 3773.
+./complement.tex:3774-3877: natbib warning:
+	Citation `DBLP:conf/esop/JayC94' on page 85 undefined on input line 3774.
+./complement.tex:4076-4075: natbib warning:
+	Citation `Boomerang07' on page 94 undefined on input line 4076.
+./delta.tex:91-155: natbib warning:
+	Citation `Matching10' on page 112 undefined on input line 91.
+./delta.tex:155-155: natbib warning:
+	Citation `HofmannPierceWagner10' on page 113 undefined on input line 155.
+./delta.tex:155-155: natbib warning:
+	Citation `Focal2005' on page 113 undefined on input line 155.
+./delta.tex:155-204: natbib warning:
+	Citation `Boomerang07' on page 113 undefined on input line 155.
+./delta.tex:371-441: natbib warning:
+	Citation `stevens2008tat' on page 117 undefined on input line 371.
+./delta.tex:441-476: natbib warning:
+	Citation `Focal2005' on page 118 undefined on input line 441.
+./delta.tex:476-587: natbib warning:
+	Citation `HofmannPierceWagner10' on page 119 undefined on input line 476.
+./delta.tex:587-647: natbib warning:
+	Citation `HofmannPierceWagner10' on page 122 undefined on input line 587.
+./delta.tex:647-809: natbib warning:
+	Citation `HofmannPierceWagner10' on page 123 undefined on input line 647.
+./delta.tex:1434-1520: natbib warning:
+	Citation `HofmannPierceWagner10' on page 142 undefined on input line 1434.
+./delta.tex:1520-2154: natbib warning:
+	Citation `HofmannPierceWagner10' on page 145 undefined on input line 1520.
+./delta.tex:3380-3398: natbib warning:
+	Citation `1195941' on page 177 undefined on input line 3380.
+./delta.tex:3398-3408: natbib warning:
+	Citation `HofmannPierceWagner10' on page 178 undefined on input line 3398.
+./delta.tex:3408-3408: natbib warning:
+	Citation `1195941' on page 178 undefined on input line 3408.
+./delta.tex:3408-3414: natbib warning:
+	Citation `HofmannPierceWagner10' on page 178 undefined on input line 3408.
+./delta.tex:3414-3416: natbib warning:
+	Citation `1195941' on page 178 undefined on input line 3414.
+./delta.tex:3416-3605: natbib warning:
+	Citation `HofmannPierceWagner10' on page 178 undefined on input line 3416.
+./delta.tex:4170-4430: natbib warning:
+	Citation `HofmannPierceWagner10' on page 197 undefined on input line 4170.
+./delta.tex:4430-4435: natbib warning:
+	Citation `HofmannPierceWagner10' on page 205 undefined on input line 4430.
+./delta.tex:4435-4514: natbib warning:
+	Citation `HofmannPierceWagner10' on page 205 undefined on input line 4435.
+./delta.tex:4606-4606: natbib warning:
+	Citation `Diskin-Delta11' on page 209 undefined on input line 4606.
+./delta.tex:4606-?: natbib warning:
+	Citation `Johnson11' on page 209 undefined on input line 4606.
+./hyper_finished_work.tex:117-127: LaTeX warning:
+	Float too large for page by 21.18045pt on input line 117.
+./hyper_finished_work.tex:127-127: natbib warning:
+	Citation `Meertens98' on page 214 undefined on input line 127.
+./hyper_finished_work.tex:127-127: natbib warning:
+	Citation `stevens2008tat' on page 214 undefined on input line 127.
+./hyper_finished_work.tex:127-143: natbib warning:
+	Citation `DBLP:conf/models/Diskin08' on page 214 undefined on input line 127.
+./hyper_finished_work.tex:143-144: natbib warning:
+	Citation `DBLP:journals/tods/BancilhonS81' on page 214 undefined on input line 143.
+./hyper_finished_work.tex:144-145: natbib warning:
+	Citation `Matching10' on page 214 undefined on input line 144.
+./hyper_finished_work.tex:145-523: natbib warning:
+	Citation `matsuda2007btb' on page 214 undefined on input line 145.
+./hyper_finished_work.tex:523-639: natbib warning:
+	Citation `Matching10' on page 223 undefined on input line 523.
+./hyper_finished_work.tex:785-854: natbib warning:
+	Citation `stevens2008tat' on page 228 undefined on input line 785.
+./hyper_finished_work.tex:854-889: natbib warning:
+	Citation `Focal2005' on page 230 undefined on input line 854.
+./hyper_finished_work.tex:889-?: natbib warning:
+	Citation `HofmannPierceWagner10' on page 231 undefined on input line 889.
+./hyper_spreadsheets.tex:?-192: ! Undefined control sequence.
+./hyper_spreadsheets.tex:?-192: <recently read> \Names 
+./hyper_spreadsheets.tex:?-192: l.124 Fix a linearly ordered set $\Names
+./hyper_spreadsheets.tex:?-192:                                         $ of names and a universe $U$ of val...The control sequence at the end of the top line
+./hyper_spreadsheets.tex:?-192: of your error message was never \def'ed. If you have
+./hyper_spreadsheets.tex:?-192: misspelled it (e.g., `\hobx'), type `I' and the correct
+./hyper_spreadsheets.tex:?-192: spelling (e.g., `I\hbox'). Otherwise just continue,
+./hyper_spreadsheets.tex:?-192: and I'll forget about whatever was undefined.
+./hyper_spreadsheets.tex:?-192: ! Undefined control sequence.
+./hyper_spreadsheets.tex:?-192: <recently read> \Names 
+./hyper_spreadsheets.tex:?-192: l.131 ...h{valuation} is a finite map from $\Names
+./hyper_spreadsheets.tex:?-192:                                                   $ to $U$.
+./hyper_spreadsheets.tex:?-192: The control sequence at the end of the top line
+./hyper_spreadsheets.tex:?-192: of your error message was never \def'ed. If you have
+./hyper_spreadsheets.tex:?-192: misspelled it (e.g., `\hobx'), type `I' and the correct
+./hyper_spreadsheets.tex:?-192: spelling (e.g., `I\hbox'). Otherwise just continue,
+./hyper_spreadsheets.tex:?-192: and I'll forget about whatever was undefined.
+./hyper_spreadsheets.tex:?-192: ! Undefined control sequence.
+./hyper_spreadsheets.tex:?-192: <recently read> \Names 
+./hyper_spreadsheets.tex:?-192: l.135 the linear ordering on $\Names
+./hyper_spreadsheets.tex:?-192:                                     $: whenever $x_1 < \cdots < x_m$ is an
+./hyper_spreadsheets.tex:?-192: The control sequence at the end of the top line
+./hyper_spreadsheets.tex:?-192: of your error message was never \def'ed. If you have
+./hyper_spreadsheets.tex:?-192: misspelled it (e.g., `\hobx'), type `I' and the correct
+./hyper_spreadsheets.tex:?-192: spelling (e.g., `I\hbox'). Otherwise just continue,
+./hyper_spreadsheets.tex:?-192: and I'll forget about whatever was undefined.
+./hyper_spreadsheets.tex:?-192: ! Undefined control sequence.
+./hyper_spreadsheets.tex:?-192: l.139 ...traint} is a finite set $n \subset \Names
+./hyper_spreadsheets.tex:?-192:                                                   $ together with a
+./hyper_spreadsheets.tex:?-192: The control sequence at the end of the top line
+./hyper_spreadsheets.tex:?-192: of your error message was never \def'ed. If you have
+./hyper_spreadsheets.tex:?-192: misspelled it (e.g., `\hobx'), type `I' and the correct
+./hyper_spreadsheets.tex:?-192: spelling (e.g., `I\hbox'). Otherwise just continue,
+./hyper_spreadsheets.tex:?-192: and I'll forget about whatever was undefined.
+./hyper_spreadsheets.tex:?-192: ! Undefined control sequence.
+./hyper_spreadsheets.tex:?-192: <recently read> \Names 
+./hyper_spreadsheets.tex:?-192: l.149 ... graph whose nodes are drawn from $\Names
+./hyper_spreadsheets.tex:?-192:                                                   $ in
+./hyper_spreadsheets.tex:?-192: The control sequence at the end of the top line
+./hyper_spreadsheets.tex:?-192: of your error message was never \def'ed. If you have
+./hyper_spreadsheets.tex:?-192: misspelled it (e.g., `\hobx'), type `I' and the correct
+./hyper_spreadsheets.tex:?-192: spelling (e.g., `I\hbox'). Otherwise just continue,
+./hyper_spreadsheets.tex:?-192: and I'll forget about whatever was undefined.
+./hyper_spreadsheets.tex:?-192: ! Undefined control sequence.
+./hyper_spreadsheets.tex:?-192: <recently read> \Names 
+./hyper_spreadsheets.tex:?-192: l.166     $\Names
+./hyper_spreadsheets.tex:?-192:                  $ in one part and pointed constraints in the other. It has an
+./hyper_spreadsheets.tex:?-192: The control sequence at the end of the top line
+./hyper_spreadsheets.tex:?-192: of your error message was never \def'ed. If you have
+./hyper_spreadsheets.tex:?-192: misspelled it (e.g., `\hobx'), type `I' and the correct
+./hyper_spreadsheets.tex:?-192: spelling (e.g., `I\hbox'). Otherwise just continue,
+./hyper_spreadsheets.tex:?-192: and I'll forget about whatever was undefined.
+./hyper_spreadsheets.tex:192-?: LaTeX warning:
+	Reference `chap:finished_work' on page 239 undefined on input line 192.
+./hyper_spreadsheets.tex:192-?: ! Undefined control sequence.
+./hyper_spreadsheets.tex:192-?: l.243 ... $\mathbf b \in \R^n$ such that $\aget(\x
+./skeleton_dissertation.tex:37-?:  =
+./skeleton_dissertation.tex:37-?: The control sequence at the end of the top line
+./skeleton_dissertation.tex:37-?: of your error message was never \def'ed. If you have
+./skeleton_dissertation.tex:37-?: misspelled it (e.g., `\hobx'), type `I' and the correct
+./skeleton_dissertation.tex:37-?: spelling (e.g., `I\hbox'). Otherwise just continue,
+./skeleton_dissertation.tex:37-?: and I'll forget about whatever was undefined.
+./skeleton_dissertation.tex:37-?: ! Undefined control sequence.
+./skeleton_dissertation.tex:37-?: l.244 M\x
+./skeleton_dissertation.tex:37-?:           +\mathbf b$.  Affine functions are surjective (and hence bidirecti...The control sequence at the end of the top line
+./skeleton_dissertation.tex:37-?: of your error message was never \def'ed. If you have
+./skeleton_dissertation.tex:37-?: misspelled it (e.g., `\hobx'), type `I' and the correct
+./skeleton_dissertation.tex:37-?: spelling (e.g., `I\hbox'). Otherwise just continue,
+./skeleton_dissertation.tex:37-?: and I'll forget about whatever was undefined.
+./skeleton_dissertation.tex:37-?: ! Undefined control sequence.
+./skeleton_dissertation.tex:37-?: l.248 \[\aput(\x
+./skeleton_dissertation.tex:37-?:                 ,\y) = M^{-1}(\y-\mathbf b)\]
+./skeleton_dissertation.tex:37-?: The control sequence at the end of the top line
+./skeleton_dissertation.tex:37-?: of your error message was never \def'ed. If you have
+./skeleton_dissertation.tex:37-?: misspelled it (e.g., `\hobx'), type `I' and the correct
+./skeleton_dissertation.tex:37-?: spelling (e.g., `I\hbox'). Otherwise just continue,
+./skeleton_dissertation.tex:37-?: and I'll forget about whatever was undefined.
+./skeleton_dissertation.tex:37-?: ! Undefined control sequence.
+./skeleton_dissertation.tex:37-?: l.248 \[\aput(\x,\y
+./paper.tex:?-?:  = M^{-1}(\y-\mathbf b)\]
+./paper.tex:?-?: The control sequence at the end of the top line
+./paper.tex:?-?: of your error message was never \def'ed. If you have
+./paper.tex:?-?: misspelled it (e.g., `\hobx'), type `I' and the correct
+./paper.tex:?-?: spelling (e.g., `I\hbox'). Otherwise just continue,
+./paper.tex:?-?: and I'll forget about whatever was undefined.
+./paper.tex:?-?: ! Undefined control sequence.
+./paper.tex:?-?: l.248 \[\aput(\x,\y) = M^{-1}(\y
+./paper.tex:?-?:                                 -\mathbf b)\]
+./paper.tex:?-?: The control sequence at the end of the top line
+./paper.tex:?-?: of your error message was never \def'ed. If you have
+./paper.tex:?-?: misspelled it (e.g., `\hobx'), type `I' and the correct
+./paper.tex:?-?: spelling (e.g., `I\hbox'). Otherwise just continue,
+./paper.tex:?-?: and I'll forget about whatever was undefined.
+./paper.tex:?-?: ! Undefined control sequence.
+./paper.tex:?-?: <recently read> \y 
+./paper.tex:?-?: l.249 ...ng case is when $m>n$, and where each $\y
+./paper.tex:?-?:                                                   $ is therefore
+./paper.tex:?-?: The control sequence at the end of the top line
+./paper.tex:?-?: of your error message was never \def'ed. If you have
+./paper.tex:?-?: misspelled it (e.g., `\hobx'), type `I' and the correct
+./paper.tex:?-?: spelling (e.g., `I\hbox'). Otherwise just continue,
+./paper.tex:?-?: and I'll forget about whatever was undefined.
+./paper.tex:?-?: ! Undefined control sequence.
+./paper.tex:?-?: l.253 \[\aput(\x
+./paper.tex:?-?:                 ,\y) = \argmin{\x',\aget(\x')=\y}||\x' - \x||\]
+./paper.tex:?-?: The control sequence at the end of the top line
+./paper.tex:?-?: of your error message was never \def'ed. If you have
+./paper.tex:?-?: misspelled it (e.g., `\hobx'), type `I' and the correct
+./paper.tex:?-?: spelling (e.g., `I\hbox'). Otherwise just continue,
+./paper.tex:?-?: and I'll forget about whatever was undefined.
+./paper.tex:?-?: ! Undefined control sequence.
+./paper.tex:?-?: l.253 \[\aput(\x,\y
+?-774:  = \argmin{\x',\aget(\x')=\y}||\x' - \x||\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.253 \[\aput(\x,\y) = \argmin
+?-774:                               {\x',\aget(\x')=\y}||\x' - \x||\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.253 \[\aput(\x,\y) = \argmin{\x
+?-774:                                  ',\aget(\x')=\y}||\x' - \x||\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.253 \[\aput(\x,\y) = \argmin{\x',\aget(\x
+?-774:                                            ')=\y}||\x' - \x||\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.253 \[\aput(\x,\y) = \argmin{\x',\aget(\x')=\y
+?-774:                                                 }||\x' - \x||\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.253 ...t(\x,\y) = \argmin{\x',\aget(\x')=\y}||\x
+?-774:                                                   ' - \x||\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.253 ...y) = \argmin{\x',\aget(\x')=\y}||\x' - \x
+?-774:                                                   ||\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.257     \[\aput(\x
+?-774:                     ,\y) = \x + P(\y - \aget(\x))\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.257     \[\aput(\x,\y
+?-774: For some reason, the log-file parser noticed an extra 'close file' marker here.
+	It's possible that the filenames and line numbers reported near this are wrong.
+	This is likely a bug -- you should report it and include your log file!
+?-774:  = \x + P(\y - \aget(\x))\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.257     \[\aput(\x,\y) = \x
+?-774:                               + P(\y - \aget(\x))\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.257     \[\aput(\x,\y) = \x + P(\y
+?-774:                                      - \aget(\x))\]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.257     \[\aput(\x,\y) = \x + P(\y - \aget(\x
+?-774: For some reason, the log-file parser noticed an extra 'close file' marker here.
+	It's possible that the filenames and line numbers reported near this are wrong.
+	This is likely a bug -- you should report it and include your log file!
+?-774: For some reason, the log-file parser noticed an extra 'close file' marker here.
+	It's possible that the filenames and line numbers reported near this are wrong.
+	This is likely a bug -- you should report it and include your log file!
+?-774: \]
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.267 Choose a basis $\{\x
+?-774:                           _1,\ldots,\x_{m-n}\}$ for the null space of $M$. ThenThe control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.267 Choose a basis $\{\x_1,\ldots,\x
+?-774:                                       _{m-n}\}$ for the null space of $M$. ThenThe control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  B &= \left [\begin {array}{c} \x 
+?-774:                                              _1\transpose \\ \vdots \\ \x _{...l.283 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ... [\begin {array}{c} \x _1\transpose 
+?-774:                                                   \\ \vdots \\ \x _{m-n}\tra...l.283 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \x 
+?-774: l.283 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ...se \\ \vdots \\ \x _{m-n}\transpose 
+?-774:                                                   \end {array}\right ] \\ P ...l.283 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  B &= \left [\begin {array}{c} \x 
+?-774:                                              _1\transpose \\ \vdots \\ \x _{...l.283 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ... [\begin {array}{c} \x _1\transpose 
+?-774:                                                   \\ \vdots \\ \x _{m-n}\tra...l.283 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \x 
+?-774: l.283 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ...se \\ \vdots \\ \x _{m-n}\transpose 
+?-774:                                                   \end {array}\right ] \\ P ...l.283 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.379     Given $N\subset\Names
+?-774:                                $, a \emph{multiway lens} $\ell \in \mlens N$
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.379 ..., a \emph{multiway lens} $\ell \in \mlens
+?-774:                                                    N$
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.380     is a triple $(\danger
+?-774:                                ,\mput,K)$ where
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.380     is a triple $(\danger,\mput
+?-774:                                      ,K)$ where
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \danger 
+?-774: l.382         \item $\danger
+?-774:                              \in 2^{2^N}$ is a predicate on sets of names ca...The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \mput 
+?-774: l.384         \item $\mput
+?-774:                            \in 2^N \to (N \to U) \to (N \to U)$ is an update
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \mput 
+?-774: l.394 the $\mput
+?-774:                 $ function should be read as marking which variables have been
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \mput 
+?-774: l.399 $\mput
+?-774:             $ function restrain itself to modifying parts of the valuation thatThe control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.406 ...losed} if $i \in D$ and $N \subset \Names
+?-774:                                                   $
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \mput 
+?-774: l.414         \item $\mput
+?-774:                           (i,f) \in K$ whenever $i \notin \danger$
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.414 ...ut(i,f) \in K$ whenever $i \notin \danger
+?-774:                                                   $
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \mput 
+?-774: l.415         \item $\mput
+?-774:                           (i,f) = f$ whenever $f \in K$
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \danger 
+?-774: l.416         \item $\danger
+?-774:                             $ is upwards-closed
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.417         \item $\left.\mput
+?-774:                                 (i,f)\right|_i = \left.f\right|_i$
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \mput 
+?-774: l.422 to extend $\mput
+?-774:                       $ functions so that they act on valuations that cover ...The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.425 ...ppose we have $N \subset M \subset \Names
+?-774:                                                   $, a lens $k \in \mlens{N}$,
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.425 ...t M \subset \Names$, a lens $k \in \mlens
+?-774:                                                   {N}$,
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \focus 
+?-774: l.427     $\focus
+?-774:                  (k,i,f)$ is a valuation on $M$:
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \focus 
+?-774:                    (k,i,f)(x) &= \cond { k.\mput (i \cap N,f|_N)(x) & x \in ...l.433     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  k.\mput 
+?-774:                     (i \cap N,f|_N)(x) & x \in N \\ f(x) & x \notin N 
+?-774: l.433     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \focus 
+?-774:                    (k,i,f)(x) &= \cond { k.\mput (i \cap N,f|_N)(x) & x \in ...l.433     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  k.\mput 
+?-774:                     (i \cap N,f|_N)(x) & x \in N \\ f(x) & x \notin N 
+?-774: l.433     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.437     Suppose $k \in \mlens
+?-774:                                {N_k}$ and $\ell \in \mlens{N_\ell}$ and let ...The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.437 ... $k \in \mlens{N_k}$ and $\ell \in \mlens
+?-774:                                                   {N_\ell}$ and let $S =
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.439     $k\mid\ell \in \mlens
+?-774:                                {N_k \cup N_\ell}$ of $k$ and $\ell$ has:
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \danger 
+?-774:                     &= k.\danger \cup \ell .\danger \cup \{(d_k \cup d_\ell ...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \danger &= k.\danger 
+?-774:                                  \cup \ell .\danger \cup \{(d_k \cup d_\ell ...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ...ger &= k.\danger \cup \ell .\danger 
+?-774:                                                   \cup \{(d_k \cup d_\ell ) ...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ... \setminus S \mid d_k \in k.\danger 
+?-774:                                                   , d_\ell \in \ell .\danger...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ....\danger , d_\ell \in \ell .\danger 
+?-774:                                                   \} \\ \mput (i) &= \cond {...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ..._\ell \in \ell .\danger \} \\ \mput 
+?-774:                                                   (i) &= \cond { \focus (\el...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \focus 
+?-774:                    (\ell ,i\cup S) \circ \focus (k,i) & i \notin k.\danger \...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \focus (\ell ,i\cup S) \circ \focus 
+?-774:                                                 (k,i) & i \notin k.\danger \...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ...c \focus (k,i) & i \notin k.\danger 
+?-774:                                                   \land i\cup S \notin \ell ...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ... \land i\cup S \notin \ell .\danger 
+?-774:                                                   \\ \focus (k,i\cup S) \cir...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \focus 
+?-774: l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ... \\ \focus (k,i\cup S) \circ \focus 
+?-774:                                                   (\ell ,i) & \mbox {otherwi...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \danger 
+?-774:                     &= k.\danger \cup \ell .\danger \cup \{(d_k \cup d_\ell ...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \danger &= k.\danger 
+?-774:                                  \cup \ell .\danger \cup \{(d_k \cup d_\ell ...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ...ger &= k.\danger \cup \ell .\danger 
+?-774:                                                   \cup \{(d_k \cup d_\ell ) ...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ... \setminus S \mid d_k \in k.\danger 
+?-774:                                                   , d_\ell \in \ell .\danger...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ....\danger , d_\ell \in \ell .\danger 
+?-774:                                                   \} \\ \mput (i) &= \cond {...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ..._\ell \in \ell .\danger \} \\ \mput 
+?-774:                                                   (i) &= \cond { \focus (\el...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \focus 
+?-774:                    (\ell ,i\cup S) \circ \focus (k,i) & i \notin k.\danger \...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \focus (\ell ,i\cup S) \circ \focus 
+?-774:                                                 (k,i) & i \notin k.\danger \...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ...c \focus (k,i) & i \notin k.\danger 
+?-774:                                                   \land i\cup S \notin \ell ...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ... \land i\cup S \notin \ell .\danger 
+?-774:                                                   \\ \focus (k,i\cup S) \cir...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <recently read> \focus 
+?-774: l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ... \\ \focus (k,i\cup S) \circ \focus 
+?-774:                                                   (\ell ,i) & \mbox {otherwi...l.451     \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.458 In the definition of $(k\mid\ell).\mput
+?-774:                                              $, there are two clauses
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.460 ...on the first clause---$i \notin k.\danger
+?-774:                                                    \land i \cup S
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.461 \notin \ell.\danger
+?-774:                          $---itself has two parts that amount to
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.462 checking that we can safely run $k.\mput
+?-774:                                               $ and that we can treat all of...The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.463 outputs of $k.\mput
+?-774:                          $ as inputs when running $\ell.\mput$, respectively...The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: l.463 ...\mput$ as inputs when running $\ell.\mput
+?-774:                                                   $, respectively. The
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \ell _f.\danger 
+?-774:                             &= \{\{i_1,i_2,o_1\}\} \\ \ell _g.\danger &= \{\...l.476 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ...{i_1,i_2,o_1\}\} \\ \ell _g.\danger 
+?-774:                                                   &= \{\{i_1,i_2,o_2\}\} 
+?-774: l.476 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument>  \ell _f.\danger 
+?-774:                             &= \{\{i_1,i_2,o_1\}\} \\ \ell _g.\danger &= \{\...l.476 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! Undefined control sequence.
+?-774: <argument> ...{i_1,i_2,o_1\}\} \\ \ell _g.\danger 
+?-774:                                                   &= \{\{i_1,i_2,o_2\}\} 
+?-774: l.476 \end{align*}
+?-774: The control sequence at the end of the top line
+?-774: of your error message was never \def'ed. If you have
+?-774: misspelled it (e.g., `\hobx'), type `I' and the correct
+?-774: spelling (e.g., `I\hbox'). Otherwise just continue,
+?-774: and I'll forget about whatever was undefined.
+?-774: ! LaTeX Error: Environment desiderata undefined.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.590 \begin{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: \begin{document} ended by \end{desiderata}.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.593 \end{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: Environment desiderata undefined.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.594 \begin{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: \begin{document} ended by \end{desiderata}.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.596 \end{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: Environment desiderata undefined.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.626 \begin{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: \begin{document} ended by \end{desiderata}.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.628 \end{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: Environment desiderata undefined.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.660 \begin{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: \begin{document} ended by \end{desiderata}.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.662 \end{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: Environment desiderata undefined.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.673 \begin{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: \begin{document} ended by \end{desiderata}.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.675 \end{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: Environment desiderata undefined.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.687 \begin{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: \begin{document} ended by \end{desiderata}.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.689 \end{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: Environment desiderata undefined.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.697 \begin{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: \begin{document} ended by \end{desiderata}.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.699 \end{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: Environment desiderata undefined.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.700 \begin{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: \begin{document} ended by \end{desiderata}.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.703 \end{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: Environment desiderata undefined.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.709 \begin{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: \begin{document} ended by \end{desiderata}.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.711 \end{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: Environment desiderata undefined.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.731 \begin{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+?-774: ! LaTeX Error: \begin{document} ended by \end{desiderata}.
+?-774: See the LaTeX manual or LaTeX Companion for explanation.
+?-774: Type  H <return>  for immediate help.
+?-774:  ...                                              
+?-774: l.733 \end{desiderata}
+?-774: Your command was ignored.
+?-774: Type  I <command> <return>  to replace it with another command,
+?-774: or  <return>  to continue without it.
+774-505: LaTeX warning:
+	File `timeline.pdf' not found on input line 774.
+774-505: ! Package pdftex.def Error: File `timeline.pdf' not found.
+774-505: See the pdftex.def package documentation for explanation.
+774-505: Type  H <return>  for immediate help.
+774-505:  ...                                              
+774-505: l.774 ...\includegraphics[scale=0.6]{timeline.pdf}
+774-505: Using draft setting for this image.
+774-505: Try typing  <return>  to proceed.
+774-505: If that doesn't work, type  X <return>  to quit.
+774-505: For some reason, the log-file parser noticed an extra 'close file' marker here.
+	It's possible that the filenames and line numbers reported near this are wrong.
+	This is likely a bug -- you should report it and include your log file!
+./tree.tex:128-227: natbib warning:
+	Citation `Foster:FTL' on page 261 undefined on input line 128.
+./tree.tex:227-227: natbib warning:
+	Citation `Foster:FTL' on page 264 undefined on input line 227.
+./tree.tex:227-417: natbib warning:
+	Citation `DalzilioS:POPL04' on page 264 undefined on input line 227.
+./tree.tex:417-436: natbib warning:
+	Citation `DalzilioS:POPL04' on page 268 undefined on input line 417.
+./tree.tex:436-561: natbib warning:
+	Citation `DalzilioS:POPL04' on page 268 undefined on input line 436.
+./tree.tex:561-701: natbib warning:
+	Citation `Foster:FTL' on page 271 undefined on input line 561.
+./tree.tex:701-753: natbib warning:
+	Citation `DalzilioS:POPL04' on page 275 undefined on input line 701.
+./tree.tex:753-800: natbib warning:
+	Citation `HofmannPierceWagner12' on page 276 undefined on input line 753.
+./tree.tex:800-?: natbib warning:
+	Citation `HofmannPierceWagner12' on page 277 undefined on input line 800.
+774-505: natbib warning:
+	There were undefined citations.
+./paper.aux:?-?: natbib warning:
+	Citation(s) may have changed.
+	Rerun to get citations correct.
+774-505: LaTeX warning:
+	There were undefined references.
+774-505: LaTeX warning:
+	There were multiply-defined labels.
+774-505: For some reason, the log-file parser noticed an extra 'close file' marker here.
+	It's possible that the filenames and line numbers reported near this are wrong.
+	This is likely a bug -- you should report it and include your log file!
+774-505: For some reason, the log-file parser noticed an extra 'close file' marker here.
+	It's possible that the filenames and line numbers reported near this are wrong.
+	This is likely a bug -- you should report it and include your log file!
+505-505: (\end occurred when \iftrue on line 505 was incomplete) 

@@ -1,0 +1,25 @@
+./delta.tex:14-4: LaTeX warning:
+	Citation `Augeas' on page 131 undefined on input line 14.
+./delta.tex:133-309: LaTeX warning:
+	Float too large for page by 4.64713pt on input line 133.
+./delta.tex:1537-2259: LaTeX warning:
+	Float too large for page by 187.23842pt on input line 1537.
+./delta.tex:2580-2597: LaTeX warning:
+	Float too large for page by 529.41048pt on input line 2580.
+./delta.tex:2645-2674: LaTeX warning:
+	Float too large for page by 74.48848pt on input line 2645.
+./delta.tex:3813-3890: LaTeX warning:
+	Float too large for page by 99.13847pt on input line 3813.
+./delta.tex:3919-3920: wrapfig warning:
+	Collision between wrapping environments on input line 3919.
+./delta.tex:3921-3947: wrapfig warning:
+	Stationary wrapfigure forced to float on input line 3921.
+./delta.tex:3947-3948: wrapfig warning:
+	Collision between wrapping environments on input line 3947.
+./delta.tex:3950-4204: wrapfig warning:
+	Stationary wrapfigure forced to float on input line 3950.
+./skeleton_dissertation.tex:36-?: LaTeX warning:
+	There were undefined references.
+./skeleton_dissertation.tex:36-?: LaTeX warning:
+	Label(s) may have changed. Rerun to get cross-references right.
+2-2: (\end occurred when \iftrue on line 2 was incomplete) 
