@@ -8,13 +8,6 @@ import GHC.IO.Encoding
 import System.Environment
 import Text.Pulp
 
-treeTake n = fst . treeTake' n where
-	treeTake' n _ | n <= 0 = ([], 0)
-	treeTake' n []         = ([], n)
-	treeTake' n (File f ls:rest) = case treeTake' n ls of
-		(ls', n') -> first (File f ls':) (treeTake' n' rest)
-	treeTake' n (other:rest) = first (other:) (treeTake' (n-1) rest)
-
 interesting :: File Annotations -> File Annotations
 interesting = concatMap go where
 	go (l, File f ls) = case interesting ls of
@@ -27,13 +20,6 @@ locallyInteresting (LaTeXMessage _ Info    _) = []
 locallyInteresting (LaTeXMessage _ Message _) = []
 locallyInteresting (HBox _ _) = []
 locallyInteresting other = [other]
-
-used :: File Markers -> [String]
-used = concatMap go where
-	go (File f ls) = f : used ls
-	go _ = []
-
-prettyPrintUsedFiles = unlines . nub . filter ("." `isPrefixOf`) . used
 
 main = do
 	args <- getArgs
