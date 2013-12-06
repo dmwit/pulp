@@ -23,6 +23,7 @@ import GHC.Show
 -- TODO: lol, we don't even parse TeX's actual errors
 -- TODO: why is parsing slow.log SO slow (like, more than a minute slow)?
 -- TODO: some of the logs in the test suite produce an ExtraCloseFile; why?
+-- TODO: check that we handle "fatal error" message correctly, e.g. see tests/fatal-error.log
 
 groupUntil = groupWhen . (not .)
 groupWhen p xs = case span p xs of
