@@ -81,7 +81,7 @@ instance Show (Line Annotations) where
            ((.)
               (showsPrec 11 b1_a14R)
               ((.) showSpace (showsPrec 11 b2_a14S))))
-  showsPrec a_a14T (Text.Pulp.LaTeXMessage b2_a14V b1_a14U b3_a14W)
+  showsPrec a_a14T (Text.Pulp.LaTeXMessage b1_a14U b2_a14V b3_a14W)
     = showParen
         ((a_a14T >= 11))
         ((.)
@@ -103,6 +103,20 @@ instance Show (Line Annotations) where
            (showString "Unknown ") (showsPrec 11 b1_a150))
   showList = showList__ (showsPrec 0)
 -- }}}
+instance Eq (Line Annotations) where
+	Boring  s   == Boring  s'    = s == s'
+	HBox    s e == HBox    s' e' = s == s' && e == e'
+	File    s f == File    s' f' = s == s' && f == f'
+	Unknown s   == Unknown s'    = s == s'
+	LaTeXMessage s m ss == LaTeXMessage s' m' ss' = s == s' && m == m' && ss == ss'
+	ExtraCloseFile == ExtraCloseFile = True
+	_ == _ = False
+
+instance Read (Line Annotations) where
+	readsPrec n s = do
+		(v, s') <- readsPrec n s
+		v' <- (retag :: Line Markers -> [Line Annotations]) v
+		return (v', s')
 
 retag :: Line a -> [Line b]
 retag (Boring s) = [Boring s]
