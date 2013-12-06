@@ -137,7 +137,7 @@ regexen = map compile $
 	["^[[:space:]]*$"
 	,"^LaTeX2e <" ++ dateRegex ++ ">$"
 	,"^Babel <.*> and hyphenation patterns for [[:digit:]]* languages loaded\\.$"
-	,"^Document Class: (beamer|report)"
+	,"^Document Class: (beamer|report|article)"
 	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
 	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
 	,"^File: " ++ filenameRegex ++ " $"
