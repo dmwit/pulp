@@ -197,14 +197,17 @@ lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s 
 -- (Maybe they terminate with a blank line.) See e.g.
 -- tests/multiline-latex-warning.log.
 
--- TODO: don't silently drop l on the ground, and look for line markers within es
-parseMessage l b e ss = first (thisM:) (categorize' Nothing ss') where
+parseMessage l b e ss = first (thisM:) (putLineHere (maximum' lms) ss') where
 	(package, level) = case words b of
 		[_, package, level] -> (package, level)
 		[_, level] -> ("LaTeX", level)
 	(es, ss') = span (("(" ++ package ++ ")") `isPrefixOf`) ss
 	ms        = map (dropWhile isSpace) (e:map (drop (length package + 2)) es)
 	thisM     = LaTeXMessage package (read (init level)) ms
+	lms       = [lm | Just lm <- [l]] ++ [lm | Just (b, e) <- map lineNumber ms, lm <- [b, e]]
+
+	maximum' [] = Nothing
+	maximum' xs = Just (maximum xs)
 
 -- TODO: I'm sure " []" isn't the only thing that can follow an
 -- overfull/underfull hbox message; but what else can?
