@@ -1,7 +1,7 @@
 {-# LANGUAGE DataKinds, FlexibleInstances, GADTs, PatternGuards, StandaloneDeriving, TypeFamilies #-}
 
 module Text.Pulp
-	( parse, prettyPrint
+	( parse, prettyPrint, uglyPrint
 	, retag
 	, Line(..)
 	, File(..)
@@ -281,3 +281,8 @@ prettyPrint = concatMap (go []) where
 	pprintMess (LaTeXMessage p l ss) = p ++ " " ++ map toLower (show l) ++ ":\n\t" ++ intercalate "\n\t" ss
 	pprintMess (ExtraCloseFile) = "For some reason, the log-file parser noticed an extra 'close file' marker here.\n\tIt's possible that the filenames and line numbers reported near this are wrong.\n\tThis is likely a bug -- you should report it and include your log file!"
 	pprintMess (Unknown s) = s
+
+uglyPrint :: File Annotations -> String
+uglyPrint = unlines . map show . concatMap (go []) where
+	go fs (l, File f ls) = concatMap (go ((l, f):fs)) ls
+	go fs m = [(fs, m)]

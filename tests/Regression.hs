@@ -5,7 +5,7 @@ import Distribution.TestSuite
 import System.Directory
 import System.FilePath
 import System.IO.Strict as Strict
-import Text.Pulp (parse)
+import Text.Pulp (parse, uglyPrint)
 
 tests = do
 	fs <- getLogs "tests"
@@ -36,7 +36,7 @@ testLog f = TestInstance
 	fileError ty name k = fileCatch (\_ -> return . Finished . Error . unwords $ ["could not open", ty, "file", name]) $ Strict.readFile name >>= k
 	go = fileError  "input"  inFile $ \ inText ->
 	     fileError "output" outFile $ \outText ->
-	     if show (parse inText) == outText
+	     if uglyPrint (parse inText) == outText
 	     then return (Finished Pass)
 	     else return . Finished . Fail $ ""
 
