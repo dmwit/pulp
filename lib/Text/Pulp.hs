@@ -139,12 +139,13 @@ regexen = map compile $
 	,"^Babel <.*> and hyphenation patterns for [[:digit:]]* languages loaded\\.$"
 	,"^Document Class: (beamer|report)"
 	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
+	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
+	,"^File: " ++ filenameRegex ++ " $"
 	,"^Package: [^ ]* " ++ dateRegex
 	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read)[[:digit:]]+$"
 	,"^\\\\openout[[:digit:]]+ = [^']*'\\.$"
 	,"^Chapter [[:digit:]]+\\.$"
 	,"^[[:space:]]*<" ++ filenameRegex ++ ", id=[[:digit:]]+, " ++ ptRegex ++ " x " ++ ptRegex ++ ">$"
-	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
 	,"^[[:space:]]*<use " ++ filenameRegex ++ ">$"
 	,"^ [[:digit:]]+ (" ++ intercalate "|" statistics ++ ") out of "
 	,"^ [[:digit:]]+ compressed objects? within [[:digit:]]+ object streams?$"
