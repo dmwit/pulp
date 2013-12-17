@@ -261,9 +261,9 @@ parseHBox l s ss = first (HBox s e:) (putLineHere l ss') where
 	-- TODO: use findBlankWithin?
 	(e, ss') = case break null ss of
 		(es, ss')
-			| null  es  -> (hboxErrorTooShort, ss')
-			| short es && last es == " []" -> (unlines (init es), ss')
-			| short es  -> (unlines es, ss')
+			| null  es  -> (hboxErrorTooShort, drop 1 ss')
+			| short es && last es == " []" -> (unlines (init es), drop 1 ss')
+			| short es  -> (unlines es, drop 1 ss')
 			| otherwise -> (hboxErrorTooLong, ss)
 
 	-- heuristic: the Overfull/Underfull hbox message is probably terminated by

@@ -663,7 +663,6 @@
 ([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 45,Just 62),Boring ""))
 ([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 45,Just 62),Boring ""))
 ([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 62,Just 77),HBox "Overfull \\hbox (2.61107pt too wide) in paragraph at lines 62--77" "[]$[]$ $[]$ \n"))
-([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 77,Just 118),Boring ""))
 ([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 77,Just 118),Boring "[1\n\n]"))
 ([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 77,Just 118),Boring " [2]"))
 ([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 77,Just 118),Boring ""))
