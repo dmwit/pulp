@@ -225,10 +225,10 @@ matchBeginning pat_ = let pat = compile pat_ in \s ->
 
 bracketNumber ss = (lines <$>) <$> bracketNumber' (unlines ss)
 bracketNumber' = matchBeginning ("[[:space:]]*\\[[[:digit:]]+([[:space:]]|[<>{}]|" ++ filenameRegex ++ ")*\\]")
-openFile  = matchBeginning ("[[:space:]]*\\(" ++ filenameRegex)
-closeFile = matchBeginning "[[:space:]]*\\)"
-beginMessage = matchBeginning "(LaTeX|Package) ([^ ]* )?(Info|Message|Warning): "
-beginHBox = matchBeginning ("(Over|Under)full \\\\[hv]box \\(((badness [[:digit:]]+)|(" ++ ptRegex ++ " too (wide|high)))\\) ")
+openFile       = matchBeginning ("[[:space:]]*\\(" ++ filenameRegex)
+closeFile      = matchBeginning "[[:space:]]*\\)"
+beginMessage   = matchBeginning "(LaTeX|Package) ([^ ]* )?(Info|Message|Warning): "
+beginHBox      = matchBeginning ("(Over|Under)full \\\\[hv]box \\(((badness [[:digit:]]+)|(" ++ ptRegex ++ " too (wide|high)))\\) ")
 lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s ->
 	case match pat s of
 		MR { mrSubList = [b, _, ""] } -> range b b
@@ -255,23 +255,24 @@ parseMessage l b e ss = first (thisM:) (putLineHere (maximum' lms) ss') where
 	maximum' [] = Nothing
 	maximum' xs = Just (maximum xs)
 
--- TODO: I'm sure " []" isn't the only thing that can follow an
--- overfull/underfull hbox message; but what else can?
+-- heuristic: the Overfull/Underfull hbox message is probably terminated by
+-- a blank line the way we expect if the blank line comes within three or
+-- four lines of the original complaint (otherwise guess that this compiler
+-- uses a different format for all messages, or at least that this message
+-- is in a different format)
 parseHBox l s ss = first (HBox s e:) (putLineHere l ss') where
-	-- TODO: use findBlankWithin?
-	(e, ss') = case break null ss of
-		(es, ss')
-			| null  es  -> (hboxErrorTooShort, drop 1 ss')
-			| short es && last es == " []" -> (unlines (init es), drop 1 ss')
-			| short es  -> (unlines es, drop 1 ss')
-			| otherwise -> (hboxErrorTooLong, ss)
+	(expected, unsure) = splitAt 1 ss
+	messageEnd         = findBlankWithin 4 unsure
+	(message_, ss'_)   = let Just (a, b) = messageEnd in (expected ++ a, b)
+	-- TODO: I'm sure " []" isn't the only thing that can follow an
+	-- overfull/underfull hbox message; but what else can?
+	message            = if last message_ == " []" then init message_ else message_
 
-	-- heuristic: the Overfull/Underfull hbox message is probably terminated by
-	-- a blank line the way we expect if the blank line comes within three or
-	-- four lines of the original complaint (otherwise guess that this compiler
-	-- uses a different format for all messages, or at least that this message
-	-- is in a different format)
-	short xs = zipWith const (replicate 5 ()) xs /= replicate 5 ()
+	(e, ss') = case (expected, messageEnd) of
+		(_ , Nothing) -> (hboxErrorTooLong , ss  )
+		([], Just {}) -> (hboxErrorTooShort, ss'_)
+		_             -> (unlines message  , ss'_)
+
 	hboxErrorTooShort = "Huh. I was expecting another line to happen after this hbox error, but none did! Maybe there's a bug in the parser."
 	hboxErrorTooLong  = "Huh. I was expecting this hbox error to end with a blank line pretty quickly, but it took a long time! Maybe there's a bug in the parser."
 
