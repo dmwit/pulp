@@ -185,7 +185,7 @@ regexen = map compile $
 	["^[[:space:]]*$"
 	,"^LaTeX2e <" ++ dateRegex ++ ">$"
 	,"^Babel <.*> and hyphenation patterns for [[:digit:]]* languages loaded\\.$"
-	,"^Document Class: (beamer|report|article)"
+	,"^Document Class: (beamer|report|article|sigplanconf)"
 	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
 	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
 	,"^File: " ++ filenameRegex ++ " $"
@@ -202,6 +202,8 @@ regexen = map compile $
 	,"^Output written on " ++ filenameRegex ++ " \\([[:digit:]]+ pages?, [[:digit:]]+ bytes?\\)\\.$"
 	,"^\\*\\*[-_.a-zA-Z0-9]*$"
 	,"^Dictionary: [-a-z]*, Language: [[:alpha:]]* $"
+	,"^Using natbib package with '.*' citation style\\.$"
+	,"^See the .* package documentation for explanation\\.$"
 	] where
 	statistics =
 		["strings?"
