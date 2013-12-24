@@ -431,7 +431,10 @@ prettyPrint = concatMap (go []) where
 
 	pprintMess (Boring s) = s
 	pprintMess (HBox s e) = s
-	pprintMess (LaTeXMessage p l ss) = p ++ " " ++ map toLower (show l) ++ ":\n\t" ++ intercalate "\n\t" ss
+	pprintMess (LaTeXMessage p l ss) = p ++ " " ++ map toLower (show l) ++ ":" ++
+		if length ss > 1
+		then "\n\t" ++ intercalate "\n\t" ss
+		else " " ++ concat ss
 	pprintMess (ExtraCloseFile) = "For some reason, the log-file parser noticed an extra 'close file' marker here.\n\tIt's possible that the filenames and line numbers reported near this are wrong.\n\tThis is likely a bug -- you should report it and include your log file!"
 	pprintMess (Error p s (Just (beg, end)) (beg', end') _) = p ++ " error: " ++ s ++ "\n\t" ++ beg' ++ "\n\t" ++ end' ++ "\n\t" ++ beg ++ "\n\t" ++ end
 	pprintMess (Error p s Nothing           (beg', end') _) = p ++ " error: " ++ s ++ "\n\t" ++ beg' ++ "\n\t" ++ end'
