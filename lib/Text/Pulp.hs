@@ -268,11 +268,13 @@ parseHBox l s ss = first (HBox s e:) (putLineHere l ss') where
 	-- overfull/underfull hbox message; but what else can?
 	message            = if last message_ == " []" then init message_ else message_
 
-	(e, ss') = case (expected, messageEnd) of
-		(_ , Nothing) -> (hboxErrorTooLong , ss  )
-		([], Just {}) -> (hboxErrorTooShort, ss'_)
-		_             -> (unlines message  , ss'_)
+	(e, ss') = case (expected, messageEnd, stripSuffix activeOutput s) of
+		(_   , Nothing, _) -> (hboxErrorTooLong , ss  )
+		([]  , Just {}, _) -> (hboxErrorTooShort, ss'_)
+		([""], _, Just {}) -> ("", unsure)
+		_                  -> (unlines message  , ss'_)
 
+	activeOutput      = ") has occurred while \\output is active []"
 	hboxErrorTooShort = "Huh. I was expecting another line to happen after this hbox error, but none did! Maybe there's a bug in the parser."
 	hboxErrorTooLong  = "Huh. I was expecting this hbox error to end with a blank line pretty quickly, but it took a long time! Maybe there's a bug in the parser."
 
@@ -371,6 +373,7 @@ findBlankWithin n ss = guard (short bs && not (null es)) >> return (bs, drop 1 e
 	short     = (shortList /=) . zipWith const shortList
 	(bs, es)  = break null ss
 
+stripSuffix needle haystack = reverse <$> stripPrefix (reverse needle) (reverse haystack)
 stripInfix _ [] = Nothing
 stripInfix needle haystack@(h:aystack)
 	=   ((,) [] <$> stripPrefix needle haystack)
