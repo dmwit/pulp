@@ -37,3 +37,4 @@ test-suite regression
                        pulp ==0.0,
                        strict >=0.3 && <0.4
   hs-source-dirs:      tests
+  ghc-options:         -O2
