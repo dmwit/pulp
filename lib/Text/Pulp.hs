@@ -180,6 +180,8 @@ equalities =
 	,"Here is how much of TeX's memory you used:"
 	,"PDF statistics:"
 	,"Forcing optional page break"
+	,"Normal \\dimen register pool exhausted, switching to extended pool."
+	,"Copyright (C) Markus Kohm"
 	]
 regexen = map compile $
 	["^[[:space:]]*$"
@@ -189,7 +191,7 @@ regexen = map compile $
 	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
 	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
 	,"^File: " ++ filenameRegex ++ " $"
-	,"^Package: [^ ]* " ++ dateRegex
+	,"^Package:? [^ ]* " ++ dateRegex
 	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read)[[:digit:]]+$"
 	,"^\\\\openout[[:digit:]]+ = [^']*'\\.$"
 	,"^Chapter [[:digit:]]+\\.$"
@@ -204,6 +206,7 @@ regexen = map compile $
 	,"^Dictionary: [-a-z]*, Language: [[:alpha:]]* $"
 	,"^Using natbib package with '.*' citation style\\.$"
 	,"^See the .* package documentation for explanation\\.$"
+	,"^Variant \\\\tl_put_right:NV already defined; not changing it on line [[:digit:]]*$"
 	] where
 	statistics =
 		["strings?"
