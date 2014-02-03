@@ -200,7 +200,7 @@ regexen = map compile $
 	,"^ [[:digit:]]+ (" ++ intercalate "|" statistics ++ ") out of "
 	,"^ [[:digit:]]+ compressed objects? within [[:digit:]]+ object streams?$"
 	,"^ [^ ]* stack positions? out of"
-	,"^([<>]|" ++ filenameRegex ++ ")+$"
+	,"^([<>{}]|" ++ filenameRegex ++ ")+$"
 	,"^Output written on " ++ filenameRegex ++ " \\([[:digit:]]+ pages?, [[:digit:]]+ bytes?\\)\\.$"
 	,"^\\*\\*[-_.a-zA-Z0-9]*$"
 	,"^Dictionary: [-a-z]*, Language: [[:alpha:]]* $"
