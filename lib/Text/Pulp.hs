@@ -207,6 +207,7 @@ regexen = map compile $
 	,"^Using natbib package with '.*' citation style\\.$"
 	,"^See the .* package documentation for explanation\\.$"
 	,"^Variant \\\\tl_put_right:NV already defined; not changing it on line [[:digit:]]*$"
+	,"^`Fixed Point Package', Version [[:digit:]]+\\.[[:digit:]]+, [[:alpha:]]{3,9} [[:digit:]]{1,2}, [[:digit:]]{4} \\(C\\) Michael Mehlich$"
 	] where
 	statistics =
 		["strings?"
