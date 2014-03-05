@@ -207,7 +207,8 @@ regexen = map compile $
 	,"^Using natbib package with '.*' citation style\\.$"
 	,"^See the .* package documentation for explanation\\.$"
 	,"^Variant \\\\tl_put_right:NV already defined; not changing it on line [[:digit:]]*$"
-	,"^`Fixed Point Package', Version [[:digit:]]+\\.[[:digit:]]+, [[:alpha:]]{3,9} [[:digit:]]{1,2}, [[:digit:]]{4} \\(C\\) Michael Mehlich$"
+	,"^`Fixed Point Package', Version " ++ vnumRegex ++ ", [[:alpha:]]{3,9} [[:digit:]]{1,2}, [[:digit:]]{4} \\(C\\) Michael Mehlich$"
+	,"^ *v" ++ vnumRegex ++ ", " ++ dateRegex ++ "$"
 	] where
 	statistics =
 		["strings?"
@@ -223,6 +224,7 @@ regexen = map compile $
 dateRegex = "[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}"
 filenameRegex = "[-_./a-zA-Z0-9]*\\.[a-z]{2,}"
 ptRegex = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
+vnumRegex = "[[:digit:]]+(\\.[[:digit:]]+)*"
 
 matchBeginning pat_ = let pat = compile pat_ in \s ->
 	case match pat s of
