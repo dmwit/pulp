@@ -290,6 +290,23 @@ geometryVerboseMode = "*geometry* verbose mode - [ preamble ] result:"
 parseGeometryVerboseMode l ss = first (map Boring results ++) (putLineHere l rest) where
 	(results, rest) = span ("* " `isPrefixOf`) ss
 
+xparseInfo = replicate 49 '.'
+parseXparseInfo ss = case result of
+	Nothing       -> recurse [Unknown xparseInfo] ss
+	Just (v, ss') -> recurse v ss'
+	where
+	recurse ls = first (ls++) . categorize' Nothing
+	result = do
+		(inside, rest) <- findExactWithin xparseInfo 7 ss
+		(p_:"":message) <- mapM (stripPrefix ". ") inside
+		p_' <- stripPrefix "LaTeX info: \"" p_
+		package <- stripSuffix "\"" p_'
+		let line  = LaTeXMessage package Info message
+		    lines = case lineNumber (unwords message) of
+		    	Nothing     -> [line]
+		    	Just (b, e) -> [b, line, e]
+		return (lines, rest)
+
 -- TeX errors usually look like this:
 -- 1. A header. One of three things:
 --        ! LaTeX Error: <message>
@@ -376,10 +393,11 @@ parseTeXError l s ss = fromMaybe giveUp (parseLaTeXError <|> parsePackageError <
 				(l, seqSourceBegin) <- parseLineHerald lineHerald
 				return (b, Nothing, LineMarker l, trimBoth seqSourceBegin seqSourceEnd, e)
 
-findBlankWithin n ss = guard (short bs && not (null es)) >> return (bs, drop 1 es) where
+findBlankWithin = findExactWithin ""
+findExactWithin s n ss = guard (short bs && not (null es)) >> return (bs, drop 1 es) where
 	shortList = replicate (n+1) ()
 	short     = (shortList /=) . zipWith const shortList
-	(bs, es)  = break null ss
+	(bs, es)  = break (s==) ss
 
 stripSuffix needle haystack = reverse <$> stripPrefix (reverse needle) (reverse haystack)
 stripInfix _ [] = Nothing
@@ -396,6 +414,7 @@ categorize' l (s:ss)
 	| any (trim s==)       equalities       = label Boring
 	| any (`match` s)      regexen          = label Boring
 	| s == geometryVerboseMode              = first (Boring s:) (parseGeometryVerboseMode l ss)
+	| s == xparseInfo                       = parseXparseInfo ss -- don't need l: we'll parse the line annotation (if any) inside parseXparseInfo
 	| Just (f, s' ) <- openFile s           = let (b, e) = categorize' Nothing (s':ss)
 	                                          in first (file f b:) (putLineHere l e)
 	| Just (_, s' ) <- closeFile s          = (maybeCons l [], s':ss)
