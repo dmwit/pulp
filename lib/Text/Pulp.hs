@@ -290,22 +290,23 @@ geometryVerboseMode = "*geometry* verbose mode - [ preamble ] result:"
 parseGeometryVerboseMode l ss = first (map Boring results ++) (putLineHere l rest) where
 	(results, rest) = span ("* " `isPrefixOf`) ss
 
-xparseInfo = replicate 49 '.'
-parseXparseInfo ss = case result of
-	Nothing       -> recurse [Unknown xparseInfo] ss
-	Just (v, ss') -> recurse v ss'
-	where
-	recurse ls = first (ls++) . categorize' Nothing
-	result = do
-		(inside, rest) <- findExactWithin xparseInfo 7 ss
-		(p_:"":message) <- mapM (stripPrefix ". ") inside
-		p_' <- stripPrefix "LaTeX info: \"" p_
+parseXparse ss = msum . map go $ xparseData where
+	go (box, word, level) = do
+		(_, ss)        <- findExactWithin (headerLine box) 0 ss
+		(inside, rest) <- findExactWithin (headerLine box) 7 ss
+		(p_:"":message) <- mapM (stripPrefix (linePrefix box)) inside
+		p_' <- stripPrefix (packagePrefix word) p_
 		package <- stripSuffix "\"" p_'
-		let line  = LaTeXMessage package Info message
+		let line  = LaTeXMessage package level message
 		    lines = case lineNumber (unwords message) of
 		    	Nothing     -> [line]
 		    	Just (b, e) -> [b, line, e]
 		return (lines, rest)
+
+	headerLine box = replicate 49 box
+	linePrefix box = [box, ' ']
+	packagePrefix word = "LaTeX " ++ word ++ ": \""
+	xparseData = [('.', "info", Info), ('*', "warning", Warning)]
 
 -- TeX errors usually look like this:
 -- 1. A header. One of three things:
@@ -414,7 +415,7 @@ categorize' l (s:ss)
 	| any (trim s==)       equalities       = label Boring
 	| any (`match` s)      regexen          = label Boring
 	| s == geometryVerboseMode              = first (Boring s:) (parseGeometryVerboseMode l ss)
-	| s == xparseInfo                       = parseXparseInfo ss -- don't need l: we'll parse the line annotation (if any) inside parseXparseInfo
+	| Just (v, ss') <- parseXparse (s:ss)   = first (v++) $ categorize' Nothing ss' -- don't need l: we'll parse the line annotation (if any) inside parseXparse
 	| Just (f, s' ) <- openFile s           = let (b, e) = categorize' Nothing (s':ss)
 	                                          in first (file f b:) (putLineHere l e)
 	| Just (_, s' ) <- closeFile s          = (maybeCons l [], s':ss)
