@@ -2,6 +2,7 @@
 
 import Control.Applicative
 import Control.Arrow
+import Control.Exception
 import Control.Monad
 import Data.Char
 import Data.List
@@ -292,14 +293,14 @@ returnn v ts = Right (ts, v)
 	Left _ -> p2 ts
 	right  -> right
 
-interesting :: File Annotations -> File Annotations
-interesting = concatMap go where
-	go (l, File f ls) = case interesting ls of
+interesting :: Sentence Atom -> File Annotations -> File Annotations
+interesting formula = concatMap go where
+	go (l, File f ls) = case concatMap go ls of
 		[] -> []
 		ls -> [(l, File f ls)]
-	go (l, m) = (,) l <$> (retag >=> locallyInteresting >=> retag) m
+	go (l, m) = (,) l <$> (retag >=> locallyInteresting formula >=> retag) m
 
-locallyInteresting l = [l | evalSentence (`evalAtom` l) defaultFormula]
+locallyInteresting formula l = [l | evalSentence (`evalAtom` l) formula]
 
 Right ([], defaultFormula) = parseSentence . tokenize $
 	"not (boring | info | message | under | over)"
@@ -311,4 +312,18 @@ main = do
 		[]     -> getContents
 		[file] -> readFile file
 		_ -> error "I haven't made a proper command-line parser yet, so this is what\nyou get instead. I hope you know what went wrong now. Idiot."
-	putStr . prettyPrint . interesting . parse $ s
+	-- TODO: we want a more complex chain, I think, so pull this out, refactor
+	-- it, think about the chain exactly, etc.
+	f <- case args of
+		[]     -> return defaultFormula
+		[file] -> do
+			-- TODO: should probably look at like .file.pulp rather than
+			-- file.pulp or something, but be careful about file names with
+			-- directory bits in
+			s <- try (parseSentence . tokenize <$> readFile (file ++ ".pulp"))
+			case s of
+				Left e -> let e' :: IOException; e' = e in return defaultFormula
+				Right (Right ([], f)) -> return f
+				_ -> return defaultFormula
+		_ -> error "this can't happen -- we should already have thrown an exception!!"
+	putStr . prettyPrint . interesting f . parse $ s
