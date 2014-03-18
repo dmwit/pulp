@@ -59,6 +59,7 @@ data Line a where
 	-- 3. the command sequence that was being processed when things died, if different from the next argument
 	-- 4. the command sequence in the source file that was being expanded when things died
 	-- 5. detailed message
+	-- TODO: perhaps the detailed message should be [String] instead of String, to match LaTeXMessage
 	Error          :: String -> String -> Maybe (String, String) -> (String, String) -> String -> Line a
 	Unknown        :: String -> Line a
 deriving instance Eq   (Line Markers)
