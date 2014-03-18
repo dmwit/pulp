@@ -179,7 +179,11 @@ parseSentence_ = parseChunk >>== \c ->
 	returnn (c, [])
 
 parseChunk :: Parser (Sentence Atom)
-parseChunk = parseKeywordChunk <|>> parseRegexChunk <|>> parseParens
+parseChunk ts = case ts of
+	Token {}:_ -> parseKeywordChunk ts
+	Regex {}:_ -> parseRegexChunk   ts
+	Open  {}:_ -> parseParens       ts
+	_          -> expecting "a bare token, a regex, or an open paren" ts
 
 parseKeywordChunk :: Parser (Sentence Atom)
 parseKeywordChunk = parseKeyword chunkKeywords >>== \k -> case k of
@@ -216,7 +220,7 @@ parseKeyword :: [(String, a)] -> Parser a
 parseKeyword cs (Token s:rest) = case expandKeyword s cs of
 	Match v      -> Right (rest, v)
 	Ambiguous cs -> Left ["Ambiguous keyword " ++ s, "Continuations include " ++ intercalate ", " cs]
-	NoMatch      -> Left ["Unknown keyword " ++ s]
+	NoMatch      -> Left ["Unknown keyword " ++ s, "Expecting one of " ++ intercalate ", " (map fst cs)]
 parseKeyword cs _ = Left ["Unexpected EOF", "Expecting one of " ++ intercalate ", " (map fst cs)]
 
 data KeywordMatch a
