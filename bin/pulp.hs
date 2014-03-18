@@ -140,7 +140,9 @@ matchesRegex s (_, r) = s =~ r
 -- binop  ::= '&&' | '||' | '=>' | '->' | '<=>' | '<->' | '==' | '!=' | '/=' | '^' | '*' | '+' | '/\' | '\/'
 --          | 'and' | 'or' | 'xor' | 'nor' | 'nand'
 
-data Token = Token String | Open | Close | Regex UncompiledRegex | UnclosedString deriving (Eq, Ord, Show, Read)
+data Token = Token String | Open | Close | Regex UncompiledRegex | UnclosedString
+	deriving (Eq, Ord, Show, Read)
+
 tokenize :: String -> [Token]
 tokenize s = case dropWhile isSpace s of
 	[] -> []
