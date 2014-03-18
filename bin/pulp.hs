@@ -86,8 +86,8 @@ extractBoxThreshold s = case nums of
 		guard (any isDigit numS)
 		readsRational numS
 
--- TODO: require the regex to be an exact match when the bool is True
-matchesRegex s (_, r) = s =~ r
+matchesRegex s (True , r) = (s =~ r) == (0 :: MatchOffset, length s :: MatchLength)
+matchesRegex s (False, r) =  s =~ r
 
 -- proposed EBNF:
 -- atom ::=
