@@ -23,7 +23,9 @@ library
 executable pulp
   main-is:             pulp.hs
   build-depends:       base >=4 && <5,
-                       pulp ==0.0
+                       pulp ==0.0,
+                       regex-posix >=0.95 && <0.96,
+                       universe >=0.1 && <0.6
   hs-source-dirs:      bin
   ghc-options:         -O2
 
