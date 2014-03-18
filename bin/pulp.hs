@@ -5,8 +5,6 @@ import Control.Arrow
 import Control.Monad
 import Data.Char
 import Data.List
-import Data.Universe
-import Data.Universe.Instances ()
 import GHC.IO.Encoding
 import System.Environment
 import Text.Pulp
@@ -18,7 +16,6 @@ data Sentence a
 	| Atom a
 	| Not (Sentence a)
 	| Bin (Sentence a) Operator (Sentence a)
-	deriving (Eq, Ord, Show, Read)
 
 evalSentence :: (a -> Bool) -> (Sentence a -> Bool)
 evalSentence f = go where
@@ -29,10 +26,6 @@ evalSentence f = go where
 
 data Fullness  = Under      | Over     | UnknownFullness  deriving (Eq, Ord, Show, Read, Bounded, Enum)
 data Direction = Horizontal | Vertical | UnknownDirection deriving (Eq, Ord, Show, Read, Bounded, Enum)
-instance Universe Fullness
-instance Finite   Fullness
-instance Universe Direction
-instance Finite   Direction
 
 fullness s
 	| "Underfull" `isPrefixOf` s = Under
@@ -162,8 +155,6 @@ tokenizeQuote d f = go where
 
 data Category = Number | Letter | White | Active | Symbol
 	deriving (Eq, Ord, Show, Read, Bounded, Enum)
-instance Universe Category
-instance Finite   Category
 
 categorize c | isNumPart c = Number
              | isActive  c = Active
