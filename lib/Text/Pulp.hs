@@ -183,17 +183,19 @@ equalities =
 	,"Forcing optional page break"
 	,"Normal \\dimen register pool exhausted, switching to extended pool."
 	,"Copyright (C) Markus Kohm"
+	,"Bootstrap'ing:"
+	,"Xy-pic is free software: see the User's Guide for details."
 	]
 regexen = map compile $
 	["^[[:space:]]*$"
 	,"^LaTeX2e <" ++ dateRegex ++ ">$"
 	,"^Babel <.*> and hyphenation patterns for [[:digit:]]* languages loaded\\.$"
-	,"^Document Class: (beamer|report|article|sigplanconf|resume)"
+	,"^Document Class: (beamer|report|article|sigplanconf|resume|memoir)"
 	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
 	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
 	,"^File: " ++ filenameRegex ++ " $"
 	,"^Package:? [^ ]* " ++ dateRegex
-	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read)[[:digit:]]+$"
+	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read|insert)[[:digit:]]+$"
 	,"^\\\\openout[[:digit:]]+ = [^']*'\\.$"
 	,"^Chapter [[:digit:]]+\\.$"
 	,"^[[:space:]]*<" ++ filenameRegex ++ ", id=[[:digit:]]+, " ++ ptRegex ++ " x " ++ ptRegex ++ ">$"
@@ -210,6 +212,9 @@ regexen = map compile $
 	,"^Variant \\\\tl_put_right:NV already defined; not changing it on line [[:digit:]]*$"
 	,"^`Fixed Point Package', Version " ++ vnumRegex ++ ", [[:alpha:]]{3,9} [[:digit:]]{1,2}, [[:digit:]]{4} \\(C\\) Michael Mehlich$"
 	,"^ *v" ++ vnumRegex ++ ", " ++ dateRegex ++ "$"
+	,"^Package [^ ]*( \\[[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}\\])? emulated by memoir\\.$"
+	,"^ Xy-pic version " ++ vnumRegex ++ " <" ++ dateRegex ++ ">$"
+	,"^ Copyright \\(c\\) [[:digit:]]{4}-[[:digit:]]{4} by Kristoffer H\\. Rose <krisrose@tug\\.org>$"
 	] where
 	statistics =
 		["strings?"
