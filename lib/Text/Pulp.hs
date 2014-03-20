@@ -285,6 +285,7 @@ parseHBox l s ss = first (HBox s e:) (putLineHere l ss') where
 	(e, ss') = case (expected, messageEnd, stripSuffix activeOutput s) of
 		(_   , Nothing, _) -> (hboxErrorTooLong , ss  )
 		([]  , Just {}, _) -> (hboxErrorTooShort, ss'_)
+		([""], Just ([], _), Just {}) -> ("\n"  , ss'_)
 		([""], _, Just {}) -> ("", unsure)
 		_                  -> (unlines message  , ss'_)
 
