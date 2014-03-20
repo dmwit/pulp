@@ -185,6 +185,14 @@ equalities =
 	,"Copyright (C) Markus Kohm"
 	,"Bootstrap'ing:"
 	,"Xy-pic is free software: see the User's Guide for details."
+	,"Loading kernel: messages; fonts; allocations: state,"
+	,"utility macros; pictures: \\xy, positions,"
+	,"kernel objects: directionals, circles, text; options; algorithms: directions,"
+	,"direction,"
+	,"objects,"
+	,"decorations;"
+	,"curve,"
+	,"circles,"
 	]
 regexen = map compile $
 	["^[[:space:]]*$"
@@ -215,6 +223,7 @@ regexen = map compile $
 	,"^Package [^ ]*( \\[[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}\\])? emulated by memoir\\.$"
 	,"^ Xy-pic version " ++ vnumRegex ++ " <" ++ dateRegex ++ ">$"
 	,"^ Copyright \\(c\\) [[:digit:]]{4}-[[:digit:]]{4} by Kristoffer H\\. Rose <krisrose@tug\\.org>$"
+	,"^ *Xy-pic [^ ]* driver: `(color|curve|frame|line|rotate)' extension support$"
 	] where
 	statistics =
 		["strings?"
@@ -227,6 +236,12 @@ regexen = map compile $
 		,"named destinations?"
 		,"words? of extra memory for PDF output"
 		]
+immediates = map compile $
+	["^ Xy-pic option: [a-zA-Z ]+ v." ++ vnumRegex
+	,"^catcodes, docmode,"
+	,"^edges, connections;  Xy-pic"
+	,"^ path, \\\\ar,"
+	]
 dateRegex = "[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}"
 filenameRegex = "[-_./a-zA-Z0-9]*\\.[a-z]{2,}"
 ptRegex = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
@@ -240,7 +255,7 @@ matchBeginning pat_ = let pat = compile pat_ in \s ->
 bracketNumber ss = (lines <$>) <$> bracketNumber' (unlines ss)
 bracketNumber' = matchBeginning ("[[:space:]]*\\[[[:digit:]]+([[:space:]]|[<>{}]|" ++ filenameRegex ++ ")*\\]")
 openFile       = matchBeginning ("[[:space:]]*\\(" ++ filenameRegex)
-closeFile      = matchBeginning "[[:space:]]*\\)"
+closeFile      = matchBeginning "[[:space:]]*(loaded)?\\)"
 beginMessage   = matchBeginning "(LaTeX|Package) ([^ ]* )?(Info|Message|Warning): "
 beginHBox      = matchBeginning ("(Over|Under)full \\\\[hv]box \\(((badness [[:digit:]]+)|(" ++ ptRegex ++ " too (wide|high)))\\) ")
 lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s ->
@@ -251,6 +266,13 @@ lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s 
 	where
 	convert = LineMarker . read
 	range s1 s2 = Just (convert s1, convert s2)
+
+stripImmediates s = [(b, e) |
+	MR { mrBefore = ""
+	   , mrMatch  = b@(_:_)
+	   , mrAfter  = e
+	   } <- map (`match` s) immediates
+	]
 
 -- TODO: May have to parse LaTeX warnings(/errors/infos/messages?) separately,
 -- since they don't put "(LaTeX)" at the beginning of each continuation line.
@@ -432,6 +454,7 @@ categorize' l (s:ss)
 	| Just (b, e  ) <- beginMessage s       = parseMessage  l b e ss
 	| Just _        <- beginHBox s          = parseHBox     l s   ss
 	| Just s'       <- stripPrefix "! " s   = parseTeXError l s'  ss
+	| (b, e):_      <- stripImmediates s    = first (Boring b:) (categorize' l (e:ss))
 	| otherwise = label Unknown
 	where
 	label f = first (f s:) (putLineHere l ss)
