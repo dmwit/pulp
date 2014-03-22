@@ -337,6 +337,12 @@ parseXparse ss = msum . map go $ xparseData where
 	packagePrefix word = "LaTeX " ++ word ++ ": \""
 	xparseData = [('.', "info", Info), ('*', "warning", Warning)]
 
+-- TODO: There is a hilarious bug in parseTeXError: it can happen that the
+-- broken command sequences in parts (2) and (3) are just long enough to
+-- trigger the "coalesce" preprocessing step, so that they get merged with the
+-- next line instead of properly staying on their own line. See
+-- undefined_control_sequence_bug.log:1428 for an example.
+
 -- TeX errors usually look like this:
 -- 1. A header. One of three things:
 --        ! LaTeX Error: <message>
