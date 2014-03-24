@@ -21,7 +21,6 @@ import Text.Regex.Posix
 -- for auto-generated code
 import GHC.Show
 
--- TODO: why is parsing slow.log SO slow (like, more than a minute slow)?
 -- TODO: some of the logs in the test suite produce an ExtraCloseFile; why?
 -- TODO: check that we handle "fatal error" message correctly, e.g. see tests/fatal-error.log
 
@@ -252,7 +251,11 @@ matchBeginning pat_ = let pat = compile pat_ in \s ->
 		MR { mrBefore = "", mrMatch = b, mrAfter = e } | not (null b) -> Just (b, e)
 		_ -> Nothing
 
-bracketNumber ss = (lines <$>) <$> bracketNumber' (unlines ss)
+bracketNumber ss = munge <$> bracketNumber' (unlines b) where
+	-- actually, in all the cases we've seen so far, the end of the bracket
+	-- comes within three lines, but let's do five just to be safe
+	(b, e) = splitAt 5 ss
+	munge (match, rest) = (match, lines rest ++ e)
 bracketNumber' = matchBeginning ("[[:space:]]*\\[[[:digit:]]+([[:space:]]|[<>{}]|" ++ filenameRegex ++ ")*\\]")
 openFile       = matchBeginning ("[[:space:]]*\\(" ++ filenameRegex)
 closeFile      = matchBeginning "[[:space:]]*(loaded)?\\)"
