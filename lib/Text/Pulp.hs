@@ -193,7 +193,7 @@ equalities =
 	,"curve,"
 	,"circles,"
 	]
-regexen = map compile $
+regex = compile . intercalate "|" . map (\re -> "(" ++ re ++ ")") $
 	["^[[:space:]]*$"
 	,"^LaTeX2e <" ++ dateRegex ++ ">$"
 	,"^Babel <.*> and hyphenation patterns for [[:digit:]]* languages loaded\\.$"
@@ -453,9 +453,9 @@ putLineHere l ss = first (maybeCons l) (categorize' Nothing ss)
 
 categorize' l [] = (maybeCons l [], [])
 categorize' l (s:ss)
+	| regex `match` s                       = label Boring
 	| any (`isPrefixOf` s) prefixes         = label Boring
 	| any (trim s==)       equalities       = label Boring
-	| any (`match` s)      regexen          = label Boring
 	| s == geometryVerboseMode              = first (Boring s:) (parseGeometryVerboseMode l ss)
 	| Just (v, ss') <- parseXparse (s:ss)   = first (v++) $ categorize' Nothing ss' -- don't need l: we'll parse the line annotation (if any) inside parseXparse
 	| Just (f, s' ) <- openFile s           = let (b, e) = categorize' Nothing (s':ss)
