@@ -337,12 +337,6 @@ parseXparse ss = msum . map go $ xparseData where
 	packagePrefix word = "LaTeX " ++ word ++ ": \""
 	xparseData = [('.', "info", Info), ('*', "warning", Warning)]
 
--- TODO: There is a hilarious bug in parseTeXError: it can happen that the
--- broken command sequences in parts (2) and (3) are just long enough to
--- trigger the "coalesce" preprocessing step, so that they get merged with the
--- next line instead of properly staying on their own line. See
--- undefined_control_sequence_bug.log:1428 for an example.
-
 -- TeX errors usually look like this:
 -- 1. A header. One of three things:
 --        ! LaTeX Error: <message>
@@ -409,6 +403,12 @@ parseTeXError l s ss = fromMaybe giveUp (parseLaTeXError <|> parsePackageError <
 	isLineHerald ('l':'.':rest) = not . null . (reads :: ReadS Integer) $ rest
 	isLineHerald _ = False
 
+	-- Some undefined control sequences are just the right length to trigger
+	-- the line-coalescing heuristic. This function is for detecting that;
+	-- correction happens in findCommandSequences. See also:
+	-- long_undefined_control_sequence.log:1428
+	isJoinedLineHerald = isLineHerald . drop 79
+
 	parseLineHerald h = do
 		lineMark <- stripPrefix "l." h
 		case reads lineMark of
@@ -417,17 +417,21 @@ parseTeXError l s ss = fromMaybe giveUp (parseLaTeXError <|> parsePackageError <
 	
 	trimBoth s s' = (trim s, trim s')
 
-	findCommandSequences ss = do
-		n <- findIndex isLineHerald (take 10 ss)
-		if n >= 2
-			then do
+	findCommandSequences ss = case map (`findIndex` take 10 ss) [isLineHerald, isJoinedLineHerald] of
+		[Just n, _]
+			| n >= 2 -> do
 				(b, seqCurrBegin:seqCurrEnd:lineHerald:seqSourceEnd:e) <- return (splitAt (n-2) ss)
 				(l, seqSourceBegin) <- parseLineHerald lineHerald
 				return (b, Just (trimBoth seqCurrBegin seqCurrEnd), LineMarker l, trimBoth seqSourceBegin seqSourceEnd, e)
-			else do
+			| otherwise -> do
 				(b, lineHerald:seqSourceEnd:e) <- return (splitAt n ss)
 				(l, seqSourceBegin) <- parseLineHerald lineHerald
 				return (b, Nothing, LineMarker l, trimBoth seqSourceBegin seqSourceEnd, e)
+		[_, Just n] -> let
+			(b, j:e) = splitAt n ss
+			(bj, ej) = splitAt 79 j
+			in findCommandSequences (b ++ [bj, ej] ++ e)
+		_ -> Nothing
 
 findBlankWithin = findExactWithin ""
 findExactWithin s n ss = guard (short bs && not (null es)) >> return (bs, drop 1 es) where
