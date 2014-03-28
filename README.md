@@ -191,4 +191,10 @@ This tool was written by reverse-engineering the log files produced by `pdflatex
 
 If you see something particularly distressing -- e.g. location reporting is significantly wrong, or there's something that's not easily parsed/filtered using the configuration tools already provided, you're invited to hack `lib/Text/Pulp.hs` (you might start reading at `categorize'`). You could also send along your log file to me, but I can't guarantee that I'll tackle every log file I see.
 
+Occasionally you'll see a stray line that looks like this towards the end of your `pulp` output:
+
+    ?-?: </opt/local/share/texmf-texlive-dist/fonts/type1/publi
+
+I personally don't really intend to fix this, so don't bother sending me a log file if that's your only complaint. If you look in the log file yourself, you'll see why: what happened was LaTeX started printing a file name, interrupted itself to print some statistics, then continued printing the file name. I'm generally high on the "tolerating brain damage" scale, but even that is too much for me. I'm not going to try to detect that kind of thing and deal with it.
+
 Also I haven't worked very hard on interface yet, so if your command line doesn't make sense you'll get a pretty unhelpful message, and if your configuration syntax isn't quite right the whole configuration will be silently ignored. UX patches very welcome.
