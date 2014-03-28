@@ -498,6 +498,7 @@ prettyPrint = concatMap (go []) where
 	pprintLine Nothing  = "?"
 	pprintLine (Just l) = show l
 
+	-- TODO: this s can contain newlines that need to be escaped or whatever!
 	pprintMess (Boring s) = s
 	pprintMess (HBox s e) = s
 	pprintMess (LaTeXMessage p l ss) = p ++ " " ++ map toLower (show l) ++ ":" ++
