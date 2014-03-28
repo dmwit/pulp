@@ -106,23 +106,23 @@ to parse this file and print some relevant information.
 
 If you're processing `foo.log`, you can make a file `foo.log.pulp` that says what messages you're interested in. The file format is a zeroth-order logic; for example, the default configuration is
 
-!(boring | info | message | under | over)
+    !(boring | info | message | under | over)
 
 which blacklists "known-boring" junk, package messages at the "info" or "message" (but not "warning" or "error") level, and messages about under- and over-full boxes. Each potential output message gives a valuation of all the available atoms, and if your sentence evaluates to true with that valuation, the message gets printed. For another example, I found I was getting a bunch of warnings from a specific package; I filtered those out by tacking on:
 
-!((warning & package 'xparse/redefine-command') | boring | info | message | under | over)
+    !((warning & package 'xparse/redefine-command') | boring | info | message | under | over)
 
 Actually, atoms only have to be spelled out enough to be unambiguous, so you could just as well write
 
-!((w & p 'xparse/redefine-command') | b | i | m | und | o)
+    !((w & p 'xparse/redefine-command') | b | i | m | und | o)
 
 Later, I expect I'll want to see more under/overfull messages -- e.g. I'll want to know about boxes that are more than 10pt overfull. So I'll change the default to something like
 
-!(b | i | m | under) & (overfull => threshold 10)
+    !(b | i | m | under) & (overfull => threshold 10)
 
 Or maybe I tried compiling with a new driver and it had some messages not caught by the standard "boring" regexen:
 
-!(b | i | m | under | over | "^This is XeTeX, Version ")
+    !(b | i | m | under | over | "^This is XeTeX, Version ")
 
 (A regex can be enclosed by double quotes to match anywhere or single quotes to be required to match the whole text of whatever it's trying to match.) There's also all the usual logical connectives in a variety of spellings, though I've showed the common ones already, I think. The full list of atoms and a complete EBNF for the language is below.
 
