@@ -196,8 +196,8 @@ equalities =
 regex = compile . intercalate "|" . map (\re -> "(" ++ re ++ ")") $
 	["^[[:space:]]*$"
 	,"^LaTeX2e <" ++ dateRegex ++ ">$"
-	,"^Babel <.*> and hyphenation patterns for [[:digit:]]* languages loaded\\.$"
-	,"^Document Class: (beamer|report|article|sigplanconf|resume|memoir)"
+	,"^Babel <.*> and hyphenation patterns for .* loaded\\.$"
+	,"^Document Class: (beamer|report|article|sigplanconf|resume|memoir|book)"
 	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
 	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
 	,"^File: " ++ filenameRegex ++ " $"
@@ -253,8 +253,8 @@ matchBeginning pat_ = let pat = compile pat_ in \s ->
 
 bracketNumber ss = munge <$> bracketNumber' (unlines b) where
 	-- actually, in all the cases we've seen so far, the end of the bracket
-	-- comes within three lines, but let's do five just to be safe
-	(b, e) = splitAt 5 ss
+	-- comes within six lines, but let's do eight just to be safe
+	(b, e) = splitAt 8 ss
 	munge (match, rest) = (match, lines rest ++ e)
 bracketNumber' = matchBeginning ("[[:space:]]*\\[[[:digit:]]+([[:space:]]|[<>{}]|" ++ filenameRegex ++ ")*\\]")
 openFile       = matchBeginning ("[[:space:]]*\\(" ++ filenameRegex)
