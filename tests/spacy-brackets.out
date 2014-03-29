@@ -454,7 +454,7 @@
 ([((Nothing,Nothing),"./thesis-output.tex")],((Nothing,Just 115),Boring ""))
 ([((Nothing,Nothing),"./thesis-output.tex")],((Nothing,Just 115),Boring "\\c@theorem=\\count129"))
 ([((Nothing,Nothing),"./thesis-output.tex")],((Nothing,Just 115),Boring ""))
-([((Nothing,Nothing),"./thesis-output.tex")],((Nothing,Just 115),Unknown "\\@input{spec.aux}"))
+([((Nothing,Nothing),"./thesis-output.tex")],((Nothing,Just 115),Boring "\\@input{spec.aux}"))
 ([((Nothing,Nothing),"./thesis-output.tex")],((Nothing,Just 115),Boring "\\openout2 = `spec.aux'."))
 ([((Nothing,Nothing),"./thesis-output.tex")],((Nothing,Just 115),Boring ""))
 ([((Nothing,Nothing),"./thesis-output.tex")],((Nothing,Just 115),Boring ""))

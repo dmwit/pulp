@@ -223,6 +223,7 @@ regex = compile . intercalate "|" . map (\re -> "(" ++ re ++ ")") $
 	,"^ Xy-pic version " ++ vnumRegex ++ " <" ++ dateRegex ++ ">$"
 	,"^ Copyright \\(c\\) [[:digit:]]{4}-[[:digit:]]{4} by Kristoffer H\\. Rose <krisrose@tug\\.org>$"
 	,"^ *Xy-pic [^ ]* driver: `(color|curve|frame|line|rotate)' extension support$"
+	,"^\\\\@input\\{" ++ filenameRegex ++ "\\}$"
 	] where
 	statistics =
 		["strings?"
