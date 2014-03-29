@@ -216,7 +216,6 @@ regex = compile . intercalate "|" . map (\re -> "(" ++ re ++ ")") $
 	,"^Dictionary: [-a-z]*, Language: [[:alpha:]]* $"
 	,"^Using natbib package with '.*' citation style\\.$"
 	,"^See the .* package documentation for explanation\\.$"
-	,"^Variant \\\\tl_put_right:NV already defined; not changing it on line [[:digit:]]*$"
 	,"^`Fixed Point Package', Version " ++ vnumRegex ++ ", [[:alpha:]]{3,9} [[:digit:]]{1,2}, [[:digit:]]{4} \\(C\\) Michael Mehlich$"
 	,"^ *v" ++ vnumRegex ++ ", " ++ dateRegex ++ "$"
 	,"^Package [^ ]*( \\[[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}\\])? emulated by memoir\\.$"
@@ -246,6 +245,7 @@ dateRegex = "[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}"
 filenameRegex = "[-_./a-zA-Z0-9]*\\.[a-z]{2,}"
 ptRegex = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
 vnumRegex = "[[:digit:]]+(\\.[[:digit:]]+)*"
+variantRegex = "^Variant \\\\[^ :]+:[^ :]+ already defined; not changing it on line [[:digit:]]+$"
 
 matchBeginning pat_ = let pat = compile pat_ in \s ->
 	case match pat s of
@@ -469,6 +469,7 @@ categorize' l (s:ss)
 	| Just _        <- beginHBox s          = parseHBox     l s   ss
 	| Just s'       <- stripPrefix "! " s   = parseTeXError l s'  ss
 	| (b, e):_      <- stripImmediates s    = first (Boring b:) (categorize' l (e:ss))
+	| compile variantRegex `match` s        = label (\s -> LaTeXMessage "variant generation" Warning [s])
 	| otherwise = label Unknown
 	where
 	label f = first (f s:) (putLineHere l ss)
