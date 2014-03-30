@@ -324,6 +324,7 @@ main = do
 			case s of
 				Left e -> let e' :: IOException; e' = e in return defaultFormula
 				Right (Right ([], f)) -> return f
-				_ -> return defaultFormula
+				Right (Right (j, _)) -> error ("trailing junk: " ++ show j)
+				Right (Left e) -> error (intercalate "\n\t" ("parse error:":e))
 		_ -> error "this can't happen -- we should already have thrown an exception!!"
 	putStr . prettyPrint . interesting f . parse $ s
