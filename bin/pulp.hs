@@ -3,7 +3,7 @@
 import Control.Applicative
 import Control.Arrow
 import Control.Exception
-import Control.Monad
+import Control.Monad.State
 import Data.Char
 import Data.List
 import GHC.IO.Encoding
@@ -134,8 +134,22 @@ matchesRegex s (False, r) =  s =~ r
 -- binop  ::= '&&' | '||' | '=>' | '->' | '<=>' | '<->' | '==' | '!=' | '/=' | '^' | '*' | '+' | '/\' | '\/'
 --          | 'and' | 'or' | 'xor' | 'nor' | 'nand'
 
-data Token = Token String | Open | Close | Regex UncompiledRegex | UnclosedString
+data Token = Token String | Open | Close | Regex UncompiledRegex | UnclosedRegex
 	deriving (Eq, Ord, Show, Read)
+
+token fToken fOpen fClose fRegex fUnclosed t = case t of
+	Token s -> fToken s
+	Open    -> fOpen
+	Close   -> fClose
+	Regex u -> fRegex u
+	UnclosedRegex -> fUnclosed
+
+isToken, isOpen, isClose, isRegex, isUnclosedRegex :: Token -> Bool
+isToken = token (const True) False False (const False) False
+isOpen  = token (const False) True False (const False) False
+isClose = token (const False) False True (const False) False
+isRegex = token (const False) False False (const True) False
+isUnclosedRegex = token (const False) False False (const False) True
 
 tokenize :: String -> [Token]
 tokenize s = case dropWhile isSpace s of
@@ -147,7 +161,7 @@ tokenize s = case dropWhile isSpace s of
 	s -> let (b, e) = break (\c -> categorize c /= categorize (head s)) s in Token b : tokenize e
 
 tokenizeQuote d f = go where
-	go acc []             = [UnclosedString]
+	go acc []             = [UnclosedRegex]
 	go acc (c:s) | c == d = f (reverse acc) : tokenize s
 	go acc ('\\':'n':s)   = go ('\n':acc) s
 	go acc ('\\':'t':s)   = go ('\t':acc) s
@@ -166,30 +180,42 @@ categorize c | isNumPart c = Number
 isNumPart c = isDigit c || c == '.'
 isActive  c = c `elem` "'\"()"
 
-type Parser a = [Token] -> Either [String] ([Token], a)
+type Parser = StateT [Token] (Either [String])
+
+parseTop :: String -> Either [String] (Sentence Atom)
+parseTop = evalStateT (parseSentence <* eof) . tokenize
 
 parseSentence :: Parser (Sentence Atom)
-parseSentence = parseSentence_ >>== \s -> returnn (precedence s) where
+parseSentence = precedence <$> parseSentence_ where
 	-- TODO
 	precedence (s, []) = s
 	precedence (s, (b,c):rest) = Bin s b (precedence (c, rest))
 
+-- why not (Data.Functor.Alt.<!>)? too many dependencies
+-- why not (Control.Applicative.<|>)? the ErrorList class is stupid and also sucks
+(<!>) :: Parser a -> Parser a -> Parser a
+p1 <!> p2 = StateT $ \s -> case runStateT p1 s of
+	Left es    -> runStateT p2 s
+	v@Right {} -> v
+
 parseSentence_ :: Parser (Sentence Atom, [(Operator, Sentence Atom)])
-parseSentence_ = parseChunk >>== \c ->
-	(parseBinop >>== \b -> parseSentence_ >>== \(s, rest) -> returnn (c, (b, s):rest)) <|>>
-	returnn (c, [])
+parseSentence_ = parseChunk >>= \c -> parseMoreChunks c <!> return (c, []) where
+	parseMoreChunks c = do
+		b <- parseBinop
+		(s, rest) <- parseSentence_
+		return (c, (b, s):rest)
 
 parseChunk :: Parser (Sentence Atom)
-parseChunk ts = case ts of
-	Token {}:_ -> parseKeywordChunk ts
-	Regex {}:_ -> parseRegexChunk   ts
-	Open  {}:_ -> parseParens       ts
+parseChunk = get >>= \ts -> case ts of
+	Token {}:_ -> parseKeywordChunk
+	Regex {}:_ -> regex AMessage
+	Open  {}:_ -> parseParens
 	_          -> expecting "a bare token, a regex, or an open paren" ts
 
 parseKeywordChunk :: Parser (Sentence Atom)
-parseKeywordChunk = parseKeyword chunkKeywords >>== \k -> case k of
-	Right sentence   -> returnn sentence
-	Left Nothing     -> parseChunk >>== \c -> returnn (Not c)
+parseKeywordChunk = parseKeyword chunkKeywords >>= \k -> case k of
+	Right sentence   -> return sentence
+	Left Nothing     -> Not <$> parseChunk
 	Left (Just atom) -> case atom of
 		"boring"    -> at ABoring
 		"unknown"   -> at AUnknown
@@ -198,31 +224,30 @@ parseKeywordChunk = parseKeyword chunkKeywords >>== \k -> case k of
 		"underfull" -> at (ABoxFullness Under)
 		"hbox"      -> at (ABoxDirection Horizontal)
 		"vbox"      -> at (ABoxDirection Vertical)
-		"threshold" -> number >>== \n -> at (ABoxThreshold n)
+		"threshold" -> Atom . ABoxThreshold <$> number
 		"info"      -> ml Info
 		"message"   -> ml Message
 		"warning"   -> ml Warning
 		"error"     -> at (AMessageLevel Nothing)
-		"package"   -> regex >>== \r -> at (APackage r)
-		"details"   -> regex >>== \r -> at (ADetails r)
+		"package"   -> regex APackage
+		"details"   -> regex ADetails
 	where
-	at = returnn . Atom
+	at = return . Atom
 	ml = at . AMessageLevel . Just
 
-parseRegexChunk = regex >>== \r -> returnn (Atom (AMessage r))
-
 parseParens :: Parser (Sentence Atom)
-parseParens = consume Open >>== \_ -> parseSentence >>== \s -> consume Close >>== \_ -> returnn s
+parseParens = satisfy "open parenthesis" isOpen *> parseSentence <* satisfy "close parenthesis" isClose
 
 parseBinop :: Parser Operator
 parseBinop = parseKeyword binopKeywords
 
 parseKeyword :: [(String, a)] -> Parser a
-parseKeyword cs (Token s:rest) = case expandKeyword s cs of
-	Match v      -> Right (rest, v)
-	Ambiguous cs -> Left ["Ambiguous keyword " ++ s, "Continuations include " ++ intercalate ", " cs]
-	NoMatch      -> Left ["Unknown keyword " ++ s, "Expecting one of " ++ intercalate ", " (map fst cs)]
-parseKeyword cs _ = Left ["Unexpected EOF", "Expecting one of " ++ intercalate ", " (map fst cs)]
+parseKeyword cs = do
+	Token s <- satisfy ("one of " ++ intercalate ", " (map fst cs)) isToken
+	case expandKeyword s cs of
+		Match v      -> return v
+		Ambiguous cs -> lift $ Left ["Ambiguous keyword " ++ s, "Continuations include " ++ intercalate ", " cs]
+		NoMatch      -> lift $ Left ["Unknown keyword " ++ s, "Expecting one of " ++ intercalate ", " (map fst cs)]
 
 data KeywordMatch a
 	= Match a
@@ -262,36 +287,33 @@ nand x y = not (x && y)
 nor  x y = not (x || y)
 
 eof :: Parser ()
-eof []    = Right ([], ())
-eof (t:_) = Left ["Expected EOF", "Saw token instead: " ++ show t]
+eof = do
+	ts <- get
+	case ts of
+		[] -> return ()
+		_  -> expecting "EOF" ts
 
-regex :: Parser UncompiledRegex
-regex (Regex r:rest) = Right (rest, r)
-regex ts = expecting "a regex" ts
+regex :: (UncompiledRegex -> Atom) -> Parser (Sentence Atom)
+regex f = do
+	Regex r <- satisfy "a regex" isRegex
+	return . Atom . f $ r
 
 number :: Parser Rational
-number ts@(Token s:rest) = case readsRational s of
-	r:_ -> returnn r rest
-	_ -> expecting "a number" ts
-number ts = expecting "a number" ts
+number = do
+	Token s <- satisfy "a number" isToken
+	case readsRational s of
+		r:_ -> return r
+		_   -> expecting "a number" [Token s]
 
-consume :: Token -> Parser Token
-consume t (t':rest) | t == t' = Right (rest, t)
-consume t ts = expecting (show t) ts
+satisfy :: String -> (Token -> Bool) -> Parser Token
+satisfy s p = do
+	t <- state (splitAt 1)
+	if any p t
+	then return (head t)
+	else expecting s t
 
-expecting :: String -> Parser a
-expecting s ts = Left ["Unexpected " ++ case ts of t:_ -> show t; [] -> "EOF", "Expecting " ++ s]
-
-(p1 >>== f) ts = case p1 ts of
-	Left e -> Left e
-	Right (ts, a) -> f a ts
-
-returnn v ts = Right (ts, v)
-
-(<|>>) :: Parser a -> Parser a -> Parser a
-(p1 <|>> p2) ts = case p1 ts of
-	Left _ -> p2 ts
-	right  -> right
+expecting :: String -> [Token] -> Parser a
+expecting s ts = lift . Left $ ["Unexpected " ++ head (map show ts ++ ["EOF"]), "Expecting " ++ s]
 
 interesting :: Sentence Atom -> File Annotations -> File Annotations
 interesting formula = concatMap go where
@@ -302,8 +324,7 @@ interesting formula = concatMap go where
 
 locallyInteresting formula l = [l | evalSentence (`evalAtom` l) formula]
 
-Right ([], defaultFormula) = parseSentence . tokenize $
-	"not (boring | info | message | under | over)"
+Right defaultFormula = parseTop "not (boring | info | message | under | over)"
 
 main = do
 	args <- getArgs
@@ -320,11 +341,10 @@ main = do
 			-- TODO: should probably look at like .file.pulp rather than
 			-- file.pulp or something, but be careful about file names with
 			-- directory bits in
-			s <- try (parseSentence . tokenize <$> readFile (file ++ ".pulp"))
+			s <- try (parseTop <$> readFile (file ++ ".pulp"))
 			case s of
 				Left e -> let e' :: IOException; e' = e in return defaultFormula
-				Right (Right ([], f)) -> return f
-				Right (Right (j, _)) -> error ("trailing junk: " ++ show j)
+				Right (Right f) -> return f
 				Right (Left e) -> error (intercalate "\n\t" ("parse error:":e))
 		_ -> error "this can't happen -- we should already have thrown an exception!!"
 	putStr . prettyPrint . interesting f . parse $ s
