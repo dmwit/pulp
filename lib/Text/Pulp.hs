@@ -162,6 +162,7 @@ retag (Unknown s)           = [Unknown s]
 
 compile :: String -> Regex
 compile = makeRegex
+compileAll = compile . intercalate "|" . map (\re -> "(" ++ re ++ ")")
 
 trim = dropWhile isSpace
 prefixes =
@@ -193,7 +194,7 @@ equalities =
 	,"curve,"
 	,"circles,"
 	]
-regex = compile . intercalate "|" . map (\re -> "(" ++ re ++ ")") $
+regex = compileAll
 	["^[[:space:]]*$"
 	,"^LaTeX2e <" ++ dateRegex ++ ">$"
 	,"^Babel <.*> and hyphenation patterns for .* loaded\\.$"
@@ -236,7 +237,7 @@ regex = compile . intercalate "|" . map (\re -> "(" ++ re ++ ")") $
 		,"named destinations?"
 		,"words? of extra memory for PDF output"
 		]
-immediates = map compile $
+immediates = compileAll
 	["^ Xy-pic option: [a-zA-Z ]+ v." ++ vnumRegex
 	,"^catcodes, docmode,"
 	,"^edges, connections;  Xy-pic"
@@ -277,12 +278,12 @@ lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s 
 	convert = LineMarker . read
 	range s1 s2 = Just (convert s1, convert s2)
 
-stripImmediates s = [(b, e) |
+stripImmediates s = case immediates `match` s of
 	MR { mrBefore = ""
 	   , mrMatch  = b@(_:_)
 	   , mrAfter  = e
-	   } <- map (`match` s) immediates
-	]
+	   } -> Just (b, e)
+	_ -> Nothing
 
 -- TODO: May have to parse LaTeX warnings(/errors/infos/messages?) separately,
 -- since they don't put "(LaTeX)" at the beginning of each continuation line.
@@ -474,7 +475,7 @@ categorize' l (s:ss)
 	| Just (b, e  ) <- beginMessage s       = parseMessage  l b e ss
 	| Just _        <- beginHBox s          = parseHBox     l s   ss
 	| Just s'       <- stripPrefix "! " s   = parseTeXError l s'  ss
-	| (b, e):_      <- stripImmediates s    = first (Boring b:) (categorize' l (e:ss))
+	| Just (b, e)   <- stripImmediates s    = first (Boring b:) (categorize' l (e:ss))
 	| compile variantRegex `match` s        = label (\s -> LaTeXMessage "variant generation" Warning [s])
 	| otherwise = label Unknown
 	where
