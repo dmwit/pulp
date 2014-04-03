@@ -197,7 +197,7 @@ regex = compile . intercalate "|" . map (\re -> "(" ++ re ++ ")") $
 	["^[[:space:]]*$"
 	,"^LaTeX2e <" ++ dateRegex ++ ">$"
 	,"^Babel <.*> and hyphenation patterns for .* loaded\\.$"
-	,"^Document Class: (beamer|report|article|sigplanconf|resume|memoir|book)"
+	,"^Document Class: [^ ]+ " ++ dateRegex ++ " v?" ++ vnumRegex
 	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
 	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
 	,"^File: " ++ filenameRegex ++ " $"
@@ -216,13 +216,14 @@ regex = compile . intercalate "|" . map (\re -> "(" ++ re ++ ")") $
 	,"^Dictionary: [-a-z]*, Language: [[:alpha:]]* $"
 	,"^Using natbib package with '.*' citation style\\.$"
 	,"^See the .* package documentation for explanation\\.$"
-	,"^`Fixed Point Package', Version " ++ vnumRegex ++ ", [[:alpha:]]{3,9} [[:digit:]]{1,2}, [[:digit:]]{4} \\(C\\) Michael Mehlich$"
+	,"^`Fixed Point Package', Version " ++ vnumRegex ++ ", " ++ monthNameRegex ++ " " ++ dayNumRegex ++ ", " ++ yearRegex ++ " \\(C\\) Michael Mehlich$"
 	,"^ *v" ++ vnumRegex ++ ", " ++ dateRegex ++ "$"
-	,"^Package [^ ]*( \\[[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}\\])? emulated by memoir\\.$"
+	,"^Package [^ ]*( \\[" ++ dateRegex ++ "\\])? emulated by memoir\\.$"
 	,"^ Xy-pic version " ++ vnumRegex ++ " <" ++ dateRegex ++ ">$"
-	,"^ Copyright \\(c\\) [[:digit:]]{4}-[[:digit:]]{4} by Kristoffer H\\. Rose <krisrose@tug\\.org>$"
+	,"^ Copyright \\(c\\) " ++ yearRegex ++ "-" ++ yearRegex ++ " by Kristoffer H\\. Rose <krisrose@tug\\.org>$"
 	,"^ *Xy-pic [^ ]* driver: `(color|curve|frame|line|rotate)' extension support$"
 	,"^\\\\@input\\{" ++ filenameRegex ++ "\\}$"
+	,"^<Paul Taylor's Proof Trees, " ++ dayNumRegex ++ " " ++ monthNameRegex ++ " " ++ yearRegex ++ ">$"
 	] where
 	statistics =
 		["strings?"
@@ -240,11 +241,16 @@ immediates = map compile $
 	,"^catcodes, docmode,"
 	,"^edges, connections;  Xy-pic"
 	,"^ path, \\\\ar,"
+	,"^Excluding comment '[a-z]*'"
 	]
-dateRegex = "[[:digit:]]{4}/[[:digit:]]{2}/[[:digit:]]{2}"
+dateRegex = yearRegex ++ "/" ++ monthNumRegex ++ "/" ++ dayNumRegex
 filenameRegex = "[-_./a-zA-Z0-9]*\\.[a-z]{2,}"
 ptRegex = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
 vnumRegex = "[[:digit:]]+(\\.[[:digit:]]+)*"
+dayNumRegex = "[[:digit:]]{1,2}"
+monthNumRegex = "(0?[1-9]|1[0-2])"
+monthNameRegex = "(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)"
+yearRegex = "[[:digit:]]{4}"
 variantRegex = "^Variant \\\\[^ :]+:[^ :]+ already defined; not changing it on line [[:digit:]]+$"
 
 matchBeginning pat_ = let pat = compile pat_ in \s ->
