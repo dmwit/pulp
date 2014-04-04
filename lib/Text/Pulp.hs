@@ -254,6 +254,7 @@ monthNumRegex = "(0?[1-9]|1[0-2])"
 monthNameRegex = "(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)"
 yearRegex = "[[:digit:]]{4}"
 variantRegex = "^Variant \\\\[^ :]+:[^ :]+ already defined; not changing it on line [[:digit:]]+$"
+warningRegex = "^([^ ]*) [wW]arning: (.*)$"
 
 matchBeginning pat_ = let pat = compile pat_ in \s ->
 	case match pat s of
@@ -272,6 +273,11 @@ lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s 
 	where
 	convert = LineMarker . read
 	range s1 s2 = Just (convert s1, convert s2)
+
+warning = let pat = compile warningRegex in \s ->
+	case match pat s of
+		MR { mrSubList = [package, text] } -> Just (LaTeXMessage package Warning [text])
+		_ -> Nothing
 
 -- Ignoring whitespace for the moment, the grammar we want to parse looks like this:
 --
@@ -518,6 +524,7 @@ categorize' l (s:ss)
 	| Just s'       <- stripPrefix "! " s   = parseTeXError l s'  ss
 	| Just (b, e)   <- stripImmediates s    = first (Boring b:) (categorize' l (e:ss))
 	| compile variantRegex `match` s        = label (\s -> LaTeXMessage "variant generation" Warning [s])
+	| Just w        <- warning s            = first (w:) (categorize' l ss)
 	| otherwise = label Unknown
 	where
 	label f = first (f s:) (putLineHere l ss)
