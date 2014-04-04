@@ -371,7 +371,7 @@ geometryVerboseMode = "*geometry* verbose mode - [ preamble ] result:"
 parseGeometryVerboseMode l ss = first (map Boring results ++) (putLineHere l rest) where
 	(results, rest) = span ("* " `isPrefixOf`) ss
 
-parseXparse ss = msum . map go $ xparseData where
+xparse ss = msum . map go $ xparseData where
 	go (box, word, level) = do
 		(_, ss)        <- findExactWithin (headerLine box) 0 ss
 		(inside, rest) <- findExactWithin (headerLine box) 7 ss
@@ -506,7 +506,7 @@ categorize' l (s:ss)
 	| any (`isPrefixOf` s) prefixes         = label Boring
 	| any (trim s==)       equalities       = label Boring
 	| s == geometryVerboseMode              = first (Boring s:) (parseGeometryVerboseMode l ss)
-	| Just (v, ss') <- parseXparse (s:ss)   = first (v++) $ categorize' Nothing ss' -- don't need l: we'll parse the line annotation (if any) inside parseXparse
+	| Just (v, ss') <- xparse (s:ss)        = first (v++) $ categorize' Nothing ss' -- don't need l: we'll parse the line annotation (if any) inside xparse
 	| Just (f, s' ) <- openFile s           = let (b, e) = categorize' Nothing (s':ss)
 	                                          in first (file f b:) (putLineHere l e)
 	| Just (_, s' ) <- closeFile s          = (maybeCons l [], s':ss)
