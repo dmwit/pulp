@@ -24,6 +24,7 @@ import GHC.Show
 
 -- TODO: some of the logs in the test suite produce an ExtraCloseFile; why?
 -- TODO: check that we handle "fatal error" message correctly, e.g. see tests/fatal-error.log
+-- TODO: 'pulp tests/spiders2.log' doesn't filter out "ABD: EveryShipout initializing macros [1\n{...long file...}]" properly
 
 groupUntil = groupWhen . (not .)
 groupWhen p xs = case span p xs of
