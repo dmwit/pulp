@@ -1,4 +1,4 @@
-{-# LANGUAGE DataKinds, FlexibleInstances, GADTs, PatternGuards, StandaloneDeriving, TypeFamilies #-}
+{-# LANGUAGE DataKinds, FlexibleInstances, GADTs, NoMonomorphismRestriction, PatternGuards, StandaloneDeriving, TypeFamilies #-}
 
 module Text.Pulp
 	( parse, prettyPrint, uglyPrint
@@ -11,7 +11,8 @@ module Text.Pulp
 
 import Control.Applicative
 import Control.Arrow
-import Control.Monad
+import Control.Monad.State
+import Control.Monad.Writer
 import Data.Char
 import Data.List
 import Data.Maybe
@@ -256,15 +257,9 @@ variantRegex = "^Variant \\\\[^ :]+:[^ :]+ already defined; not changing it on l
 
 matchBeginning pat_ = let pat = compile pat_ in \s ->
 	case match pat s of
-		MR { mrBefore = "", mrMatch = b, mrAfter = e } | not (null b) -> Just (b, e)
-		_ -> Nothing
+		MR { mrBefore = "", mrMatch = b, mrAfter = e } | not (null b) -> return (b, e)
+		_ -> mzero
 
-bracketNumber ss = munge <$> bracketNumber' (unlines b) where
-	-- actually, in all the cases we've seen so far, the end of the bracket
-	-- comes within six lines, but let's do eight just to be safe
-	(b, e) = splitAt 8 ss
-	munge (match, rest) = (match, lines rest ++ e)
-bracketNumber' = matchBeginning ("[[:space:]]*\\[[[:digit:]]+([[:space:]]|[<>{}]|" ++ filenameRegex ++ ")*\\]")
 openFile       = matchBeginning ("[[:space:]]*\\(" ++ filenameRegex)
 closeFile      = matchBeginning "[[:space:]]*(loaded)?\\)"
 beginMessage   = matchBeginning "(LaTeX|Package) ([^ ]* )?(Info|Message|Warning): "
@@ -277,6 +272,52 @@ lineNumber = let pat = compile "lines? ([[:digit:]]+)(--([[:digit:]]+))?" in \s 
 	where
 	convert = LineMarker . read
 	range s1 s2 = Just (convert s1, convert s2)
+
+-- Ignoring whitespace for the moment, the grammar we want to parse looks like this:
+--
+-- top     ::= '[' number junk* ']'
+-- number  ::= ['0'-'9']+
+-- junk    ::= blank | '<' filename '>' | '{' filename '}' | warning
+-- blank   ::= /* an entire line with nothing in it */
+-- warning ::= /* an entire line with 'pdfTeX warning: pdflatex (file ' filename '): PDF inclusion: multiple pdfs with page group included in a single page' */
+--
+-- We'll delay the warnings untill after the bracket, since they're a different
+-- kind of thing.  I want to do this with a regex, but I don't really know of
+-- an implementation that will short-circuit when it enters a failing state.
+bracketNumber ss = mungeParts <$> runParser (mungeParse <$> open <*> boring <*> close) ss where
+	mungeParse open boring close = concat [open, boring, close]
+	mungeParts ((boring, remainder), delayed) = (boring, delayed ++ remainder)
+	runParser p ss = runWriterT (runStateT p ss)
+
+	pdfTeXWarningRegex = "^pdfTeX warning: pdflatex \\(file " ++ filenameRegex ++ "\\): PDF inclusion: multiple pdfs with page group included in a single page$"
+	delimitedFileRegex = "([[:space:]]|[<>{}]|" ++ filenameRegex ++ ")*"
+
+	head = do
+		ss <- get
+		case ss of
+			[]   -> mzero
+			s:ss -> put ss >> return s
+
+	open = do
+		s      <- head
+		(b, e) <- matchBeginning "[[:space:]]*\\[[[:digit:]]+" s
+		modify (e:)
+		return b
+
+	boring = do
+		s <- head
+		case (matchBeginning delimitedFileRegex s, matchBeginning pdfTeXWarningRegex s) of
+			_ | null s        -> ((     "\n") ++) <$> boring
+			(Just (b, ""), _) -> ((b ++ "\n") ++) <$> boring
+			(Just (b, e) , _) -> modify (e:) >> return b
+			(_, Just (b, "")) -> tell [b]    >> boring
+			_                 -> modify (s:) >> return ""
+
+	close = do
+		s      <- head
+		(b, e) <- matchBeginning "\\]" s
+		modify (e:)
+		return b
 
 stripImmediates s = case immediates `match` s of
 	MR { mrBefore = ""
