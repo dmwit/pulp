@@ -177,6 +177,7 @@ prefixes =
 equalities =
 	["entering extended mode"
 	,"restricted \\write18 enabled."
+	,"restricted write18 enabled."
 	,"%&-line parsing enabled."
 	,"For additional information on amsmath, use the `?' option."
 	,"ABD: EveryShipout initializing macros"
@@ -215,7 +216,7 @@ regex = compileAll
 	,"^ [^ ]* stack positions? out of"
 	,"^([<>{}]|" ++ filenameRegex ++ ")+$"
 	,"^Output written on " ++ filenameRegex ++ " \\([[:digit:]]+ pages?, [[:digit:]]+ bytes?\\)\\.$"
-	,"^\\*\\*[-_.a-zA-Z0-9]*$"
+	,"^\\*\\*" ++ quoted filebaseRegex ++ "$"
 	,"^Dictionary: [-a-z]*, Language: [[:alpha:]]* $"
 	,"^Using natbib package with '.*' citation style\\.$"
 	,"^See the .* package documentation for explanation\\.$"
@@ -246,8 +247,10 @@ immediates = compileAll
 	,"^ path, \\\\ar,"
 	,"^Excluding comment '[a-z]*'"
 	]
+quoted r = "\"?" ++ r ++ "\"?"
 dateRegex = yearRegex ++ "/" ++ monthNumRegex ++ "/" ++ dayNumRegex
-filenameRegex = "[-_./a-zA-Z0-9]*\\.[a-z]{2,}"
+filebaseRegex = "[-_.:/a-zA-Z0-9]*"
+filenameRegex = quoted (filebaseRegex ++ "\\.[a-z]{2,}")
 ptRegex = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
 vnumRegex = "[[:digit:]]+(\\.[[:digit:]]+)*"
 dayNumRegex = "[[:digit:]]{1,2}"
