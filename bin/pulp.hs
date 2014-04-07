@@ -62,7 +62,7 @@ evalAtom (ABoxThreshold t)        (HBox s _)            = extractBoxThreshold s 
 evalAtom (AMessageLevel Nothing)  (Error          {})   = True
 evalAtom (AMessageLevel (Just l)) (LaTeXMessage _ l' _) = l == l'
 evalAtom (AMessage r)             (Boring s)            =         s `matchesRegex` r
-evalAtom (AMessage r)             (LaTeXMessage _ _ s)  = unlines s `matchesRegex` r
+evalAtom (AMessage r)             (LaTeXMessage _ _ s)  = unlines' s `matchesRegex` r
 evalAtom (AMessage r)             (Error s _ _ _ _)     =         s `matchesRegex` r
 evalAtom (AMessage r)             (Unknown s)           =         s `matchesRegex` r
 evalAtom (APackage r)             (LaTeXMessage p _ _)  =         p `matchesRegex` r
@@ -89,6 +89,10 @@ extractBoxThreshold s = case nums of
 
 matchesRegex s (True , r) = (s =~ r) == (0 :: MatchOffset, length s :: MatchLength)
 matchesRegex s (False, r) =  s =~ r
+
+-- that final newline is so pesky
+unlines' [] = ""
+unlines' ss = init (unlines ss)
 
 -- proposed EBNF:
 -- atom ::=
