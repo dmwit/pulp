@@ -22,7 +22,6 @@ import Text.Regex.Posix
 -- for auto-generated code
 import GHC.Show
 
--- TODO: some of the logs in the test suite produce an ExtraCloseFile; why?
 -- TODO: check that we handle "fatal error" message correctly, e.g. see tests/fatal-error.log
 -- TODO: 'pulp tests/spiders2.log' doesn't filter out "ABD: EveryShipout initializing macros [1\n{...long file...}]" properly
 
@@ -33,8 +32,10 @@ groupWhen p xs = case span p xs of
 	(b,  []) -> [b]
 
 coalesce = map concat
-         . groupWhen (\l -> length l == 79 && not (".tex" `isSuffixOf` l || "..." `isSuffixOf` l))
+         . groupWhen (\l -> length l == 79 && not (breakHerald l))
          . lines
+
+breakHerald l = any (\suffix -> reverse suffix `isPrefixOf` reverse l) [".tex", ".sty", "..."]
 
 data MessageLevel = Info | Message | Warning
 	deriving (Eq, Ord, Show, Read, Enum, Bounded)
@@ -169,7 +170,6 @@ compileAll = compile . intercalate "|" . map (\re -> "(" ++ re ++ ")")
 trim = dropWhile isSpace
 prefixes =
 	["This is pdfTeX, Version 3."
-	,"Style option: `fancyvrb' v"
 	,"[Loading MPS to PDF converter (version "
 	,"*geometry* driver: "
 	,"*geometry* detected driver: "
@@ -228,6 +228,7 @@ regex = compileAll
 	,"^ *Xy-pic [^ ]* driver: `(color|curve|frame|line|rotate)' extension support$"
 	,"^\\\\@input\\{" ++ filenameRegex ++ "\\}$"
 	,"^<Paul Taylor's Proof Trees, " ++ dayNumRegex ++ " " ++ monthNameRegex ++ " " ++ yearRegex ++ ">$"
+	,fancyvrbRegex ++ "$"
 	] where
 	statistics =
 		["strings?"
@@ -246,6 +247,7 @@ immediates = compileAll
 	,"^edges, connections;  Xy-pic"
 	,"^ path, \\\\ar,"
 	,"^Excluding comment '[a-z]*'"
+	,fancyvrbRegex
 	]
 quoted r = "\"?" ++ r ++ "\"?"
 dateRegex = yearRegex ++ "/" ++ monthNumRegex ++ "/" ++ dayNumRegex
@@ -259,6 +261,7 @@ monthNameRegex = "(January|February|March|April|May|June|July|August|September|O
 yearRegex = "[[:digit:]]{4}"
 variantRegex = "^Variant \\\\[^ :]+:[^ :]+ already defined; not changing it on line [[:digit:]]+$"
 warningRegex = "^([^ ]*) [wW]arning: (.*)$"
+fancyvrbRegex = "^Style option: `fancyvrb' v.* <" ++ dateRegex ++ "> \\(tvz\\)"
 
 matchBeginning pat_ = let pat = compile pat_ in \s ->
 	case match pat s of
