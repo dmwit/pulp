@@ -165,7 +165,9 @@ tokenizeQuote d f = go where
 	go acc (c:s) | c == d = f (reverse acc) : tokenize s
 	go acc ('\\':'n':s)   = go ('\n':acc) s
 	go acc ('\\':'t':s)   = go ('\t':acc) s
-	go acc ('\\':c:s)     = go (c:acc) s
+	go acc ('\\':'\'':s)  = go ('\'':acc) s
+	go acc ('\\':'"':s)   = go ('"':acc) s
+	go acc ('\\':c:s)     = go (c:'\\':acc) s
 	go acc (c:s)          = go (c:acc) s
 
 data Category = Number | Letter | White | Active | Symbol
