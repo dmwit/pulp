@@ -61,13 +61,13 @@ evalAtom (ABoxDirection d)        (HBox s _)            = direction s == d
 evalAtom (ABoxThreshold t)        (HBox s _)            = extractBoxThreshold s > t
 evalAtom (AMessageLevel Nothing)  (Error          {})   = True
 evalAtom (AMessageLevel (Just l)) (LaTeXMessage _ l' _) = l == l'
-evalAtom (AMessage r)             (Boring s)            =         s `matchesRegex` r
+evalAtom (AMessage r)             (Boring s)            =          s `matchesRegex` r
 evalAtom (AMessage r)             (LaTeXMessage _ _ s)  = unlines' s `matchesRegex` r
-evalAtom (AMessage r)             (Error s _ _ _ _)     =         s `matchesRegex` r
-evalAtom (AMessage r)             (Unknown s)           =         s `matchesRegex` r
-evalAtom (APackage r)             (LaTeXMessage p _ _)  =         p `matchesRegex` r
-evalAtom (APackage r)             (Error p _ _ _ _)     =         p `matchesRegex` r
-evalAtom (ADetails r)             (Error _ _ _ _ d)     =         d `matchesRegex` r
+evalAtom (AMessage r)             (Error s _ _ _ _)     =          s `matchesRegex` r
+evalAtom (AMessage r)             (Unknown s)           =          s `matchesRegex` r
+evalAtom (APackage r)             (LaTeXMessage p _ _)  =          p `matchesRegex` r
+evalAtom (APackage r)             (Error p _ _ _ _)     =          p `matchesRegex` r
+evalAtom (ADetails r)             (Error _ _ _ _ d)     =          d `matchesRegex` r
 evalAtom _ _ = False
 
 readsRational s = do
