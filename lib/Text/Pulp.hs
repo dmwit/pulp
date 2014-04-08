@@ -526,9 +526,8 @@ categorize' l (s:ss)
 	| s == geometryVerboseMode              = first (Boring s:) (parseGeometryVerboseMode l ss)
 	| Just (v, ss') <- xparse (s:ss)        = first (v++) $ categorize' Nothing ss' -- don't need l: we'll parse the line annotation (if any) inside xparse
 	| Just (f, s' ) <- openFile s           = let (b, e) = categorize' Nothing (s':ss)
-	                                          in case e of
-	                                             	[] -> ([file f (b ++ [NoCloseFile])], [])
-	                                             	_  -> first (file f b:) (categorize' Nothing e)
+	                                          in first ((file f (b ++ [NoCloseFile | null e])):)
+	                                                   (categorize' Nothing e)
 	                                          -- in the two recursive calls, we'll rediscover l if necessary (and toss it when it should be used in the other call)
 	| Just (_, s' ) <- closeFile s          = (maybeCons l [], s':ss)
 	| Just (b, ss') <- bracketNumber (s:ss) = first (Boring b:) (categorize' l ss')
