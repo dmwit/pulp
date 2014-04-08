@@ -42,7 +42,7 @@ type UncompiledRegex = (Bool, String)
 data Atom
 	= ABoring
 	| AUnknown
-	| AExtraCloseFile
+	| ACloseFile
 	| ABoxFullness Fullness
 	| ABoxDirection Direction
 	| ABoxThreshold Rational
@@ -55,7 +55,8 @@ data Atom
 evalAtom :: Atom -> Line a -> Bool
 evalAtom ABoring                  (Boring         {})   = True
 evalAtom AUnknown                 (Unknown        {})   = True
-evalAtom AExtraCloseFile          (ExtraCloseFile {})   = True
+evalAtom ACloseFile               (ExtraCloseFile {})   = True
+evalAtom ACloseFile               (   NoCloseFile {})   = True
 evalAtom (ABoxFullness f)         (HBox s _)            = fullness  s == f
 evalAtom (ABoxDirection d)        (HBox s _)            = direction s == d
 evalAtom (ABoxThreshold t)        (HBox s _)            = extractBoxThreshold s > t
@@ -225,7 +226,7 @@ parseKeywordChunk = parseKeyword chunkKeywords >>= \k -> case k of
 	Left (Just atom) -> case atom of
 		"boring"    -> at ABoring
 		"unknown"   -> at AUnknown
-		"close"     -> at AExtraCloseFile
+		"close"     -> at ACloseFile
 		"overfull"  -> at (ABoxFullness Over)
 		"underfull" -> at (ABoxFullness Under)
 		"hbox"      -> at (ABoxDirection Horizontal)

@@ -678,3 +678,6 @@
 ([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 118,Nothing),Boring " 14 hyphenation exceptions out of 8191"))
 ([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 118,Nothing),Boring " 65i,13n,71p,476b,297s stack positions out of 5000i,500n,10000p,200000b,80000s"))
 ([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 118,Nothing),Unknown "!  ==> Fatal error occurred, no output PDF file produced!"))
+([((Just 37,Nothing),"./introduction.tex"),((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 118,Nothing),NoCloseFile))
+([((Nothing,Nothing),"./skeleton_dissertation.tex"),((Nothing,Nothing),"./paper.tex")],((Just 37,Nothing),NoCloseFile))
+([((Nothing,Nothing),"./paper.tex")],((Nothing,Nothing),NoCloseFile))

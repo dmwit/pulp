@@ -24,7 +24,6 @@ import GHC.Show
 
 -- TODO: check that we handle "fatal error" message correctly, e.g. see tests/fatal-error.log
 -- TODO: 'pulp tests/spiders2.log' doesn't filter out "ABD: EveryShipout initializing macros [1\n{...long file...}]" properly
--- TODO: mark MissingCloseFile's
 
 groupUntil = groupWhen . (not .)
 groupWhen p xs = case span p xs of
@@ -56,6 +55,7 @@ data Line a where
 	LaTeXMessage   :: String -> MessageLevel -> [String] -> Line a
 	LineMarker     :: Integer -> Line Markers
 	ExtraCloseFile :: Line a
+	NoCloseFile    :: Line a
 	-- the arguments to Error are:
 	-- 1. the package that complained (or "LaTeX" or "TeX")
 	-- 2. the error message
@@ -109,6 +109,8 @@ instance Show (Line Annotations) where
                          showSpace (showsPrec 11 b3_a1qZ))))))
     showsPrec _ Text.Pulp.ExtraCloseFile
       = showString "ExtraCloseFile"
+    showsPrec _ Text.Pulp.NoCloseFile
+      = showString "NoCloseFile"
     showsPrec
       a_a1r2
       (Text.Pulp.Error b1_a1r3 b2_a1r4 b3_a1r5 b4_a1r6 b5_a1r7)
@@ -146,6 +148,7 @@ instance Eq (Line Annotations) where
 	Unknown s   == Unknown s'    = s == s'
 	LaTeXMessage s m ss == LaTeXMessage s' m' ss' = s == s' && m == m' && ss == ss'
 	ExtraCloseFile == ExtraCloseFile = True
+	NoCloseFile == NoCloseFile   = True
 	_ == _ = False
 
 instance Read (Line Annotations) where
@@ -161,6 +164,7 @@ retag (File s f) = []
 retag (LaTeXMessage p l ss) = [LaTeXMessage p l ss]
 retag (LineMarker n)        = []
 retag (ExtraCloseFile)      = [ExtraCloseFile]
+retag (NoCloseFile)         = [NoCloseFile]
 retag (Error p m s s' d)    = [Error p m s s' d]
 retag (Unknown s)           = [Unknown s]
 
@@ -522,7 +526,10 @@ categorize' l (s:ss)
 	| s == geometryVerboseMode              = first (Boring s:) (parseGeometryVerboseMode l ss)
 	| Just (v, ss') <- xparse (s:ss)        = first (v++) $ categorize' Nothing ss' -- don't need l: we'll parse the line annotation (if any) inside xparse
 	| Just (f, s' ) <- openFile s           = let (b, e) = categorize' Nothing (s':ss)
-	                                          in first (file f b:) (categorize' Nothing e)
+	                                          in case e of
+	                                             	[] -> ([file f (b ++ [NoCloseFile])], [])
+	                                             	_  -> first (file f b:) (categorize' Nothing e)
+	                                          -- in the two recursive calls, we'll rediscover l if necessary (and toss it when it should be used in the other call)
 	| Just (_, s' ) <- closeFile s          = (maybeCons l [], s':ss)
 	| Just (b, ss') <- bracketNumber (s:ss) = first (Boring b:) (categorize' l ss')
 	| (Nothing, Just (b, e)) <- (l, lineNumber s)
@@ -570,10 +577,13 @@ prettyPrint = concatMap (go []) where
 		if length ss > 1
 		then "\n\t" ++ intercalate "\n\t" ss
 		else " " ++ concat ss
-	pprintMess (ExtraCloseFile) = "For some reason, the log-file parser noticed an extra 'close file' marker here.\n\tIt's possible that the filenames and line numbers reported near this are wrong.\n\tThis is likely a bug -- you should report it and include your log file!"
+	pprintMess (ExtraCloseFile) = closeFileMessage "an extra"
+	pprintMess (NoCloseFile   ) = closeFileMessage "a missing"
 	pprintMess (Error p s (Just (beg, end)) (beg', end') _) = p ++ " error: " ++ s ++ "\n\t" ++ beg' ++ "\n\t" ++ end' ++ "\n\t" ++ beg ++ "\n\t" ++ end
 	pprintMess (Error p s Nothing           (beg', end') _) = p ++ " error: " ++ s ++ "\n\t" ++ beg' ++ "\n\t" ++ end'
 	pprintMess (Unknown s) = s
+
+	closeFileMessage s = "For some reason, the log-file parser noticed " ++ s ++ " 'close file' marker here.\n\tIt's possible that the filenames and line numbers reported near this are wrong.\n\tThis is likely a bug -- you should report it and include your log file!"
 
 uglyPrint :: File Annotations -> String
 uglyPrint = unlines . map show . concatMap (go []) where

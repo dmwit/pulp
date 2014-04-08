@@ -132,7 +132,7 @@ The available atoms, and when they're true, are:
     info, message, warning, error   -- output from \PackageError and friends
     boring          -- matches a big regex for known, boring stuff
     unknown         -- unparsed bits of the log file
-    close           -- a part of the log file that looks like it should be parseable, but doesn't make sense here
+    close           -- TeX reported opening a file but not closing it, or closing more files than it opened
     threshold <n>   -- *full *box messages whose badness/points are greater than n
     package <regex> -- \PackageError and friends was called by a package whose name matches the regex
     details <regex> -- long output from \PackageError or \ClassError matches the regex
