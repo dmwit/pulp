@@ -522,7 +522,7 @@ categorize' l (s:ss)
 	| s == geometryVerboseMode              = first (Boring s:) (parseGeometryVerboseMode l ss)
 	| Just (v, ss') <- xparse (s:ss)        = first (v++) $ categorize' Nothing ss' -- don't need l: we'll parse the line annotation (if any) inside xparse
 	| Just (f, s' ) <- openFile s           = let (b, e) = categorize' Nothing (s':ss)
-	                                          in first (file f b:) (putLineHere l e)
+	                                          in first (file f b:) (categorize' Nothing e)
 	| Just (_, s' ) <- closeFile s          = (maybeCons l [], s':ss)
 	| Just (b, ss') <- bracketNumber (s:ss) = first (Boring b:) (categorize' l ss')
 	| (Nothing, Just (b, e)) <- (l, lineNumber s)
