@@ -26,7 +26,7 @@ getLogs dir = do
 
 testLog f = TestInstance
 	{ run = go
-	, name = f
+	, name = takeFileName f
 	, tags = []
 	, options = []
 	, setOption = \_ _ -> Left "this test does not support any options"
