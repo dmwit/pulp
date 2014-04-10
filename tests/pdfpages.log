@@ -1,0 +1,1212 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.8.13)  9 APR 2014 11:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**drafts/extract_pages.tex
+(./drafts/extract_pages.tex
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2012/08/31 v0.4t Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count87
+\calc@Bcount=\count88
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count89
+\calc@Cskip=\skip45
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count90
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box26
+\AM@toc@title=\toks15
+\c@AM@survey=\count91
+\AM@templatesizebox=\box27
+)
+No file extract_pages.aux.
+\openout1 = `extract_pages.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+\AtBeginShipoutBox=\box28
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count92
+\scratchdimen=\dimen107
+\scratchbox=\box29
+\nofMPsegments=\count93
+\nofMParguments=\count94
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count95
+\MPscratchDim=\dimen108
+\MPnumerator=\count96
+\makeMPintoPDFobject=\count97
+\everyMPtoPDFconversion=\toks17
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+<paper.pdf, id=3, page=24, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 24>
+Package pdftex.def Info: paper.pdf, page24 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 24>
+Package pdftex.def Info: paper.pdf, page24 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 24>
+Package pdftex.def Info: paper.pdf, page24 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 24>
+Package pdftex.def Info: paper.pdf, page24 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[1
+
+ <./paper.pdf{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}
+>] <paper.pdf, id=50, page=25, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 25>
+Package pdftex.def Info: paper.pdf, page25 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 25>
+Package pdftex.def Info: paper.pdf, page25 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 25>
+Package pdftex.def Info: paper.pdf, page25 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[2 <./paper.pdf>] <paper.pdf, id=114, page=26, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 26>
+Package pdftex.def Info: paper.pdf, page26 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 26>
+Package pdftex.def Info: paper.pdf, page26 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 26>
+Package pdftex.def Info: paper.pdf, page26 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[3 <./paper.pdf>] <paper.pdf, id=349, page=27, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 27>
+Package pdftex.def Info: paper.pdf, page27 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 27>
+Package pdftex.def Info: paper.pdf, page27 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 27>
+Package pdftex.def Info: paper.pdf, page27 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[4 <./paper.pdf>] <paper.pdf, id=353, page=28, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 28>
+Package pdftex.def Info: paper.pdf, page28 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 28>
+Package pdftex.def Info: paper.pdf, page28 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 28>
+Package pdftex.def Info: paper.pdf, page28 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[5 <./paper.pdf>] <paper.pdf, id=367, page=29, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 29>
+Package pdftex.def Info: paper.pdf, page29 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 29>
+Package pdftex.def Info: paper.pdf, page29 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 29>
+Package pdftex.def Info: paper.pdf, page29 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[6 <./paper.pdf>] <paper.pdf, id=509, page=30, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 30>
+Package pdftex.def Info: paper.pdf, page30 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 30>
+Package pdftex.def Info: paper.pdf, page30 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 30>
+Package pdftex.def Info: paper.pdf, page30 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[7 <./paper.pdf>] <paper.pdf, id=514, page=31, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 31>
+Package pdftex.def Info: paper.pdf, page31 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 31>
+Package pdftex.def Info: paper.pdf, page31 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 31>
+Package pdftex.def Info: paper.pdf, page31 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[8 <./paper.pdf>] <paper.pdf, id=518, page=32, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 32>
+Package pdftex.def Info: paper.pdf, page32 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 32>
+Package pdftex.def Info: paper.pdf, page32 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 32>
+Package pdftex.def Info: paper.pdf, page32 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[9 <./paper.pdf>] <paper.pdf, id=532, page=33, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 33>
+Package pdftex.def Info: paper.pdf, page33 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 33>
+Package pdftex.def Info: paper.pdf, page33 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 33>
+Package pdftex.def Info: paper.pdf, page33 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[10 <./paper.pdf>] <paper.pdf, id=536, page=34, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 34>
+Package pdftex.def Info: paper.pdf, page34 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 34>
+Package pdftex.def Info: paper.pdf, page34 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 34>
+Package pdftex.def Info: paper.pdf, page34 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[11 <./paper.pdf>] <paper.pdf, id=540, page=35, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 35>
+Package pdftex.def Info: paper.pdf, page35 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 35>
+Package pdftex.def Info: paper.pdf, page35 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 35>
+Package pdftex.def Info: paper.pdf, page35 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[12 <./paper.pdf>] <paper.pdf, id=554, page=36, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 36>
+Package pdftex.def Info: paper.pdf, page36 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 36>
+Package pdftex.def Info: paper.pdf, page36 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 36>
+Package pdftex.def Info: paper.pdf, page36 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[13 <./paper.pdf>] <paper.pdf, id=559, page=37, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 37>
+Package pdftex.def Info: paper.pdf, page37 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 37>
+Package pdftex.def Info: paper.pdf, page37 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 37>
+Package pdftex.def Info: paper.pdf, page37 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[14 <./paper.pdf>] <paper.pdf, id=563, page=38, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 38>
+Package pdftex.def Info: paper.pdf, page38 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 38>
+Package pdftex.def Info: paper.pdf, page38 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 38>
+Package pdftex.def Info: paper.pdf, page38 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[15 <./paper.pdf>] <paper.pdf, id=567, page=39, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 39>
+Package pdftex.def Info: paper.pdf, page39 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 39>
+Package pdftex.def Info: paper.pdf, page39 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 39>
+Package pdftex.def Info: paper.pdf, page39 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[16 <./paper.pdf>] <paper.pdf, id=571, page=40, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 40>
+Package pdftex.def Info: paper.pdf, page40 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 40>
+Package pdftex.def Info: paper.pdf, page40 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 40>
+Package pdftex.def Info: paper.pdf, page40 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[17 <./paper.pdf>] <paper.pdf, id=580, page=41, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 41>
+Package pdftex.def Info: paper.pdf, page41 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 41>
+Package pdftex.def Info: paper.pdf, page41 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 41>
+Package pdftex.def Info: paper.pdf, page41 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[18 <./paper.pdf>] <paper.pdf, id=584, page=42, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 42>
+Package pdftex.def Info: paper.pdf, page42 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 42>
+Package pdftex.def Info: paper.pdf, page42 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 42>
+Package pdftex.def Info: paper.pdf, page42 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[19 <./paper.pdf>] <paper.pdf, id=589, page=43, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 43>
+Package pdftex.def Info: paper.pdf, page43 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 43>
+Package pdftex.def Info: paper.pdf, page43 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 43>
+Package pdftex.def Info: paper.pdf, page43 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[20 <./paper.pdf>] <paper.pdf, id=593, page=44, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 44>
+Package pdftex.def Info: paper.pdf, page44 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 44>
+Package pdftex.def Info: paper.pdf, page44 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 44>
+Package pdftex.def Info: paper.pdf, page44 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[21 <./paper.pdf>] <paper.pdf, id=597, page=45, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 45>
+Package pdftex.def Info: paper.pdf, page45 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 45>
+Package pdftex.def Info: paper.pdf, page45 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 45>
+Package pdftex.def Info: paper.pdf, page45 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[22 <./paper.pdf>] <paper.pdf, id=601, page=46, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 46>
+Package pdftex.def Info: paper.pdf, page46 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 46>
+Package pdftex.def Info: paper.pdf, page46 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 46>
+Package pdftex.def Info: paper.pdf, page46 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[23 <./paper.pdf>] <paper.pdf, id=605, page=47, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 47>
+Package pdftex.def Info: paper.pdf, page47 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 47>
+Package pdftex.def Info: paper.pdf, page47 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 47>
+Package pdftex.def Info: paper.pdf, page47 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[24 <./paper.pdf>] <paper.pdf, id=609, page=48, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 48>
+Package pdftex.def Info: paper.pdf, page48 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 48>
+Package pdftex.def Info: paper.pdf, page48 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 48>
+Package pdftex.def Info: paper.pdf, page48 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[25 <./paper.pdf>] <paper.pdf, id=619, page=49, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 49>
+Package pdftex.def Info: paper.pdf, page49 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 49>
+Package pdftex.def Info: paper.pdf, page49 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 49>
+Package pdftex.def Info: paper.pdf, page49 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[26 <./paper.pdf>] <paper.pdf, id=623, page=50, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 50>
+Package pdftex.def Info: paper.pdf, page50 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 50>
+Package pdftex.def Info: paper.pdf, page50 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 50>
+Package pdftex.def Info: paper.pdf, page50 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[27 <./paper.pdf>] <paper.pdf, id=632, page=51, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 51>
+Package pdftex.def Info: paper.pdf, page51 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 51>
+Package pdftex.def Info: paper.pdf, page51 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 51>
+Package pdftex.def Info: paper.pdf, page51 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[28 <./paper.pdf>] <paper.pdf, id=636, page=52, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 52>
+Package pdftex.def Info: paper.pdf, page52 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 52>
+Package pdftex.def Info: paper.pdf, page52 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 52>
+Package pdftex.def Info: paper.pdf, page52 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[29 <./paper.pdf>] <paper.pdf, id=640, page=53, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 53>
+Package pdftex.def Info: paper.pdf, page53 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 53>
+Package pdftex.def Info: paper.pdf, page53 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 53>
+Package pdftex.def Info: paper.pdf, page53 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[30 <./paper.pdf>] <paper.pdf, id=644, page=54, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 54>
+Package pdftex.def Info: paper.pdf, page54 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 54>
+Package pdftex.def Info: paper.pdf, page54 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 54>
+Package pdftex.def Info: paper.pdf, page54 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[31 <./paper.pdf>] <paper.pdf, id=649, page=55, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 55>
+Package pdftex.def Info: paper.pdf, page55 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 55>
+Package pdftex.def Info: paper.pdf, page55 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 55>
+Package pdftex.def Info: paper.pdf, page55 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[32 <./paper.pdf>] <paper.pdf, id=653, page=56, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 56>
+Package pdftex.def Info: paper.pdf, page56 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 56>
+Package pdftex.def Info: paper.pdf, page56 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 56>
+Package pdftex.def Info: paper.pdf, page56 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[33 <./paper.pdf>] <paper.pdf, id=657, page=57, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 57>
+Package pdftex.def Info: paper.pdf, page57 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 57>
+Package pdftex.def Info: paper.pdf, page57 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 57>
+Package pdftex.def Info: paper.pdf, page57 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[34 <./paper.pdf>] <paper.pdf, id=661, page=58, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 58>
+Package pdftex.def Info: paper.pdf, page58 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 58>
+Package pdftex.def Info: paper.pdf, page58 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 58>
+Package pdftex.def Info: paper.pdf, page58 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[35 <./paper.pdf>] <paper.pdf, id=665, page=59, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 59>
+Package pdftex.def Info: paper.pdf, page59 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 59>
+Package pdftex.def Info: paper.pdf, page59 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 59>
+Package pdftex.def Info: paper.pdf, page59 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[36 <./paper.pdf>] <paper.pdf, id=669, page=60, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 60>
+Package pdftex.def Info: paper.pdf, page60 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 60>
+Package pdftex.def Info: paper.pdf, page60 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 60>
+Package pdftex.def Info: paper.pdf, page60 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[37 <./paper.pdf>] <paper.pdf, id=679, page=61, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 61>
+Package pdftex.def Info: paper.pdf, page61 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 61>
+Package pdftex.def Info: paper.pdf, page61 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 61>
+Package pdftex.def Info: paper.pdf, page61 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[38 <./paper.pdf>] <paper.pdf, id=683, page=62, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 62>
+Package pdftex.def Info: paper.pdf, page62 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 62>
+Package pdftex.def Info: paper.pdf, page62 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 62>
+Package pdftex.def Info: paper.pdf, page62 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[39 <./paper.pdf>] <paper.pdf, id=687, page=63, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 63>
+Package pdftex.def Info: paper.pdf, page63 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 63>
+Package pdftex.def Info: paper.pdf, page63 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 63>
+Package pdftex.def Info: paper.pdf, page63 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[40 <./paper.pdf>] <paper.pdf, id=691, page=64, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 64>
+Package pdftex.def Info: paper.pdf, page64 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 64>
+Package pdftex.def Info: paper.pdf, page64 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 64>
+Package pdftex.def Info: paper.pdf, page64 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[41 <./paper.pdf>] <paper.pdf, id=695, page=65, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 65>
+Package pdftex.def Info: paper.pdf, page65 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 65>
+Package pdftex.def Info: paper.pdf, page65 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 65>
+Package pdftex.def Info: paper.pdf, page65 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[42 <./paper.pdf>] <paper.pdf, id=705, page=66, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 66>
+Package pdftex.def Info: paper.pdf, page66 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 66>
+Package pdftex.def Info: paper.pdf, page66 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 66>
+Package pdftex.def Info: paper.pdf, page66 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[43 <./paper.pdf>] <paper.pdf, id=710, page=67, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 67>
+Package pdftex.def Info: paper.pdf, page67 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 67>
+Package pdftex.def Info: paper.pdf, page67 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 67>
+Package pdftex.def Info: paper.pdf, page67 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[44 <./paper.pdf>] <paper.pdf, id=714, page=68, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 68>
+Package pdftex.def Info: paper.pdf, page68 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 68>
+Package pdftex.def Info: paper.pdf, page68 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 68>
+Package pdftex.def Info: paper.pdf, page68 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[45 <./paper.pdf>] <paper.pdf, id=718, page=69, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 69>
+Package pdftex.def Info: paper.pdf, page69 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 69>
+Package pdftex.def Info: paper.pdf, page69 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 69>
+Package pdftex.def Info: paper.pdf, page69 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[46 <./paper.pdf>] <paper.pdf, id=722, page=70, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 70>
+Package pdftex.def Info: paper.pdf, page70 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 70>
+Package pdftex.def Info: paper.pdf, page70 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 70>
+Package pdftex.def Info: paper.pdf, page70 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[47 <./paper.pdf>] <paper.pdf, id=726, page=71, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 71>
+Package pdftex.def Info: paper.pdf, page71 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 71>
+Package pdftex.def Info: paper.pdf, page71 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 71>
+Package pdftex.def Info: paper.pdf, page71 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[48 <./paper.pdf>] <paper.pdf, id=730, page=72, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 72>
+Package pdftex.def Info: paper.pdf, page72 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 72>
+Package pdftex.def Info: paper.pdf, page72 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 72>
+Package pdftex.def Info: paper.pdf, page72 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[49 <./paper.pdf>] <paper.pdf, id=735, page=73, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 73>
+Package pdftex.def Info: paper.pdf, page73 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 73>
+Package pdftex.def Info: paper.pdf, page73 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 73>
+Package pdftex.def Info: paper.pdf, page73 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[50 <./paper.pdf>] <paper.pdf, id=739, page=74, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 74>
+Package pdftex.def Info: paper.pdf, page74 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 74>
+Package pdftex.def Info: paper.pdf, page74 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 74>
+Package pdftex.def Info: paper.pdf, page74 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[51 <./paper.pdf>] <paper.pdf, id=743, page=75, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 75>
+Package pdftex.def Info: paper.pdf, page75 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 75>
+Package pdftex.def Info: paper.pdf, page75 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 75>
+Package pdftex.def Info: paper.pdf, page75 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[52 <./paper.pdf>] <paper.pdf, id=747, page=76, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 76>
+Package pdftex.def Info: paper.pdf, page76 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 76>
+Package pdftex.def Info: paper.pdf, page76 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 76>
+Package pdftex.def Info: paper.pdf, page76 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[53 <./paper.pdf>] <paper.pdf, id=751, page=77, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 77>
+Package pdftex.def Info: paper.pdf, page77 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 77>
+Package pdftex.def Info: paper.pdf, page77 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 77>
+Package pdftex.def Info: paper.pdf, page77 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[54 <./paper.pdf>] <paper.pdf, id=755, page=78, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 78>
+Package pdftex.def Info: paper.pdf, page78 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 78>
+Package pdftex.def Info: paper.pdf, page78 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 78>
+Package pdftex.def Info: paper.pdf, page78 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[55 <./paper.pdf>] <paper.pdf, id=760, page=79, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 79>
+Package pdftex.def Info: paper.pdf, page79 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 79>
+Package pdftex.def Info: paper.pdf, page79 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 79>
+Package pdftex.def Info: paper.pdf, page79 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[56 <./paper.pdf>] <paper.pdf, id=764, page=80, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 80>
+Package pdftex.def Info: paper.pdf, page80 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 80>
+Package pdftex.def Info: paper.pdf, page80 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 80>
+Package pdftex.def Info: paper.pdf, page80 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[57 <./paper.pdf>] <paper.pdf, id=768, page=81, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 81>
+Package pdftex.def Info: paper.pdf, page81 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 81>
+Package pdftex.def Info: paper.pdf, page81 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 81>
+Package pdftex.def Info: paper.pdf, page81 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[58 <./paper.pdf>] <paper.pdf, id=772, page=82, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 82>
+Package pdftex.def Info: paper.pdf, page82 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 82>
+Package pdftex.def Info: paper.pdf, page82 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 82>
+Package pdftex.def Info: paper.pdf, page82 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[59 <./paper.pdf>] <paper.pdf, id=776, page=83, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 83>
+Package pdftex.def Info: paper.pdf, page83 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 83>
+Package pdftex.def Info: paper.pdf, page83 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 83>
+Package pdftex.def Info: paper.pdf, page83 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[60 <./paper.pdf>] <paper.pdf, id=780, page=84, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 84>
+Package pdftex.def Info: paper.pdf, page84 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 84>
+Package pdftex.def Info: paper.pdf, page84 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 84>
+Package pdftex.def Info: paper.pdf, page84 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[61 <./paper.pdf>] <paper.pdf, id=785, page=85, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 85>
+Package pdftex.def Info: paper.pdf, page85 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 85>
+Package pdftex.def Info: paper.pdf, page85 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 85>
+Package pdftex.def Info: paper.pdf, page85 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[62 <./paper.pdf>] <paper.pdf, id=789, page=86, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 86>
+Package pdftex.def Info: paper.pdf, page86 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 86>
+Package pdftex.def Info: paper.pdf, page86 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 86>
+Package pdftex.def Info: paper.pdf, page86 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[63 <./paper.pdf>] <paper.pdf, id=793, page=87, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 87>
+Package pdftex.def Info: paper.pdf, page87 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 87>
+Package pdftex.def Info: paper.pdf, page87 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 87>
+Package pdftex.def Info: paper.pdf, page87 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[64 <./paper.pdf>] <paper.pdf, id=797, page=88, 614.295pt x 794.97pt>
+File: paper.pdf Graphic file (type pdf)
+
+<use paper.pdf, page 88>
+Package pdftex.def Info: paper.pdf, page88 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 88>
+Package pdftex.def Info: paper.pdf, page88 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: paper.pdf Graphic file (type pdf)
+ <use paper.pdf, page 88>
+Package pdftex.def Info: paper.pdf, page88 used on input line 4.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+[65 <./paper.pdf>] (./extract_pages.aux) ) 
+Here is how much of TeX's memory you used:
+ 2891 strings out of 495035
+ 42281 string characters out of 6181702
+ 97703 words of memory out of 5000000
+ 6091 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 39i,18n,46p,253b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
+10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/cm-super/sfcc1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/cm-super/sfrm0700.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+cm-super/sfrm0800.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-supe
+r/sfrm1000.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfrm1
+200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on extract_pages.pdf (65 pages, 993332 bytes).
+PDF statistics:
+ 839 PDF objects out of 1000 (max. 8388607)
+ 526 compressed objects within 6 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 336 words of extra memory for PDF output out of 10000 (max. 10000000)
+
