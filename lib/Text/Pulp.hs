@@ -344,16 +344,12 @@ stripImmediates s = case immediates `match` s of
 	   } -> Just (b, e)
 	_ -> Nothing
 
--- TODO: May have to parse LaTeX warnings(/errors/infos/messages?) separately,
--- since they don't put "(LaTeX)" at the beginning of each continuation line.
--- (Maybe they terminate with a blank line.) See e.g.
--- tests/multiline-latex-warning.log.
-
 parseMessage l b e ss = first (thisM:) (putLineHere (maximum' lms) ss') where
 	(package, level) = case words b of
 		[_, package, level] -> (package, level)
 		[_, level] -> ("LaTeX", level)
-	(es, ss') = span (("(" ++ package ++ ")") `isPrefixOf`) ss
+	packagePrefix = if package == "LaTeX" then "               " else "(" ++ package ++ ")"
+	(es, ss') = span (packagePrefix `isPrefixOf`) ss
 	ms        = map (dropWhile isSpace) (e:map (drop (length package + 2)) es)
 	thisM     = LaTeXMessage package (read (init level)) ms
 	lms       = [lm | Just lm <- [l]] ++ [lm | Just (b, e) <- map lineNumber ms, lm <- [b, e]]
