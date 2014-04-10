@@ -254,19 +254,20 @@ immediates = compileAll
 	,"^Excluding comment '[a-z]*'"
 	,fancyvrbRegex
 	]
-quoted r = "\"?" ++ r ++ "\"?"
-dateRegex = yearRegex ++ "/" ++ monthNumRegex ++ "/" ++ dayNumRegex
-filebaseRegex = "[-_.:/a-zA-Z0-9]*"
-filenameRegex = quoted (filebaseRegex ++ "\\.[a-z]{2,}")
-ptRegex = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
-vnumRegex = "[[:digit:]]+(\\.[[:digit:]]+)*"
-dayNumRegex = "[[:digit:]]{1,2}"
-monthNumRegex = "(0?[1-9]|1[0-2])"
+
+quoted r       = "\"?" ++ r ++ "\"?"
+dateRegex      = yearRegex ++ "/" ++ monthNumRegex ++ "/" ++ dayNumRegex
+filebaseRegex  = "[-_.:/a-zA-Z0-9]*"
+filenameRegex  = quoted (filebaseRegex ++ "\\.[a-z]{2,}")
+ptRegex        = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
+vnumRegex      = "[[:digit:]]+(\\.[[:digit:]]+)*"
+dayNumRegex    = "[[:digit:]]{1,2}"
+monthNumRegex  = "(0?[1-9]|1[0-2])"
 monthNameRegex = "(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)"
-yearRegex = "[[:digit:]]{4}"
-variantRegex = "^Variant \\\\[^ :]+:[^ :]+ already defined; not changing it on line [[:digit:]]+$"
-warningRegex = "^([^ ]*) [wW]arning: (.*)$"
-fancyvrbRegex = "^Style option: `fancyvrb' v.* <" ++ dateRegex ++ "> \\(tvz\\)"
+yearRegex      = "[[:digit:]]{4}"
+variantRegex   = "^Variant \\\\[^ :]+:[^ :]+ already defined; not changing it on line [[:digit:]]+$"
+warningRegex   = "^([^ ]*) [wW]arning: (.*)$"
+fancyvrbRegex  = "^Style option: `fancyvrb' v.* <" ++ dateRegex ++ "> \\(tvz\\)"
 
 matchBeginning pat_ = let pat = compile pat_ in \s ->
 	case match pat s of
