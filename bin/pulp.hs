@@ -92,8 +92,7 @@ matchesRegex s (True , r) = (s =~ r) == (0 :: MatchOffset, length s :: MatchLeng
 matchesRegex s (False, r) =  s =~ r
 
 -- that final newline is so pesky
-unlines' [] = ""
-unlines' ss = init (unlines ss)
+unlines' = intercalate "\n"
 
 -- proposed EBNF:
 -- atom ::=
