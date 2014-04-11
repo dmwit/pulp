@@ -3,7 +3,6 @@
 import Config as Config
 import Control.Applicative
 import Control.Exception
-import Control.Monad
 import Data.List
 import GHC.IO.Encoding
 import System.Environment
@@ -11,11 +10,10 @@ import Text.Pulp as Pulp
 
 interesting :: Config -> File Annotations -> File Annotations
 interesting formula = concatMap go where
-	locallyInteresting formula l = [l | Config.eval formula l]
 	go (l, File f ls) = case concatMap go ls of
 		[] -> []
 		ls -> [(l, File f ls)]
-	go (l, m) = (,) l <$> (retag >=> locallyInteresting formula >=> retag) m
+	go (l, m) = [(l, m) | Config.eval formula m]
 
 Right defaultFormula = Config.parse "not (boring | info | message | under | over)"
 
