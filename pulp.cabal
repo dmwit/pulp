@@ -24,6 +24,7 @@ library
 
 executable pulp
   main-is:             pulp.hs
+  other-modules:       Config
   build-depends:       base >=4 && <5,
                        mtl >=2 && <3,
                        pulp ==0.0,
