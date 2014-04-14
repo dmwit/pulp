@@ -57,7 +57,7 @@ Do you find LaTeX's output too voluminous? Do you wish it would get straight to 
      0 named destinations out of 1000 (max. 500000)
      224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-...do your eyes automatically skip to the line about undefined references without conscious effort? Then you need `pulp`. Compare LaTeX's spew with what `pulp` has to say about that file:
+...do your eyes automatically skip to the line about cross-references without conscious effort? Then you need `pulp`. Compare LaTeX's spew with what `pulp` has to say about that file:
 
     ./delta.tex:133-133: LaTeX warning: Float too large for page by 4.64713pt on input line 133.
     ./delta.tex:2649-2649: LaTeX warning: Float too large for page by 74.48848pt on input line 2649.
