@@ -298,9 +298,11 @@ warning = let pat = compile warningRegex in \s ->
 -- number  ::= ['0'-'9']+
 -- junk    ::= blank | '<' filename '>' | '{' filename '}' | warning
 -- blank   ::= /* an entire line with nothing in it */
--- warning ::= /* an entire line with 'pdfTeX warning: pdflatex (file ' filename '): PDF inclusion: multiple pdfs with page group included in a single page' */
+-- warning ::= /* an entire line with 'pdfTeX warning: pdflatex (file '
+--                filename '): PDF inclusion: multiple pdfs with page group
+--                included in a single page' */
 --
--- We'll delay the warnings untill after the bracket, since they're a different
+-- We'll delay the warnings until after the bracket, since they're a different
 -- kind of thing.  I want to do this with a regex, but I don't really know of
 -- an implementation that will short-circuit when it enters a failing state.
 bracketNumber ss = mungeParts <$> runParser (mungeParse <$> open <*> boring <*> close) ss where
