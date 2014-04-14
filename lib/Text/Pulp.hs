@@ -374,10 +374,10 @@ parseHBox l s ss = first (HBox s e:) (putLineHere l ss') where
 	message            = if last message_ == " []" then init message_ else message_
 
 	(e, ss') = case (expected, messageEnd, stripSuffix activeOutput s) of
+		([""], Just ([], _), Just {}) -> ("\n"  , ss'_)
+		([""], _, Just {}) -> (""               , unsure)
 		(_   , Nothing, _) -> (hboxErrorTooLong , ss  )
 		([]  , Just {}, _) -> (hboxErrorTooShort, ss'_)
-		([""], Just ([], _), Just {}) -> ("\n"  , ss'_)
-		([""], _, Just {}) -> ("", unsure)
 		_                  -> (unlines message  , ss'_)
 
 	activeOutput      = ") has occurred while \\output is active []"
