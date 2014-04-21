@@ -1,6 +1,6 @@
 name:                pulp
 version:             0.0
-synopsis:            process your LaTeX log file and make a better paper
+synopsis:            process your LaTeX log file with pulp and make a better paper
 -- description:         
 homepage:            http://dmwit.com/pulp
 license:             BSD3
