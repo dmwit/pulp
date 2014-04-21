@@ -71,7 +71,7 @@ Do you find LaTeX's output too voluminous? Do you wish it would get straight to 
 
 Not only is the label warning more clearly highlighted, a number of other errors -- which were scrolled way the heck off the terminal ages ago if you were just using `pdflatex` -- are more clearly visible, together with information about which source file and line number caused the problem. (In fact, even messages which do not have a line number directly in them will have a "best guess" assigned to them by pulp to give you an idea of where in the file to start looking.)
 
-And, just to rub in the beauty a bit more, here's a comparison, LaTeX vs. pulp, for a paper with no problems:
+Here's a comparison, LaTeX vs. pulp, for a paper with no problems:
 
     % pdflatex paper
     This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013)
@@ -88,19 +88,21 @@ And, just to rub in the beauty a bit more, here's a comparison, LaTeX vs. pulp, 
     % pulp paper.log
     %
 
-# Example usage
+# Usage and installation
 
-To install, simply type `cabal install` from the repository directory, or `cabal install pulp` if you want the latest release from Hackage. As usual with cabal, make sure that the appropriate directory is in your `PATH`; cabal's default binary directory is `~/.cabal/bin`.
-
-To use, compile your LaTeX file first, for example, with
+To use pulp, first compile your LaTeX file, then run `pulp` on the log file that LaTeX produces. The two commands together might like this:
 
     pdflatex -interaction nonstopmode foo
-
-This should produce, among other things, a file named `foo.log`, which serves as the input to `pulp`. Use
-
     pulp foo.log
 
-to parse this file and print some relevant information.
+Installation is simple if you are familiar with the Haskell toolchain; simply `cabal install pulp`. If you are not, chances are good you haven't got the toolchain in the first place. Then the process should look like this:
+
+1. Install GHC and cabal-install. The recommended way for newcomers to get these is by installing the [Haskell Platform](http://www.haskell.org/platform/).
+2. Synch cabal-install's package database with the public repository on Hackage. Run `cabal update`.
+3. Build `pulp` itself; run `cabal install pulp`.
+4. Make sure the appropriate directory is in your `PATH`; by default, this is `~/.cabal/bin`. For the most popular shells, this can be done by adding a line like `export PATH=$HOME/.cabal/bin:$PATH` to your startup file.
+
+Alternately, one of the binaries from http://dmwit.com/pulp may work on your system.
 
 # Configuration
 
