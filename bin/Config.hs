@@ -4,6 +4,10 @@ import Control.Applicative
 import Control.Monad.State
 import Data.Char
 import Data.List
+import Data.Universe.Instances.Eq   ()
+import Data.Universe.Instances.Ord  ()
+import Data.Universe.Instances.Read ()
+import Data.Universe.Instances.Show ()
 import Text.Pulp hiding (parse)
 import Text.Regex.Posix
 
@@ -13,6 +17,7 @@ data Sentence a
 	| Atom a
 	| Not (Sentence a)
 	| Bin (Sentence a) Operator (Sentence a)
+	deriving (Eq, Ord, Show, Read)
 
 evalSentence :: (a -> Bool) -> (Sentence a -> Bool)
 evalSentence f = go where
@@ -193,9 +198,16 @@ parse = evalStateT (parseSentence <* eof) . tokenize
 
 parseSentence :: Parser (Sentence Atom)
 parseSentence = precedence <$> parseSentence_ where
-	-- TODO
-	precedence (s, []) = s
-	precedence (s, (b,c):rest) = Bin s b (precedence (c, rest))
+	precedence raw = case foldr gather raw precedenceTable of
+		(s, []) -> s
+		_ -> error "Amazing! We managed to parse an operator that's not in the list of binary operators. This is definitely a bug."
+
+	gather op (s, []) = (s, [])
+	gather op (s, (b, c):rest) = case gather op (c, rest) of
+		(c, rest) | op == b   -> (Bin s b c, rest)
+		          | otherwise -> (s, (b, c):rest)
+
+	precedenceTable = reverse . nub . map snd $ binopKeywords
 
 -- why not (Data.Functor.Alt.<!>)? too many dependencies
 -- why not (Control.Applicative.<|>)? the ErrorList class is stupid and also sucks
@@ -272,7 +284,7 @@ expandKeyword k choices = case filter ((k `isPrefixOf`) . fst) choices of
 atomKeywords     = ["boring", "unknown", "close", "overfull", "underfull", "hbox", "vbox", "threshold", "info", "message", "warning", "error", "package", "details"]
 nullopKeywords   = [("true", True), ("false", False), ("0", False), ("1", True)]
 unopKeywords     = ["not", "!", "~"]
-binopKeywords    =
+binopKeywords    = -- note to self: this list doubles as a precedence order
 	[ ("&&", (&&)), ("*", (&&)), ("/\\", (&&)), ("and", (&&))
 	, ("||", (||)), ("+", (||)), ("\\/", (||)), ("or",  (||))
 	, ("=>", (==>)), ("->", (==>))

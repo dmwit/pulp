@@ -185,6 +185,18 @@ The configuration file format (modulo white space) is given below.
         | 'package' regex
         | 'details' regex
 
+All binary operators are right-associative, and the precedence order is (from highest to lowest):
+
+    &&, *, /\, and
+    ||, +, \/, or
+    =>, ->
+    <=>, <->, ==
+    !=, /=, ^, xor
+    nor
+    nand
+
+Operators that share a line above are actually alternate spellings of the same operator, and hence have the same precedence. For example, `a & b and c <=> d \/ e + f` parses as `(a & (b and c)) <=> (d \/ (e + f))`.
+
 # Disclaimer
 
 This tool was written by reverse-engineering the log files produced by `pdflatex` on my machine. It should work well for you if you use the same LaTeX engine, have the same version of BibTeX, use the same packages as me, have the same underlying operating system, and are in the same latitude as me. There's no guarantee it works well if anything is different. I have tried to make the parser relatively lax, and have had a few other people try it with their setups, so it's not a foregone conclusion that it *won't* work for you, but just keep your expectations realistic to begin with.
