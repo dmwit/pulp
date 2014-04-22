@@ -219,7 +219,7 @@ John Collins writes this about integrating with latexmk:
 >
 > With this set up, after each run of latex or pdflatex, latexmk will run pulp on the log file, which I think will do what you want.
 >
-> By the way, latexmk is currently programmed to provide a summary of important warnings in the log file after a run, by default. If you use pulp, this summary will probably not be useful; pulp performs a better version of that task. You can get this warnings turned off by using latexmk's --silent or --quiet option. But that will also silence other programs it calls, which may be not what you want.
+> By the way, latexmk is currently programmed to provide a summary of important warnings in the log file after a run, by default. If you use pulp, this summary will probably not be useful; pulp performs a better version of that task. You can get this warnings turned off by using latexmk's `--silent` or `--quiet` option. But that will also silence other programs it calls, which may be not what you want.
 
 # Disclaimer
 
