@@ -199,6 +199,28 @@ All binary operators are right-associative, and the precedence order is (from hi
 
 Operators that share a line above are actually alternate spellings of the same operator, and hence have the same precedence. For example, `a & b and c <=> d \/ e + f` parses as `(a & (b and c)) <=> (d \/ (e + f))`.
 
+# latexmk
+
+John Collins writes this about integrating with latexmk:
+
+> To use latexmk with pulp, all you need to do is configure latexmk to run pdflatex and then pulp when it would normally just run pdflatex. To do this you can just put the following lines in one of latexmk's configuration files:
+>
+>     $pdflatex = 'internal pulplatex pdflatex %Y%B.log %O %S';
+>     $latex = 'internal pulplatex latex %Y%B.log %O %S';
+>
+>     sub pulplatex {
+>       my ($prog, $log, @args) = @_;
+>       print "====Running $prog @args\n";
+>       my $ret1 = system( $prog, '-interaction=batchmode', @args );
+>       print "====Summarizing the log file $log\n";
+>       system( 'pulp', $log );
+>       return $ret1;
+>     }
+>
+> With this set up, after each run of latex or pdflatex, latexmk will run pulp on the log file, which I think will do what you want.
+>
+> By the way, latexmk is currently programmed to provide a summary of important warnings in the log file after a run, by default. If you use pulp, this summary will probably not be useful; pulp performs a better version of that task. You can get this warnings turned off by using latexmk's --silent or --quiet option. But that will also silence other programs it calls, which may be not what you want.
+
 # Disclaimer
 
 This tool was written by reverse-engineering the log files produced by `pdflatex` on my machine. It should work well for you if you use the same LaTeX engine, have the same version of BibTeX, use the same packages as me, have the same underlying operating system, and are in the same latitude as me. There's no guarantee it works well if anything is different. I have tried to make the parser relatively lax, and have had a few other people try it with their setups, so it's not a foregone conclusion that it *won't* work for you, but just keep your expectations realistic to begin with.
