@@ -257,7 +257,7 @@ immediates = compileAll
 
 quoted r       = "\"?" ++ r ++ "\"?"
 dateRegex      = yearRegex ++ "/" ++ monthNumRegex ++ "/" ++ dayNumRegex
-filebaseRegex  = "[-_.:/a-zA-Z0-9]*"
+filebaseRegex  = "[^]({<*]*"
 filenameRegex  = quoted (filebaseRegex ++ "\\.[a-z]{2,}")
 ptRegex        = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
 vnumRegex      = "[[:digit:]]+(\\.[[:digit:]]+)*"
