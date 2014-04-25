@@ -16,6 +16,7 @@ library
   exposed-modules:     Text.Pulp
   build-depends:       base >=4 && <5,
                        mtl  >=2 && <3,
+                       split       <0.3,
                        void >=0 && <1,
                        regex-posix >=0.95 && <0.96
   hs-source-dirs:      lib

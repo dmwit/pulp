@@ -15,6 +15,7 @@ import Control.Monad.State
 import Control.Monad.Writer
 import Data.Char
 import Data.List
+import Data.List.Split
 import Data.Maybe
 import Data.Void
 import Text.Regex.Posix
@@ -31,9 +32,12 @@ groupWhen p xs = case span p xs of
 	([], []) -> []
 	(b,  []) -> [b]
 
+-- TODO: lines' could definitely be implemented in one pass instead of two if
+-- that becomes a performance problem
+lines'   = endBy "\r\n" >=> endBy "\n"
 coalesce = map concat
          . groupWhen (\l -> length l == 79 && not (breakHerald l))
-         . lines
+         . lines'
 
 breakHerald l = any (\suffix -> reverse suffix `isPrefixOf` reverse l) [".tex", ".sty", "..."]
 
