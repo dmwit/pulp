@@ -1,3 +1,14 @@
+# Table of contents
+
+1. [Table of contents](#table-of-contents)
+2. [What is pulp?](#what-is-pulp)
+3. [Usage and installation](#usage-and-installation)
+4. [Configuration](#configuration)
+5. [latexmk](#latexmk)
+6. [Disclaimer](#disclaimer)
+7. [Hacking](#hacking)
+8. [Thanks](#thanks)
+
 # What is pulp?
 
 Do you find LaTeX's output too voluminous? Do you wish it would get straight to the point and just tell you the errors and where they occurred? When you see this:
