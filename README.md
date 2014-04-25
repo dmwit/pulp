@@ -242,3 +242,11 @@ Some miscellaneous notes that may interest people staring into the awful guts of
 * There are regression tests set up. Run `cabal test` to initiate them. See `bin/generate-test.lhs` for instructions on adding a new regression test.
 * The parser for LaTeX's output is in `lib/Text/Pulp.hs`. You might want to start reading at `categorize'`.
 * The parser for pulp's own configuration file is in `bin/Config.hs`. The only other real file of interest is `bin/pulp.hs`, which is not much more than glue code.
+
+# Thanks
+
+Lots of people helped me build pulp, in various ways.
+
+* [John Collins](http://users.phys.psu.edu/~collins/index.html), author of [latexmk](http://users.phys.psu.edu/~collins/software/latexmk-jcc/), warned me about lots of log-file-parsing gotchas before users could complain.
+* [Brent Yorgey](http://www.cis.upenn.edu/~byorgey/) and Vilhelm Sjöberg sent some particularly weird log files, which helped improve the robustness of the parser.
+* [Michael Greenberg](http://www.weaselhat.com/) shared his build of pulp for the binaries page.
