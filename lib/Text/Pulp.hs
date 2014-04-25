@@ -255,9 +255,14 @@ immediates = compileAll
 	,fancyvrbRegex
 	]
 
-quoted r       = "\"?" ++ r ++ "\"?"
+quoted r       = "(" ++ r ++ "|\"[^\"]*\")"
 dateRegex      = yearRegex ++ "/" ++ monthNumRegex ++ "/" ++ dayNumRegex
-filebaseRegex  = "[^]({<*]*"
+-- heuristic: filenames don't start with "*" (to avoid running into ambiguity
+-- with xparse errors), and can't have any of the characters "]({<" in them
+-- anywhere, with the notable exception of allowing the exact string "(x86)"
+-- anywhere in the middle because many LaTeX installations live in
+-- "C:\Program Files (x86)\..."
+filebaseRegex  = "[^]({<*]([^]({<]|\\(x86\\))*"
 filenameRegex  = quoted (filebaseRegex ++ "\\.[a-z]{2,}")
 ptRegex        = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
 vnumRegex      = "[[:digit:]]+(\\.[[:digit:]]+)*"
