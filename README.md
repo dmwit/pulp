@@ -106,14 +106,33 @@ To use pulp, first compile your LaTeX file, then run `pulp` on the log file that
     pdflatex -interaction nonstopmode foo
     pulp foo.log
 
-Installation is simple if you are familiar with the Haskell toolchain; simply `cabal install pulp`. If you are not, chances are good you haven't got the toolchain in the first place. Then the process should look like this:
+## Prerequisites
 
-1. Install GHC and cabal-install. The recommended way for newcomers to get these is by installing the [Haskell Platform](http://www.haskell.org/platform/).
-2. Synch cabal-install's package database with the public repository on Hackage. Run `cabal update`.
-3. Build `pulp` itself; run `cabal install pulp`.
-4. Make sure the appropriate directory is in your `PATH`; by default, this is `~/.cabal/bin`. For the most popular shells, this can be done by adding a line like `export PATH=$HOME/.cabal/bin:$PATH` to your startup file.
+If you want to build your own copy (see the "Binaries" section below otherwise), you will need:
 
-Alternately, one of the binaries from http://dmwit.com/pulp may work on your system.
+* A newish GHC (7.4 or later should be new enough).
+* A newish cabal-install (0.8 or later should be new enough).
+
+If you have neither, the recommended way to get them is to install the [Haskell Platform](http://www.haskell.org/platform).
+
+## Building
+
+You should choose between building the latest release from Hackage or building the bleeding edge source from the github repository. If you choose to build a release, you should synch cabal-install's package database with the public repository on Hackage, then install pulp:
+
+    cabal update
+    cabal install pulp
+
+If you choose to build from the repository, you will need to add a step where you fetch the code manually:
+
+    git clone https://github.com/dmwit/pulp.git
+    cabal update
+    cabal install ./pulp
+
+In either case, make sure the appropriate directory is in your `PATH`; by default, this is `~/.cabal/bin`. For the most popular shells, this can be done by adding a line like `export PATH=$HOME/.cabal/bin:$PATH` to your startup file.
+
+## Binaries
+
+If you don't want to (or can't) build a copy yourself, one of the binaries from http://dmwit.com/pulp may work on your system.
 
 # Configuration
 
@@ -260,4 +279,4 @@ Lots of people helped me build pulp, in various ways.
 
 * [John Collins](http://users.phys.psu.edu/~collins/index.html), author of [latexmk](http://users.phys.psu.edu/~collins/software/latexmk-jcc/), warned me about lots of log-file-parsing gotchas before users could complain.
 * [Brent Yorgey](http://www.cis.upenn.edu/~byorgey/) and Vilhelm Sjöberg sent some particularly weird log files, which helped improve the robustness of the parser.
-* [Michael Greenberg](http://www.weaselhat.com/) shared his build of pulp for the binaries page.
+* [Michael Greenberg](http://www.weaselhat.com/) and [Catalin Hritcu](https://hritcu.wordpress.com/) shared pulp binaries.
