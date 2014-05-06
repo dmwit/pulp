@@ -15,7 +15,8 @@ cabal-version:       >=1.10
 library
   exposed-modules:     Text.Pulp
   build-depends:       base >=4 && <5,
-                       mtl  >=2 && <3,
+                       -- mtl-2.2 doesn't export run*T by mistake
+                       mtl  >=2 && <3 && (>2.2 || <2.2),
                        split       <0.3,
                        void >=0 && <1,
                        regex-posix >=0.95 && <0.96
