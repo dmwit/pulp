@@ -560,6 +560,7 @@ parse = annotate . categorize . coalesce
 
 annotate :: File Markers -> File Annotations
 annotate = concatMap retagAnnot . liftA3 zip3 (scanl (flip combine) Nothing) (scanr combine Nothing) id where
+	combine :: Line Markers -> Maybe Integer -> Maybe Integer
 	combine (LineMarker n) l = Just n
 	combine _ l = l
 
