@@ -320,7 +320,7 @@ bracketNumber ss = mungeParts <$> runParser (mungeParse <$> open <*> boring <*> 
 	runParser p ss = runWriterT (runStateT p ss)
 
 	pdfTeXWarningRegex = "^pdfTeX warning: pdflatex \\(file " ++ filenameRegex ++ "\\): PDF inclusion: multiple pdfs with page group included in a single page$"
-	delimitedFileRegex = "([[:space:]]|[<>{}]|" ++ filenameRegex ++ ")*"
+	delimitedFileRegex = "([[:space:]]|[<>{}]|\\(PNG copy\\)|" ++ filenameRegex ++ ")*"
 
 	head = do
 		ss <- get
