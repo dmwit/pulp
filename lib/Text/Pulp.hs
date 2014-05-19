@@ -218,7 +218,7 @@ regex = compileAll
 	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read|insert)[[:digit:]]+$"
 	,"^\\\\openout[[:digit:]]+ = [^']*'\\.$"
 	,"^Chapter [[:digit:]]+\\.$"
-	,"^Appendix [A-Z]\\.$"
+	,"^Appendix [A-Z]\\.$" -- after 26 appendices, TeX barfs =)
 	,"^[[:space:]]*<" ++ filenameRegex ++ ", id=[[:digit:]]+, (page=[[:digit:]]+, )?" ++ ptRegex ++ " x " ++ ptRegex ++ ">$"
 	,"^[[:space:]]*<use " ++ filenameRegex ++ "(, page [[:digit:]]+)?>$"
 	,"^ [[:digit:]]+ (" ++ intercalate "|" statistics ++ ") out of "
