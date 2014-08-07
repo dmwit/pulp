@@ -257,6 +257,7 @@ immediates = compileAll
 	,"^edges, connections;  Xy-pic"
 	,"^ path, \\\\ar,"
 	,"^Excluding comment '[a-z]*'"
+	,"^ *Excluding '[a-z]*' comment\\."
 	,fancyvrbRegex
 	]
 
