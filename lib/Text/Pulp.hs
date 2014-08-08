@@ -323,6 +323,7 @@ bracketNumber ss = mungeParts <$> runParser (mungeParse <$> open <*> boring <*> 
 
 	pdfTeXWarningRegex = "^pdfTeX warning: pdflatex \\(file " ++ filenameRegex ++ "\\): PDF inclusion: multiple pdfs with page group included in a single page$"
 	delimitedFileRegex = "([[:space:]]|[<>{}]|\\(PNG copy\\)|" ++ filenameRegex ++ ")*"
+	nonPDFSpecialRegex = "^Non-PDF special ignored!$"
 
 	head = do
 		ss <- get
@@ -338,12 +339,13 @@ bracketNumber ss = mungeParts <$> runParser (mungeParse <$> open <*> boring <*> 
 
 	boring = do
 		s <- head
-		case (matchBeginning delimitedFileRegex s, matchBeginning pdfTeXWarningRegex s) of
-			_ | null s        -> ((     "\n") ++) <$> boring
-			(Just (b, ""), _) -> ((b ++ "\n") ++) <$> boring
-			(Just (b, e) , _) -> modify (e:) >> return b
-			(_, Just (b, "")) -> tell [b]    >> boring
-			_                 -> modify (s:) >> return ""
+		case (matchBeginning delimitedFileRegex s, matchBeginning pdfTeXWarningRegex s, matchBeginning nonPDFSpecialRegex s) of
+			_ | null s           -> ((     "\n") ++) <$> boring
+			(Just (b, ""), _, _) -> ((b ++ "\n") ++) <$> boring
+			(Just (b, e) , _, _) -> modify (e:) >> return b
+			(_, Just (b, ""), _) -> tell [b]    >> boring
+			(_, _, Just (b, "")) -> tell [b]    >> boring
+			_                    -> modify (s:) >> return ""
 
 	close = do
 		s      <- head
