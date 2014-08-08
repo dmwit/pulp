@@ -210,7 +210,7 @@ regex = compileAll
 	["^[[:space:]]*$"
 	,"^LaTeX2e <" ++ dateRegex ++ ">$"
 	,"^Babel <.*> and hyphenation patterns for .* loaded\\.$"
-	,"^Document Class: [^ ]+ " ++ dateRegex ++ " v?" ++ vnumRegex
+	,"^Document Class"
 	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
 	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
 	,"^File: " ++ filenameRegex ++ " $"
