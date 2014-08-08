@@ -1171,7 +1171,7 @@
 ([((Nothing,Nothing),"./skeleton_complement.tex"),((Nothing,Nothing),"./paper.tex")],((Just 102,Just 103),LaTeXMessage "Font" Info ["Font shape `T1/phv/bx/n' in size <9> not available","Font shape `T1/phv/b/n' tried instead on input line 103."]))
 ([((Nothing,Nothing),"./skeleton_complement.tex"),((Nothing,Nothing),"./paper.tex")],((Just 103,Just 160),Boring ""))
 ([((Nothing,Nothing),"./skeleton_complement.tex"),((Nothing,Nothing),"./paper.tex")],((Just 103,Just 160),HBox "Overfull \\vbox (72.27pt too high) has occurred while \\output is active []" ""))
-([((Nothing,Nothing),"./skeleton_complement.tex"),((Nothing,Nothing),"./paper.tex")],((Just 103,Just 160),Boring " [1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}\n\n]"))
+([((Nothing,Nothing),"./skeleton_complement.tex"),((Nothing,Nothing),"./paper.tex")],((Just 103,Just 160),Boring " [1{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}\n\n\n]"))
 ([((Nothing,Nothing),"./skeleton_complement.tex"),((Nothing,Nothing),"./paper.tex")],((Just 103,Just 160),Unknown "Non-PDF special ignored!"))
 ([((Nothing,Nothing),"./skeleton_complement.tex"),((Nothing,Nothing),"./paper.tex")],((Just 103,Just 160),Boring ""))
 ([((Nothing,Nothing),"./skeleton_complement.tex"),((Nothing,Nothing),"./paper.tex")],((Just 160,Just 175),HBox "Underfull \\hbox (badness 1184) in paragraph at lines 160--175" "[]\\T1/pnc/m/n/10 First, we show that lenses can be gen-er-al-ized from their usual asym-met-ric\n"))
