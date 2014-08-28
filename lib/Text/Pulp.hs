@@ -3,6 +3,7 @@
 module Text.Pulp
 	( parse, prettyPrint, uglyPrint
 	, retag
+	, Annotation
 	, Line(..)
 	, File(..)
 	, MessageLevel(..)

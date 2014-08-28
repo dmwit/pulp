@@ -12,11 +12,11 @@ import Text.Pulp as Pulp
 version = "0.0"
 
 interesting :: Config -> File Annotations -> File Annotations
-interesting formula = concatMap go where
-	go (l, File f ls) = case concatMap go ls of
+interesting formula = concatMap (go []) where
+	go bt (l, File f ls) = case concatMap (go $ (f, l):bt) ls of
 		[] -> []
 		ls -> [(l, File f ls)]
-	go (l, m) = [(l, m) | Config.eval formula m]
+	go bt (l, m) = [(l, m) | Config.eval (l, bt) m formula]
 
 defaultFormulaString = "not (boring | info | message | under | over)"
 Right defaultFormula = Config.parse defaultFormulaString

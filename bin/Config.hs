@@ -53,28 +53,29 @@ data Atom
 	| ADetails UncompiledRegex
 	deriving (Eq, Ord, Show, Read)
 
-evalAtom :: Atom -> Line a -> Bool
-evalAtom ABoring                  (Boring         {})   = True
-evalAtom AUnknown                 (Unknown        {})   = True
-evalAtom ACloseFile               (ExtraCloseFile {})   = True
-evalAtom ACloseFile               (   NoCloseFile {})   = True
-evalAtom (ABoxFullness f)         (HBox s _)            = fullness  s == f
-evalAtom (ABoxDirection d)        (HBox s _)            = direction s == d
-evalAtom (ABoxThreshold t)        (HBox s _)            = extractBoxThreshold s > t
-evalAtom (AMessageLevel Nothing)  (Error          {})   = True
-evalAtom (AMessageLevel (Just l)) (LaTeXMessage _ l' _) = l == l'
-evalAtom (AMessage r)             (Boring s)            =          s `matchesRegex` r
-evalAtom (AMessage r)             (LaTeXMessage _ _ s)  = unlines' s `matchesRegex` r
-evalAtom (AMessage r)             (Error s _ _ _ _)     =          s `matchesRegex` r
-evalAtom (AMessage r)             (Unknown s)           =          s `matchesRegex` r
-evalAtom (APackage r)             (LaTeXMessage p _ _)  =          p `matchesRegex` r
-evalAtom (APackage r)             (Error p _ _ _ _)     =          p `matchesRegex` r
-evalAtom (ADetails r)             (Error _ _ _ _ d)     =          d `matchesRegex` r
-evalAtom _ _ = False
+type Backtrace = (Annotation, [(String, Annotation)])
+evalAtom :: Backtrace -> Line a -> Atom -> Bool
+evalAtom _ (Boring         {})   ABoring                  = True
+evalAtom _ (Unknown        {})   AUnknown                 = True
+evalAtom _ (ExtraCloseFile {})   ACloseFile               = True
+evalAtom _ (   NoCloseFile {})   ACloseFile               = True
+evalAtom _ (HBox s _)            (ABoxFullness f)         = fullness  s == f
+evalAtom _ (HBox s _)            (ABoxDirection d)        = direction s == d
+evalAtom _ (HBox s _)            (ABoxThreshold t)        = extractBoxThreshold s > t
+evalAtom _ (Error          {})   (AMessageLevel Nothing)  = True
+evalAtom _ (LaTeXMessage _ l' _) (AMessageLevel (Just l)) = l == l'
+evalAtom _ (Boring s)            (AMessage r)             =          s `matchesRegex` r
+evalAtom _ (LaTeXMessage _ _ s)  (AMessage r)             = unlines' s `matchesRegex` r
+evalAtom _ (Error s _ _ _ _)     (AMessage r)             =          s `matchesRegex` r
+evalAtom _ (Unknown s)           (AMessage r)             =          s `matchesRegex` r
+evalAtom _ (LaTeXMessage p _ _)  (APackage r)             =          p `matchesRegex` r
+evalAtom _ (Error p _ _ _ _)     (APackage r)             =          p `matchesRegex` r
+evalAtom _ (Error _ _ _ _ d)     (ADetails r)             =          d `matchesRegex` r
+evalAtom _ _ _ = False
 
 type Config = Sentence Atom
-eval :: Config -> Line a -> Bool
-eval f l = evalSentence (`evalAtom` l) f
+eval :: Backtrace -> Line a -> Config -> Bool
+eval = evalSentence .: evalAtom where (.:) = (.).(.)
 
 readsRational s = do
 	(b, "") <- reads b_
