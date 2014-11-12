@@ -214,6 +214,7 @@ regex = compileAll
 	,"^File: " ++ filenameRegex ++ " " ++ dateRegex
 	,"^File: " ++ filenameRegex ++ " Graphic file \\(type [a-z]+\\)$"
 	,"^File: " ++ filenameRegex ++ " $"
+	,"^File: " ++ filenameRegex ++ " \\(.* translation file `.*'\\)$"
 	,"^Package:? [^ ]* " ++ dateRegex
 	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read|insert)[[:digit:]]+$"
 	,"^\\\\openout[[:digit:]]+ = [^']*'\\.$"
