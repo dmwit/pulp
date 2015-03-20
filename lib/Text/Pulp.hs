@@ -206,6 +206,7 @@ equalities =
 	,"decorations;"
 	,"curve,"
 	,"circles,"
+	,"LaTeX document class for Lecture Notes in Computer Science"
 	]
 regex = compileAll
 	["^[[:space:]]*$"
