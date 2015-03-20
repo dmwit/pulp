@@ -2,12 +2,14 @@ module Regression where
 
 import Control.Exception
 import Distribution.TestSuite
+import GHC.IO.Encoding
 import System.Directory
 import System.FilePath
 import System.IO.Strict as Strict
 import Text.Pulp (parse, uglyPrint)
 
 tests = do
+	setLocaleEncoding latin1
 	fs <- getLogs "tests"
 	return [Group
 		{ groupName = "regression tests"
