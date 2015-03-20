@@ -83,7 +83,7 @@ checkForPulpFile s =
 			Left e -> let e' :: IOException; e' = e in return s
 			Right (Right f) -> return $ s { formula = f }
 			Right (Left e) -> do
-				putStrLn $ "ERROR: bad pulp file 'pf':\n\t" ++ intercalate "\n\t" e
+				putStrLn $ "ERROR: bad pulp file '" ++ pf ++ "':\n\t" ++ intercalate "\n\t" e
 				exitFailure
 	else return s
 
