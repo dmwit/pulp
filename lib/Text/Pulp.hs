@@ -271,7 +271,7 @@ dateRegex      = yearRegex ++ "/" ++ monthNumRegex ++ "/" ++ dayNumRegex
 -- anywhere in the middle because many LaTeX installations live in
 -- "C:\Program Files (x86)\..."
 filebaseRegex  = "[^]({<*]([^]({<]|\\(x86\\))*"
-filenameRegex  = quoted (filebaseRegex ++ "\\.[a-z]{2,}")
+filenameRegex  = quoted (filebaseRegex ++ "\\.[a-z]+")
 ptRegex        = "[[:digit:]]+(\\.[[:digit:]]+)?pt"
 vnumRegex      = "[[:digit:]]+(\\.[[:digit:]]+)*"
 dayNumRegex    = "[[:digit:]]{1,2}"
