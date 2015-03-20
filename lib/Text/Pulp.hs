@@ -217,8 +217,10 @@ regex = compileAll
 	,"^File: " ++ filenameRegex ++ " $"
 	,"^File: " ++ filenameRegex ++ " \\(.* translation file `.*'\\)$"
 	,"^Package:? [^ ]* " ++ dateRegex
+	,"^Language: [^ ]* " ++ dateRegex
 	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read|insert)[[:digit:]]+$"
 	,"^\\\\openout[[:digit:]]+ = [^']*'\\.$"
+	,"^\\\\l@[a-z]+ = a dialect from \\\\language\\\\l@[a-z]+\\s*$"
 	,"^Chapter [[:digit:]]+\\.$"
 	,"^Appendix [A-Z]\\.$" -- after 26 appendices, TeX barfs =)
 	,"^[[:space:]]*<" ++ filenameRegex ++ ", id=[[:digit:]]+, (page=[[:digit:]]+, )?" ++ ptRegex ++ " x " ++ ptRegex ++ ">$"
