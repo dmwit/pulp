@@ -221,7 +221,6 @@ regex = compileAll
 	,"^Language: [^ ]* " ++ dateRegex
 	,"^\\\\[^ =]+=\\\\(count|dimen|toks|mathgroup|skip|box|muskip|write|read|insert)[[:digit:]]+$"
 	,"^\\\\openout[[:digit:]]+ = [^']*'\\.$"
-	,"^\\\\l@[a-z]+ = a dialect from \\\\language\\\\l@[a-z]+\\s*$"
 	,"^Chapter [[:digit:]]+\\.$"
 	,"^Appendix [A-Z]\\.$" -- after 26 appendices, TeX barfs =)
 	,"^[[:space:]]*<" ++ filenameRegex ++ ", id=[[:digit:]]+, (page=[[:digit:]]+, )?" ++ ptRegex ++ " x " ++ ptRegex ++ ">$"
@@ -284,6 +283,7 @@ yearRegex      = "[[:digit:]]{4}"
 variantRegex   = "^Variant \\\\[^ :]+:[^ :]+ already defined; not changing it on line [[:digit:]]+$"
 warningRegex   = "^([^ ]*) [wW]arning: (.*)$"
 fancyvrbRegex  = "^Style option: `fancyvrb' v.* <" ++ dateRegex ++ "> \\(tvz\\)"
+dialectRegex   = "^\\\\l@[a-z]+ = a dialect from \\\\language\\\\l@[a-z]+\\s*$"
 
 matchBeginning pat_ = let pat = compile pat_ in \s ->
 	case match pat s of
@@ -556,6 +556,7 @@ categorize' l (s:ss)
 	| Just (b, e)   <- stripImmediates s    = first (Boring b:) (categorize' l (e:ss))
 	| compile variantRegex `match` s        = label (\s -> LaTeXMessage "variant generation" Warning [s])
 	| Just w        <- warning s            = first (w:) (categorize' l ss)
+	| compile dialectRegex `match` s        = label (\s -> LaTeXMessage "babel" Info [s])
 	| otherwise = label Unknown
 	where
 	label f = first (f s:) (putLineHere l ss)
