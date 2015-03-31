@@ -1,4 +1,4 @@
-{-# LANGUAGE DataKinds #-}
+{-# LANGUAGE DataKinds, TypeFamilies #-}
 
 import Config as Config
 import Control.Applicative

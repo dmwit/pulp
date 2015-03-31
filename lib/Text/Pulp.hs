@@ -1,4 +1,4 @@
-{-# LANGUAGE DataKinds, FlexibleInstances, GADTs, NoMonomorphismRestriction, PatternGuards, StandaloneDeriving, TypeFamilies #-}
+{-# LANGUAGE DataKinds, FlexibleContexts, FlexibleInstances, GADTs, NoMonomorphismRestriction, PatternGuards, StandaloneDeriving, TypeFamilies #-}
 
 module Text.Pulp
 	( parse, prettyPrint, uglyPrint

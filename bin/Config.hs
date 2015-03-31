@@ -1,3 +1,4 @@
+{-# LANGUAGE FlexibleContexts #-}
 module Config (Config, parse, eval) where
 
 import Control.Applicative
