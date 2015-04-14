@@ -40,7 +40,7 @@ coalesce = map concat
          . groupWhen (\l -> length l == 79 && not (breakHerald l))
          . lines'
 
-breakHerald l = any (\suffix -> reverse suffix `isPrefixOf` reverse l) [".tex", ".sty", "..."]
+breakHerald l = any (\suffix -> reverse suffix `isPrefixOf` reverse l) [".tex", ".sty", "...", "pt>"]
 
 data MessageLevel = Info | Message | Warning
 	deriving (Eq, Ord, Show, Read, Enum, Bounded)
