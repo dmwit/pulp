@@ -1,0 +1,5 @@
+!( boring
+ | info
+ | message
+ | (unknown & "Copyright \(C\) \w* \w*, [[:digit:]]{4}-")
+ )

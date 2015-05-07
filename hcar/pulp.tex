@@ -1,0 +1,58 @@
+\documentclass{scrreprt}
+\usepackage{paralist}
+\usepackage{graphicx}
+\usepackage[final]{hcar}
+
+%include polycode.fmt
+
+\begin{document}
+
+\begin{hcarentry}{pulp}
+\report{Daniel Wagner}
+\status{Not yet released}
+\participants{Daniel Wagner, Michael Greenberg}
+\makeheader
+
+Anybody who has used \LaTeX\ knows that it is a fantastic tool for
+typesetting; but its error reporting leaves much to be desired. Even simple
+documents that use a handful of packages can produce hundreds of lines of
+uninteresting output on a successful run. Reviewing this output manually to
+pick out the interesting parts---like errors and warnings---is a serious
+chore. Sometimes, even when you have found something of interest in the
+output, one must refer to the more complete log file written to disk to
+discover what really went wrong; and these can easily be thousands of lines
+of uninteresting output to wade through. Moreover, as a document passes
+through the writing lifecycle, different \emph{kinds} of messages are of
+interest. For example, in early drafts, when text is still undergoing major
+changes, fixing minor typesetting infelicities is a waste of time, though
+these become important as the document enters its later stages.
+Unfortunately, \LaTeX\ itself has few knobs to adjust what messages are
+reported.
+
+Pulp addresses these concerns. It includes a parser for \LaTeX\ log files
+and a small but expressive configuration language for identifying which
+messages are of interest. The program then shows only the interesting parts
+of the log file. A typical run of pulp after successfully building a
+document produces no output; this makes it very easy to spot when something
+has gone wrong. Additionally, pulp provides location reporting for all
+messages that gives the file name and line number that caused the error.
+(Errors which do not include a line number are given a ``best guess'' by
+examining nearby errors from the same file.)
+
+Next time you want to produce a great paper, process your log with pulp!
+
+% What's following are suggestions for the content of an entry.
+%
+% (WHAT IS IT?)
+%
+% (WHAT IS ITS STATUS? / WHAT HAS HAPPENED SINCE LAST TIME?)
+%
+% (CAN OTHERS GET IT?)
+%
+% (WHAT ARE THE IMMEDIATE PLANS?)
+
+\FurtherReading
+  \url{http://github.com/dmwit/pulp}
+\end{hcarentry}
+
+\end{document}
