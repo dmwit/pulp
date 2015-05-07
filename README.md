@@ -280,4 +280,4 @@ Lots of people helped me build pulp, in various ways.
 * [John Collins](http://users.phys.psu.edu/~collins/index.html), author of [latexmk](http://users.phys.psu.edu/~collins/software/latexmk-jcc/), warned me about lots of log-file-parsing gotchas before users could complain.
 * [Michael Greenberg](http://www.weaselhat.com/) shared pulp binaries and improved the command-line handling and error reporting.
 * [Brent Yorgey](http://www.cis.upenn.edu/~byorgey/) and Vilhelm Sjöberg sent some particularly weird log files, which helped improve the robustness of the parser.
-* [Catalin Hritcu](https://hritcu.wordpress.com/) shared pulp binaries.
+* [Catalin Hritcu](https://hritcu.wordpress.com/) shared pulp binaries and made many feature suggestions.
