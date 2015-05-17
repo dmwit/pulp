@@ -16,44 +16,27 @@
 Anybody who has used \LaTeX\ knows that it is a fantastic tool for
 typesetting; but its error reporting leaves much to be desired. Even simple
 documents that use a handful of packages can produce hundreds of lines of
-uninteresting output on a successful run. Reviewing this output manually to
-pick out the interesting parts---like errors and warnings---is a serious
-chore. Sometimes, even when you have found something of interest in the
-output, one must refer to the more complete log file written to disk to
-discover what really went wrong, and where; and these can easily be
-thousands of lines of uninteresting output to wade through. Moreover, as a
-document passes through the writing lifecycle, different \emph{kinds} of
-messages are of interest. For example, in early drafts, when text is still
-undergoing major changes, it can be a waste of time to fret about underfull
-boxes or bad hyphenations, though these become important as the document
-enters its later stages. Unfortunately, \LaTeX\ itself has few knobs to
-adjust what messages are reported.
+uninteresting output on a successful run. Picking out the parts that require
+action is a serious chore, and locating the right part of the document
+source to change can be tiresome when there are many files.
 
-Pulp addresses these concerns. It includes a parser for \LaTeX\ log files
-and a small but expressive configuration language for identifying which
-messages are of interest. The program then shows only the interesting parts
-of the log file. A typical run of pulp after successfully building a
-document produces no output; this makes it very easy to spot when something
-has gone wrong.
-
-Next time you want to produce a great paper, process your log with pulp!
+Pulp is a parser for \LaTeX\ log files with a small but expressive
+configuration language for identifying which messages are of interest. A
+typical run of pulp after successfully building a document produces no
+output; this makes it very easy to spot when something has gone wrong. Next
+time you want to produce a great paper, process your log with pulp!
 
 \paragraph*{Features}
 \begin{compactitem}
 	\item \LaTeX\ log parser with special-case support for many popular
-		packages and classes, including article, babel, beamer, fancyvrb,
-		fp, geometry, graphicx, KOMA-Script, llncs, memoir, natbib, nowidow,
-		pdfpages, prooftree, scrlfile, xparse, xypic
-	\item Expressive configuration language based on zeroth-order logic with
-		atoms for error level, error content, reporting package, and more
-	\item Uniform error reporting format
+		packages and classes
+	\item Expressive configuration language
 		\begin{compactitem}
-			\item File and line number location information
-			\item Line-number guessing heuristic for errors that do not
-				report line information
-			\item Clear delineation of multi-line errors
+			\item Filter out document-specific unimportance
+			\item Increase verbosity as the document nears completion
 		\end{compactitem}
-	\item Integration with latexmk
+	\item Uniform error reporting format with file and line information
+	\item Instructions for use with latexmk
 	\item Rudimentary Windows support
 \end{compactitem}
 
