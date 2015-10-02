@@ -403,7 +403,7 @@ parseHBox l s ss = first (HBox s e:) (putLineHere l ss') where
 	hboxErrorTooShort = "Huh. I was expecting another line to happen after this hbox error, but none did! Maybe there's a bug in the parser."
 	hboxErrorTooLong  = "Huh. I was expecting this hbox error to end with a blank line pretty quickly, but it took a long time! Maybe there's a bug in the parser."
 
-geometryVerboseMode = "*geometry* verbose mode - [ preamble ] result:"
+geometryRegex = "\\*geometry\\* verbose mode - \\[ .* \\] result:"
 parseGeometryVerboseMode l ss = first (map Boring results ++) (putLineHere l rest) where
 	(results, rest) = span ("* " `isPrefixOf`) ss
 
@@ -541,7 +541,7 @@ categorize' l (s:ss)
 	| regex `match` s                       = label Boring
 	| any (`isPrefixOf` s) prefixes         = label Boring
 	| any (trim s==)       equalities       = label Boring
-	| s == geometryVerboseMode              = first (Boring s:) (parseGeometryVerboseMode l ss)
+	| compile geometryRegex `match` s       = first (Boring s:) (parseGeometryVerboseMode l ss)
 	| Just (v, ss') <- xparse (s:ss)        = first (v++) $ categorize' Nothing ss' -- don't need l: we'll parse the line annotation (if any) inside xparse
 	| Just (f, s' ) <- openFile s           = let (b, e) = categorize' Nothing (s':ss)
 	                                          in first ((file f (b ++ [NoCloseFile | null e])):)
