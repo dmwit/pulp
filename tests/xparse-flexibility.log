@@ -1,0 +1,30 @@
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'Linotype-UniversLTPro-45Light.otf(0)' created for font
+. 'Linotype - UniversLTPro-45Light.otf' with options [BoldFont={Linotype -
+. UniversLTPro-65Bold.otf},ItalicFont={Linotype -
+. UniversLTPro-45LightOblique.otf},BoldItalicFont={Linotype -
+. UniversLTPro-65BoldOblique.otf}].
+. 
+. This font family consists of the following shapes:
+. 
+. * 'normal' with NFSS spec.:
+. <->"[Linotype - UniversLTPro-45Light.otf]/ICU:script=latn;language=DFLT;"
+. 
+. * 'bold' with NFSS spec.:
+. <->"[Linotype - UniversLTPro-65Bold.otf]/ICU:script=latn;language=DFLT;"
+. 
+. * 'italic' with NFSS spec.:
+. <->"[Linotype -
+. UniversLTPro-45LightOblique.otf]/ICU:script=latn;language=DFLT;"
+. 
+. * 'bold italic' with NFSS spec.:
+. <->"[Linotype -
+. UniversLTPro-65BoldOblique.otf]/ICU:script=latn;language=DFLT;"
+.................................................
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................

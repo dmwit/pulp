@@ -410,11 +410,15 @@ parseGeometryVerboseMode l ss = first (map Boring results ++) (putLineHere l res
 xparse ss = msum . map go $ xparseData where
 	go (box, word, level) = do
 		(_, ss)        <- findExactWithin (headerLine box) 0 ss
-		(inside, rest) <- findExactWithin (headerLine box) 7 ss
+		(inside, rest) <- findExactWithin (headerLine box) 30 ss
 		(p_:"":message) <- mapM (stripPrefix (linePrefix box)) inside
-		p_' <- stripPrefix (packagePrefix word) p_
-		package <- stripSuffix "\"" p_'
-		let line  = LaTeXMessage package level message
+		(package, p_') <- stripInfix " " p_
+		p_'' <- stripPrefix (word ++ ": \"") p_'
+		topic <- stripSuffix "\"" p_''
+		let packageTopic = case package of
+		    	"LaTeX" -> topic
+		    	_ -> package ++ "/" ++ topic
+		    line  = LaTeXMessage packageTopic level message
 		    lines = case lineNumber (unwords message) of
 		    	Nothing     -> [line]
 		    	Just (b, e) -> [b, line, e]
@@ -422,7 +426,6 @@ xparse ss = msum . map go $ xparseData where
 
 	headerLine box = replicate 49 box
 	linePrefix box = [box, ' ']
-	packagePrefix word = "LaTeX " ++ word ++ ": \""
 	xparseData = [('.', "info", Info), ('*', "warning", Warning)]
 
 -- TeX errors usually look like this:
